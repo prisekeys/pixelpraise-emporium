@@ -214,11 +214,7 @@ function Home() {
       <footer className="border-t border-border/60">
         <div className="mx-auto max-w-7xl px-6 py-8 flex items-center justify-between flex-wrap gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2.5">
-            <div className="grid grid-cols-2 gap-0.5 w-4 h-4">
-              <span className="bg-[#F25022]" /><span className="bg-[#7FBA00]" />
-              <span className="bg-[#00A4EF]" /><span className="bg-[#FFB900]" />
-            </div>
-            <span className="font-display font-semibold text-foreground">Microsoft Store</span>
+            <img src={logo.url} alt="KeyGG" className="h-7 w-auto" />
             <span>© 2026</span>
           </div>
           <div className="flex gap-6">
