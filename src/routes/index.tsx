@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles } from "lucide-react";
 import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
@@ -35,14 +35,11 @@ const heroSlides = [
 
 function Home() {
   const [active, setActive] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const id = setInterval(() => setActive((i) => (i + 1) % heroSlides.length), 5000);
     return () => clearInterval(id);
   }, []);
-
-  const scrollBy = (dir: number) => sliderRef.current?.scrollBy({ left: dir * 380, behavior: "smooth" });
 
   return (
     <div className="min-h-screen bg-background">
@@ -139,51 +136,36 @@ function Home() {
         </div>
       </section>
 
-      {/* Products slider */}
+      {/* Products grid — 4 per row */}
       <section id="products" className="mx-auto max-w-7xl px-6 py-20">
-        <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
-          <div>
-            <div className="text-sm font-medium text-primary mb-2">Featured</div>
-            <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Top Microsoft products</h2>
-          </div>
-          <div className="flex items-center gap-2">
-            <button onClick={() => scrollBy(-1)} aria-label="Previous" className="w-11 h-11 rounded-full border border-border bg-card hover:bg-secondary transition grid place-items-center">
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={() => scrollBy(1)} aria-label="Next" className="w-11 h-11 rounded-full text-primary-foreground transition grid place-items-center hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+        <div className="mb-10">
+          <div className="text-sm font-medium text-primary mb-2">Featured</div>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Top Microsoft products</h2>
         </div>
 
-        <div ref={sliderRef} className="no-scrollbar flex gap-6 overflow-x-auto snap-x snap-mandatory -mx-6 px-6 pb-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((p) => (
-            <article key={p.title} className="snap-start shrink-0 w-[320px] md:w-[380px] card-tilt rounded-3xl border border-border bg-card overflow-hidden">
-              <div className="relative aspect-[4/5] overflow-hidden bg-secondary">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-xs font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
-                <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-1">
-                  <Star className="w-3 h-3 fill-primary text-primary" /> {p.rating}
+            <article key={p.title} className="card-tilt rounded-2xl border border-border bg-card overflow-hidden group">
+              <div className="relative aspect-square overflow-hidden bg-secondary">
+                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
+                <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-0.5">
+                  <Star className="w-2.5 h-2.5 fill-primary text-primary" /> {p.rating}
                 </div>
-                <button className="absolute bottom-3 right-3 w-10 h-10 rounded-full text-primary-foreground grid place-items-center hover:scale-110 transition" style={{ background: "var(--gradient-primary)" }}>
-                  <ArrowUpRight className="w-4 h-4" />
+                <button className="absolute bottom-2 right-2 w-8 h-8 rounded-full text-primary-foreground grid place-items-center hover:scale-110 transition" style={{ background: "var(--gradient-primary)" }}>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
                 </button>
               </div>
-              <div className="p-5">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="font-display font-bold text-xl tracking-tight">{p.title}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
+              <div className="p-3 md:p-4">
+                <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
+                <p className="mt-1 text-xs text-muted-foreground line-clamp-2">{p.desc}</p>
+                <div className="mt-3 flex items-center justify-between">
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="font-display font-bold text-base md:text-lg">${p.price}</span>
+                    <span className="text-xs text-muted-foreground line-through">${p.original}</span>
                   </div>
-                  <div className="text-right shrink-0">
-                    <div className="font-display font-bold text-xl">${p.price}</div>
-                    <div className="text-xs text-muted-foreground line-through">${p.original}</div>
-                  </div>
-                </div>
-                <div className="mt-4 flex items-center justify-between pt-4 border-t border-border">
-                  <span className="text-xs text-muted-foreground">{p.sales} sold</span>
-                  <button className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-2.5 transition-all">
-                    <Download className="w-3.5 h-3.5" /> Buy now
+                  <button className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:gap-1.5 transition-all">
+                    <Download className="w-3 h-3" /> Buy now
                   </button>
                 </div>
               </div>
