@@ -64,10 +64,10 @@ function Home() {
         </nav>
       </header>
 
-      {/* HERO — image slider, no text bloat */}
+      {/* HERO — compact image slider */}
       <section className="relative">
-        <div className="mx-auto max-w-7xl px-6 pt-6 pb-8">
-          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card aspect-[21/9] md:aspect-[21/8]">
+        <div className="mx-auto max-w-7xl px-6 pt-4 pb-6">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[21/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
                 key={s.title}
@@ -81,11 +81,11 @@ function Home() {
                   className="absolute inset-0 w-full h-full object-cover scale-105"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-r ${s.accent}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-6 md:p-10 max-w-xl">
-                  <div className="text-xs md:text-sm font-medium text-primary mb-2">{s.eyebrow}</div>
-                  <h2 className="font-display font-bold text-2xl md:text-4xl tracking-tighter">{s.title}</h2>
-                  <a href="#products" className="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-primary-foreground" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 p-5 md:p-8 max-w-md">
+                  <div className="text-xs font-medium text-primary mb-1">{s.eyebrow}</div>
+                  <h2 className="font-display font-bold text-xl md:text-3xl tracking-tighter">{s.title}</h2>
+                  <a href="#products" className="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-primary-foreground" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}>
                     {s.cta} <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
