@@ -5,14 +5,15 @@ import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
+import logo from "@/assets/keygg-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Microsoft Store — Software, Games & AI" },
-      { name: "description", content: "Genuine Microsoft software: Office 365, Windows 11, Xbox Game Pass, and Copilot. Instant digital delivery." },
-      { property: "og:title", content: "Microsoft Store — Software, Games & AI" },
-      { property: "og:description", content: "Genuine Microsoft software with instant digital delivery." },
+      { title: "KeyGG — Genuine Microsoft Keys, Games & AI" },
+      { name: "description", content: "KeyGG: Office 365, Windows 11, Xbox Game Pass and Copilot at the best prices. Instant digital delivery." },
+      { property: "og:title", content: "KeyGG — Genuine Microsoft Keys" },
+      { property: "og:description", content: "Office 365, Windows 11, Xbox Game Pass and Copilot. Instant digital delivery." },
     ],
   }),
   component: Home,
@@ -49,11 +50,7 @@ function Home() {
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
         <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2.5">
-            <div className="grid grid-cols-2 gap-0.5 w-5 h-5">
-              <span className="bg-[#F25022]" /><span className="bg-[#7FBA00]" />
-              <span className="bg-[#00A4EF]" /><span className="bg-[#FFB900]" />
-            </div>
-            <span className="font-display font-semibold text-base tracking-tight">Microsoft Store</span>
+            <img src={logo.url} alt="KeyGG" className="h-9 md:h-10 w-auto" />
           </a>
           <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
             <a href="#products" className="hover:text-foreground transition">Software</a>
@@ -217,11 +214,7 @@ function Home() {
       <footer className="border-t border-border/60">
         <div className="mx-auto max-w-7xl px-6 py-8 flex items-center justify-between flex-wrap gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2.5">
-            <div className="grid grid-cols-2 gap-0.5 w-4 h-4">
-              <span className="bg-[#F25022]" /><span className="bg-[#7FBA00]" />
-              <span className="bg-[#00A4EF]" /><span className="bg-[#FFB900]" />
-            </div>
-            <span className="font-display font-semibold text-foreground">Microsoft Store</span>
+            <img src={logo.url} alt="KeyGG" className="h-7 w-auto" />
             <span>© 2026</span>
           </div>
           <div className="flex gap-6">
