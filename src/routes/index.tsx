@@ -35,14 +35,11 @@ const heroSlides = [
 
 function Home() {
   const [active, setActive] = useState(0);
-  const sliderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const id = setInterval(() => setActive((i) => (i + 1) % heroSlides.length), 5000);
     return () => clearInterval(id);
   }, []);
-
-  const scrollBy = (dir: number) => sliderRef.current?.scrollBy({ left: dir * 380, behavior: "smooth" });
 
   return (
     <div className="min-h-screen bg-background">
