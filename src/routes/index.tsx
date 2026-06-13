@@ -126,9 +126,18 @@ function Home() {
         <div className="border-y border-border/60 py-3 overflow-hidden bg-secondary/40">
           <div className="flex gap-12 animate-marquee whitespace-nowrap text-sm font-medium text-muted-foreground">
             {Array.from({ length: 2 }).map((_, i) => (
-              <div key={i} className="flex gap-12 shrink-0">
-                {["⚡ Instant digital delivery", "✓ Genuine Microsoft licenses", "↻ 30-day money back", "★ Trusted by millions", "◎ 24/7 support", "✱ Secure checkout"].map((t) => (
-                  <span key={t}>{t}</span>
+              <div key={i} className="flex gap-12 shrink-0 items-center">
+                {[
+                  { icon: Zap, text: "Instant digital delivery" },
+                  { icon: BadgeCheck, text: "Genuine Microsoft licenses" },
+                  { icon: RefreshCcw, text: "30-day money back" },
+                  { icon: Star, text: "Trusted by millions" },
+                  { icon: Headphones, text: "24/7 support" },
+                  { icon: Lock, text: "Secure checkout" },
+                ].map(({ icon: Icon, text }) => (
+                  <span key={text} className="inline-flex items-center gap-2">
+                    <Icon className="w-4 h-4 text-primary" /> {text}
+                  </span>
                 ))}
               </div>
             ))}
