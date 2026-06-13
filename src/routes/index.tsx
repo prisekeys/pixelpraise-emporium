@@ -159,12 +159,12 @@ function Home() {
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
                 <p className="mt-1 text-xs text-muted-foreground line-clamp-2">{p.desc}</p>
-                <div className="mt-3 flex items-center justify-between">
+                <div className="mt-3 flex flex-col gap-2">
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-display font-bold text-base md:text-lg">${p.price}</span>
                     <span className="text-xs text-muted-foreground line-through">${p.original}</span>
                   </div>
-                  <button className="inline-flex items-center gap-1 text-xs font-medium text-primary hover:gap-1.5 transition-all">
+                  <button className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
                     <Download className="w-3 h-3" /> Buy now
                   </button>
                 </div>
