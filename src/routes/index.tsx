@@ -202,16 +202,77 @@ function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-border/60">
-        <div className="mx-auto max-w-7xl px-6 py-8 flex items-center justify-between flex-wrap gap-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2.5">
-            <img src={logo.url} alt="KeyGG" className="h-7 w-auto" />
-            <span>© 2026</span>
+      {/* Footer */}
+      <footer className="border-t border-border/60 bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
+          {/* Top section: logo + links */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+            <div className="col-span-2 md:col-span-1">
+              <img src={logo.url} alt="KeyGG" className="h-8 w-auto mb-4" />
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+                Genuine Microsoft keys, games & AI tools. Instant digital delivery, unbeatable prices.
+              </p>
+              <div className="mt-5 flex items-center gap-3">
+                <a href="#" aria-label="Twitter" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a href="#" aria-label="Email" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
+                  <Mail className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-display font-bold text-sm mb-4">Products</h4>
+              <ul className="space-y-2.5 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-foreground transition">Microsoft 365</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Windows 11</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Xbox Game Pass</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Microsoft Copilot</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-display font-bold text-sm mb-4">Support</h4>
+              <ul className="space-y-2.5 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-foreground transition">Help Center</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Activation Guide</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Refund Policy</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-display font-bold text-sm mb-4">Legal</h4>
+              <ul className="space-y-2.5 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-foreground transition">Terms of Service</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Cookie Policy</a></li>
+                <li><a href="#" className="hover:text-foreground transition">Licenses</a></li>
+              </ul>
+            </div>
           </div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition">Terms</a>
-            <a href="#" className="hover:text-foreground transition">Privacy</a>
-            <a href="#" className="hover:text-foreground transition">Contact</a>
+
+          {/* Divider */}
+          <div className="border-t border-border/60" />
+
+          {/* Bottom bar: payments + copyright */}
+          <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2 flex-wrap justify-center">
+              <span className="text-xs text-muted-foreground mr-1">We accept:</span>
+              {["Stripe", "PayPal", "Visa", "Mastercard", "Apple Pay"].map((name) => (
+                <span key={name} className="px-2.5 py-1 rounded-md text-[10px] font-semibold bg-card border border-border text-muted-foreground uppercase tracking-wide">
+                  {name}
+                </span>
+              ))}
+            </div>
+            <p className="text-xs text-muted-foreground">© 2026 KeyGG. All rights reserved.</p>
           </div>
         </div>
       </footer>
