@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight, ArrowUpRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles } from "lucide-react";
 import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
