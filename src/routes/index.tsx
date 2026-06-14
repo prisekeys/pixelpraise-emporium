@@ -112,50 +112,50 @@ function Home() {
 
       {/* HERO — slider with premium two-column slides */}
       <section className="relative">
-        <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
-          <div className="relative overflow-hidden rounded-2xl bg-transparent aspect-[16/9] md:aspect-[3/1]">
+        <div className="mx-auto max-w-7xl px-3 sm:px-6 pt-3 sm:pt-4 pb-2">
+          <div className="relative overflow-hidden rounded-2xl bg-transparent min-h-[440px] sm:min-h-0 sm:aspect-[16/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
                 key={s.eyebrow}
                 className={`absolute inset-0 transition-opacity duration-700 ease-out ${i === active ? "opacity-100" : "opacity-0 pointer-events-none"}`}
               >
-                <div className="grid grid-cols-2 h-full items-center gap-4 px-5 sm:px-8 md:px-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 h-full items-center gap-3 sm:gap-4 px-4 pt-4 pb-16 sm:px-8 sm:py-0 md:px-14">
                   {/* Left: copy */}
-                  <div className="max-w-xl">
+                  <div className="max-w-xl text-center sm:text-left order-2 sm:order-1">
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-background border border-border text-[10px] sm:text-xs font-medium text-muted-foreground mb-2 sm:mb-3">
                       <BadgeCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary" /> {s.eyebrow}
                     </div>
-                    <h2 className="font-display font-bold text-lg sm:text-2xl md:text-4xl lg:text-5xl tracking-tighter leading-[1.05] text-foreground">
+                    <h2 className="font-display font-bold text-2xl sm:text-2xl md:text-4xl lg:text-5xl tracking-tighter leading-[1.1] text-foreground">
                       {s.title}{" "}
                       <span className="text-primary">{s.highlight}</span>
                     </h2>
-                    <p className="hidden sm:block mt-2 md:mt-3 text-xs md:text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                    <p className="mt-2 md:mt-3 text-xs md:text-sm text-muted-foreground leading-relaxed line-clamp-2">
                       {s.desc}
                     </p>
-                    <div className="mt-2 sm:mt-4 flex items-center gap-3">
+                    <div className="mt-3 sm:mt-4 flex items-center justify-center sm:justify-start gap-3">
                       <a
                         href="#products"
-                        className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                        className="inline-flex items-center gap-1.5 sm:gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                         style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                       >
                         {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       </a>
-                      <div className="hidden md:flex items-baseline gap-1.5">
-                        <span className="font-display font-bold text-lg text-foreground">${s.price}</span>
+                      <div className="flex items-baseline gap-1.5">
+                        <span className="font-display font-bold text-base sm:text-lg text-foreground">${s.price}</span>
                         <span className="text-xs text-muted-foreground line-through">${s.original}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Right: layered product graphics */}
-                  <div className="relative h-full">
+                  <div className="relative h-36 sm:h-full order-1 sm:order-2">
                     <div
                       aria-hidden
-                      className="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 rounded-full blur-3xl opacity-30"
+                      className="absolute top-1/2 right-1/2 translate-x-1/2 sm:right-0 sm:translate-x-0 -translate-y-1/2 w-40 h-40 sm:w-64 sm:h-64 rounded-full blur-3xl opacity-30"
                       style={{ background: "var(--gradient-primary)" }}
                     />
                     {/* main card */}
-                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[78%] aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-2xl">
+                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[100%] sm:h-[78%] aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-2xl">
                       <img src={s.product} alt={s.eyebrow} className="w-full h-full object-contain p-3 sm:p-5" />
                     </div>
                     {/* accent card */}
