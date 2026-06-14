@@ -57,11 +57,14 @@ const heroSlides = [
 function Home() {
   const [active, setActive] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [paused, setPaused] = useState(false);
 
   useEffect(() => {
+    if (paused) return;
     const id = setInterval(() => setActive((i) => (i + 1) % heroSlides.length), 5000);
     return () => clearInterval(id);
-  }, []);
+  }, [paused]);
+
 
   return (
     <div className="min-h-screen bg-secondary/30">
