@@ -436,8 +436,8 @@ function Home() {
                 { src: payMastercard.url, alt: "Mastercard" },
                 { src: payApple.url, alt: "Apple Pay" },
               ].map((p) => (
-                <span key={p.alt} className="inline-flex items-center justify-center h-9 px-3 rounded-md bg-white border border-border" title={p.alt}>
-                  <img src={p.src} alt={p.alt} className="h-5 w-auto object-contain" loading="lazy" />
+                <span key={p.alt} className="inline-flex items-center justify-center h-6 px-2 rounded bg-white border border-border" title={p.alt}>
+                  <img src={p.src} alt={p.alt} className="h-3.5 w-auto object-contain" loading="lazy" />
                 </span>
               ))}
             </div>
