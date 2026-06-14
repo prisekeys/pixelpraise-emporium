@@ -5,6 +5,8 @@ import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
+import security from "@/assets/product-security.jpg";
+import project from "@/assets/product-project.jpg";
 import logo from "@/assets/keygg-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
