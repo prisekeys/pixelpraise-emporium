@@ -107,55 +107,82 @@ function Home() {
         )}
       </header>
 
-      {/* HERO — compact image slider */}
-      <section className="relative">
-        <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[16/9] md:aspect-[3/1]">
-            {heroSlides.map((s, i) => (
-              <div
-                key={s.title}
-                className={`absolute inset-0 transition-opacity duration-700 ease-out ${i === active ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-              >
-                <img
-                  src={s.img}
-                  alt={s.title}
-                  width={1024}
-                  height={1024}
-                  className="absolute inset-0 w-full h-full object-cover scale-105"
-                />
-                <div className={`absolute inset-0 bg-gradient-to-r ${s.accent}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-4 sm:p-5 md:p-8 max-w-[85%] sm:max-w-md">
-                  <div className="text-[10px] sm:text-xs font-medium text-primary mb-1">{s.eyebrow}</div>
-                  <h2 className="font-display font-bold text-lg sm:text-xl md:text-3xl tracking-tighter">{s.title}</h2>
-                  <a href="#products" className="mt-2 sm:mt-3 inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-primary-foreground" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}>
-                    {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  </a>
+      {/* HERO — two-column premium layout */}
+      <section className="relative bg-secondary/40">
+        <div className="mx-auto max-w-7xl px-6 pt-10 pb-12 md:pt-16 md:pb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+            {/* Left: copy */}
+            <div className="max-w-xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-muted-foreground mb-5">
+                <BadgeCheck className="w-3.5 h-3.5 text-primary" /> Genuine Microsoft licenses
+              </div>
+              <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[1.05] text-foreground">
+                Genuine software.{" "}
+                <span className="text-primary">Unbeatable prices.</span>
+              </h1>
+              <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
+                Activate Windows, Office and Microsoft 365 in minutes. Instant
+                email delivery, lifetime licenses, and friendly support whenever
+                you need it.
+              </p>
+              <div className="mt-8 flex items-center gap-4">
+                <a
+                  href="#products"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
+                >
+                  Shop best sellers <ArrowRight className="w-4 h-4" />
+                </a>
+                <div className="hidden sm:flex items-center gap-1.5 text-xs text-muted-foreground">
+                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  <span className="font-semibold text-foreground">4.9/5</span>
+                  <span>from 24,500+ buyers</span>
                 </div>
               </div>
-            ))}
+            </div>
 
-            {/* arrows */}
-            <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
-              className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Next slide"
-              className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
-              <ChevronRight className="w-5 h-5" />
-            </button>
+            {/* Right: layered product graphics */}
+            <div className="relative h-[340px] sm:h-[420px] md:h-[480px]">
+              {/* soft gradient blob */}
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-[2rem]"
+                style={{ background: "var(--gradient-primary)", opacity: 0.08 }}
+              />
+              <div
+                aria-hidden
+                className="absolute -top-6 -right-6 w-56 h-56 rounded-full blur-3xl opacity-30"
+                style={{ background: "var(--gradient-primary)" }}
+              />
 
-            {/* dots */}
-            <div className="absolute bottom-3 sm:bottom-5 right-4 sm:right-6 flex items-center gap-2">
-              {heroSlides.map((_, i) => (
-                <button key={i} onClick={() => setActive(i)} aria-label={`Go to slide ${i + 1}`}
-                  className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
-              ))}
+              {/* main product card */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[68%] aspect-square rounded-3xl bg-background border border-border overflow-hidden shadow-2xl">
+                <img src={win11Pro.url} alt="Windows 11 Professional" className="w-full h-full object-contain p-6" />
+              </div>
+
+              {/* overlap card top-left */}
+              <div className="absolute top-4 left-2 sm:left-4 w-32 sm:w-40 aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-xl rotate-[-6deg]">
+                <img src={office2024Pro.url} alt="Office 2024" className="w-full h-full object-contain p-3" />
+              </div>
+
+              {/* overlap card bottom-right */}
+              <div className="absolute bottom-2 right-2 sm:right-6 w-36 sm:w-44 aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-xl rotate-[5deg]">
+                <img src={m365Family.url} alt="Microsoft 365 Family" className="w-full h-full object-contain p-3" />
+              </div>
+
+              {/* floating badge */}
+              <div className="hidden sm:flex absolute bottom-6 left-0 items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-background border border-border shadow-xl">
+                <div className="grid place-items-center w-8 h-8 rounded-xl bg-primary/10">
+                  <Zap className="w-4 h-4 text-primary" />
+                </div>
+                <div className="leading-tight">
+                  <div className="text-[11px] text-muted-foreground">Delivery</div>
+                  <div className="text-xs font-semibold text-foreground">Instant by email</div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-
       </section>
 
       {/* Products grid — 4 per row */}
