@@ -221,7 +221,6 @@ function Home() {
               <CardWrap {...wrapProps} className="block">
               <div className="relative aspect-square overflow-hidden bg-white">
                 <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain" />
-                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
@@ -353,7 +352,6 @@ function Home() {
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <div className="relative aspect-square overflow-hidden bg-white">
                 <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain" />
-                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">Office</div>
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
