@@ -102,7 +102,7 @@ function Home() {
 
         {/* Mobile menu dropdown */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
+          <div className="md:hidden border-t border-border/60 bg-secondary/30 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
             <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Software</a>
             <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Gaming</a>
             <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">AI</a>
