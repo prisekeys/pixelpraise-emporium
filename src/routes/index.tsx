@@ -379,20 +379,6 @@ function Home() {
               <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
                 Genuine Microsoft keys, games & AI tools. Instant digital delivery, unbeatable prices.
               </p>
-              <div className="mt-5 flex items-center gap-3">
-                <a href="#" aria-label="Twitter" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
-                  <Instagram className="w-4 h-4" />
-                </a>
-                <a href="#" aria-label="Email" className="w-9 h-9 rounded-full bg-card border border-border grid place-items-center hover:bg-secondary transition">
-                  <Mail className="w-4 h-4" />
-                </a>
-              </div>
             </div>
 
             <div>
