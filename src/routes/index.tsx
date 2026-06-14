@@ -178,9 +178,6 @@ function Home() {
               <div className="relative aspect-square overflow-hidden bg-white">
                 <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
-                <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-0.5">
-                  <Star className="w-2.5 h-2.5 fill-primary text-primary" /> {p.rating}
-                </div>
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
