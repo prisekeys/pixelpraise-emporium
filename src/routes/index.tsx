@@ -331,7 +331,7 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border/60 bg-secondary/30">
+      <footer className="bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
           {/* Top section: logo + links */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
