@@ -110,7 +110,7 @@ function Home() {
       {/* HERO — slider with premium two-column slides */}
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
-          <div className="relative overflow-hidden rounded-2xl bg-secondary/40 aspect-[16/9] md:aspect-[3/1]">
+          <div className="relative overflow-hidden rounded-2xl bg-transparent aspect-[16/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
                 key={s.eyebrow}
