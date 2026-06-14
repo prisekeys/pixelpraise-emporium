@@ -109,7 +109,7 @@ function Home() {
 
       {/* HERO — compact image slider */}
       <section className="relative">
-        <div className="mx-auto max-w-7xl px-6 pt-4 pb-6">
+        <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
           <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[16/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
@@ -159,7 +159,7 @@ function Home() {
       </section>
 
       {/* Products grid — 4 per row */}
-      <section id="products" className="mx-auto max-w-7xl px-6 py-20">
+      <section id="products" className="mx-auto max-w-7xl px-6 pt-6 pb-20">
         <div className="mb-10">
           <div className="text-sm font-medium text-primary mb-2">Featured</div>
           <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Top Microsoft products</h2>
