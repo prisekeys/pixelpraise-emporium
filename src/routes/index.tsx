@@ -173,8 +173,8 @@ function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((p) => (
             <article key={p.title} className="card-tilt rounded-2xl border border-border bg-card overflow-hidden group">
-              <div className="relative aspect-square overflow-hidden bg-secondary">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="relative aspect-square overflow-hidden bg-white">
+                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
                 <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-0.5">
                   <Star className="w-2.5 h-2.5 fill-primary text-primary" /> {p.rating}
