@@ -179,9 +179,6 @@ function Home() {
                 <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-0.5">
                   <Star className="w-2.5 h-2.5 fill-primary text-primary" /> {p.rating}
                 </div>
-                <button className="absolute bottom-2 right-2 w-8 h-8 rounded-full text-primary-foreground grid place-items-center hover:scale-110 transition" style={{ background: "var(--gradient-primary)" }}>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </button>
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
