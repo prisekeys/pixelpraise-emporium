@@ -48,10 +48,10 @@ const products = [
 ];
 
 const heroSlides = [
-  { img: office,   eyebrow: "Microsoft 365",       title: "Work better, together.",        cta: "Shop Microsoft 365",       accent: "from-emerald-400/30 to-transparent" },
-  { img: windows,  eyebrow: "Windows 11",          title: "A fresh start, simply yours.",  cta: "Get Windows 11 Pro",       accent: "from-sky-300/30 to-transparent" },
-  { img: xbox,     eyebrow: "Xbox Game Pass",      title: "Hundreds of games. One pass.",  cta: "Join Game Pass Ultimate",  accent: "from-lime-400/40 to-transparent" },
-  { img: copilot,  eyebrow: "Microsoft Copilot",   title: "Your everyday AI companion.",   cta: "Try Copilot",              accent: "from-teal-300/30 to-transparent" },
+  { product: win11Pro.url,    eyebrow: "Windows 11 Pro",        title: "Genuine software.",   highlight: "Unbeatable prices.",     desc: "Lifetime license, instant email delivery, and friendly support whenever you need it.", cta: "Shop Windows 11",  price: 13, original: 50 },
+  { product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "The latest Office.",  highlight: "Activated in minutes.",  desc: "Word, Excel, PowerPoint and Outlook — one key, one PC, forever.",                       cta: "Get Office 2024",  price: 20, original: 65 },
+  { product: m365Family.url,  eyebrow: "Microsoft 365 Family",  title: "Premium apps for 6.", highlight: "6 TB cloud included.",   desc: "Share Microsoft 365 with up to six people, with 1 TB OneDrive storage each.",          cta: "Shop 365 Family",  price: 78, original: 130 },
+  { product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "All the essentials.", highlight: "Fraction of the price.", desc: "Full Office suite with lifetime license and instant digital delivery.",                 cta: "Get Office 2021",  price: 15, original: 55 },
 ];
 
 function Home() {
