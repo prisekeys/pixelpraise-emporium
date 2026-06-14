@@ -25,6 +25,10 @@ import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1
 import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
 import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
 import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
+import outlook2024 from "@/assets/products/outlook-2024.webp.asset.json";
+import access2024 from "@/assets/products/access-2024.webp.asset.json";
+import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
+import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
