@@ -7,6 +7,7 @@ import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
 import logo from "@/assets/keygg-logo.png.asset.json";
+import microsoftCertified from "@/assets/microsoft-certified.png.asset.json";
 import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
 import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
 import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
@@ -334,7 +335,7 @@ function Home() {
       <footer className="bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
           {/* Top section: logo + links */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
             <div className="col-span-2 md:col-span-1">
               <img src={logo.url} alt="KeyGG" className="h-8 w-auto mb-4" />
               <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
@@ -384,6 +385,11 @@ function Home() {
                 <li><a href="#" className="hover:text-foreground transition">Cookie Policy</a></li>
                 <li><a href="#" className="hover:text-foreground transition">Licenses</a></li>
               </ul>
+            </div>
+
+            <div>
+              <h4 className="font-display font-bold text-sm mb-4">Partners</h4>
+              <img src={microsoftCertified.url} alt="Microsoft Certified" className="h-12 w-auto" />
             </div>
           </div>
 
