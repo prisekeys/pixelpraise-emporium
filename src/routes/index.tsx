@@ -156,27 +156,6 @@ function Home() {
 
         </div>
 
-        {/* Marquee strip */}
-        <div className="border-y border-border/60 py-2.5 sm:py-3 overflow-hidden bg-secondary/40">
-          <div className="flex gap-8 sm:gap-12 animate-marquee whitespace-nowrap text-xs sm:text-sm font-medium text-muted-foreground">
-            {Array.from({ length: 2 }).map((_, i) => (
-              <div key={i} className="flex gap-8 sm:gap-12 shrink-0 items-center">
-                {[
-                  { icon: Zap, text: "Instant digital delivery" },
-                  { icon: BadgeCheck, text: "Genuine Microsoft licenses" },
-                  { icon: RefreshCcw, text: "30-day money back" },
-                  { icon: Star, text: "Trusted by millions" },
-                  { icon: Headphones, text: "24/7 support" },
-                  { icon: Lock, text: "Secure checkout" },
-                ].map(({ icon: Icon, text }) => (
-                  <span key={text} className="inline-flex items-center gap-1.5 sm:gap-2">
-                    <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" /> {text}
-                  </span>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Products grid — 4 per row */}
