@@ -65,18 +65,18 @@ function Home() {
     <div className="min-h-screen bg-background">
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
-        <nav className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2.5">
-            <img src={logo.url} alt="KeyGG" className="h-9 md:h-10 w-auto" />
-          </a>
-          <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
+        <nav className="mx-auto max-w-7xl px-6 h-16 grid grid-cols-3 items-center">
+          <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground justify-start">
             <a href="#products" className="hover:text-foreground transition">Software</a>
             <a href="#products" className="hover:text-foreground transition">Gaming</a>
             <a href="#products" className="hover:text-foreground transition">AI</a>
             <a href="#features" className="hover:text-foreground transition">Support</a>
           </div>
-          <button className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
-            Sign in
+          <a href="/" className="flex items-center gap-2.5 justify-center">
+            <img src={logo.url} alt="KeyGG" className="h-9 md:h-10 w-auto" />
+          </a>
+          <button className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end" style={{ background: "var(--gradient-primary)" }}>
+            <Headphones className="w-4 h-4" /> Support
           </button>
         </nav>
       </header>
