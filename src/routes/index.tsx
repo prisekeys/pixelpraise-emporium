@@ -1,7 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play } from "lucide-react";
-import { SiStripe, SiPaypal, SiVisa, SiMastercard, SiApple } from "react-icons/si";
+import payStripe from "@/assets/payments/stripe.svg.asset.json";
+import payPaypal from "@/assets/payments/paypal.svg.asset.json";
+import payVisa from "@/assets/payments/visa.svg.asset.json";
+import payMastercard from "@/assets/payments/mastercard.svg.asset.json";
+import payApple from "@/assets/payments/applepay.svg.asset.json";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
@@ -423,13 +427,19 @@ function Home() {
 
           {/* Bottom bar: payments + copyright */}
           <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 flex-wrap justify-center">
+            <div className="flex items-center gap-3 flex-wrap justify-center">
               <span className="text-xs text-muted-foreground mr-1">We accept:</span>
-              <span className="px-2 py-1.5 rounded-md bg-card border border-border" title="Stripe"><SiStripe className="w-5 h-5 text-muted-foreground" /></span>
-              <span className="px-2 py-1.5 rounded-md bg-card border border-border" title="PayPal"><SiPaypal className="w-5 h-5 text-muted-foreground" /></span>
-              <span className="px-2 py-1.5 rounded-md bg-card border border-border" title="Visa"><SiVisa className="w-5 h-5 text-muted-foreground" /></span>
-              <span className="px-2 py-1.5 rounded-md bg-card border border-border" title="Mastercard"><SiMastercard className="w-5 h-5 text-muted-foreground" /></span>
-              <span className="px-2 py-1.5 rounded-md bg-card border border-border" title="Apple Pay"><SiApple className="w-5 h-5 text-muted-foreground" /></span>
+              {[
+                { src: payStripe.url, alt: "Stripe" },
+                { src: payPaypal.url, alt: "PayPal" },
+                { src: payVisa.url, alt: "Visa" },
+                { src: payMastercard.url, alt: "Mastercard" },
+                { src: payApple.url, alt: "Apple Pay" },
+              ].map((p) => (
+                <span key={p.alt} className="inline-flex items-center justify-center h-9 px-3 rounded-md bg-white border border-border" title={p.alt}>
+                  <img src={p.src} alt={p.alt} className="h-5 w-auto object-contain" loading="lazy" />
+                </span>
+              ))}
             </div>
             <p className="text-xs text-muted-foreground">© 2026 KeyGG. All rights reserved.</p>
           </div>
