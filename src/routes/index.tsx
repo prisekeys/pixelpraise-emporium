@@ -48,10 +48,10 @@ const products = [
 ];
 
 const heroSlides = [
-  { img: office,   eyebrow: "Microsoft 365",       title: "Work better, together.",        cta: "Shop Microsoft 365",       accent: "from-emerald-400/30 to-transparent" },
-  { img: windows,  eyebrow: "Windows 11",          title: "A fresh start, simply yours.",  cta: "Get Windows 11 Pro",       accent: "from-sky-300/30 to-transparent" },
-  { img: xbox,     eyebrow: "Xbox Game Pass",      title: "Hundreds of games. One pass.",  cta: "Join Game Pass Ultimate",  accent: "from-lime-400/40 to-transparent" },
-  { img: copilot,  eyebrow: "Microsoft Copilot",   title: "Your everyday AI companion.",   cta: "Try Copilot",              accent: "from-teal-300/30 to-transparent" },
+  { product: win11Pro.url,    eyebrow: "Windows 11 Pro",        title: "Genuine software.",   highlight: "Unbeatable prices.",     desc: "Lifetime license, instant email delivery, and friendly support whenever you need it.", cta: "Shop Windows 11",  price: 13, original: 50 },
+  { product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "The latest Office.",  highlight: "Activated in minutes.",  desc: "Word, Excel, PowerPoint and Outlook — one key, one PC, forever.",                       cta: "Get Office 2024",  price: 20, original: 65 },
+  { product: m365Family.url,  eyebrow: "Microsoft 365 Family",  title: "Premium apps for 6.", highlight: "6 TB cloud included.",   desc: "Share Microsoft 365 with up to six people, with 1 TB OneDrive storage each.",          cta: "Shop 365 Family",  price: 78, original: 130 },
+  { product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "All the essentials.", highlight: "Fraction of the price.", desc: "Full Office suite with lifetime license and instant digital delivery.",                 cta: "Get Office 2021",  price: 15, original: 55 },
 ];
 
 function Home() {
@@ -107,79 +107,83 @@ function Home() {
         )}
       </header>
 
-      {/* HERO — two-column premium layout */}
-      <section className="relative bg-secondary/40">
-        <div className="mx-auto max-w-7xl px-6 pt-10 pb-12 md:pt-16 md:pb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-            {/* Left: copy */}
-            <div className="max-w-xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-background border border-border text-xs font-medium text-muted-foreground mb-5">
-                <BadgeCheck className="w-3.5 h-3.5 text-primary" /> Genuine Microsoft licenses
-              </div>
-              <h1 className="font-display font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[1.05] text-foreground">
-                Genuine software.{" "}
-                <span className="text-primary">Unbeatable prices.</span>
-              </h1>
-              <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed">
-                Activate Windows, Office and Microsoft 365 in minutes. Instant
-                email delivery, lifetime licenses, and friendly support whenever
-                you need it.
-              </p>
-              <div className="mt-8 flex items-center gap-4">
-                <a
-                  href="#products"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
-                  style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
-                >
-                  Shop best sellers <ArrowRight className="w-4 h-4" />
-                </a>
-                <div className="hidden sm:flex items-center gap-1.5 text-xs text-muted-foreground">
-                  <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="font-semibold text-foreground">4.9/5</span>
-                  <span>from 24,500+ buyers</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: layered product graphics */}
-            <div className="relative h-[340px] sm:h-[420px] md:h-[480px]">
-              {/* soft gradient blob */}
+      {/* HERO — slider with premium two-column slides */}
+      <section className="relative">
+        <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-secondary/40 aspect-[16/9] md:aspect-[3/1]">
+            {heroSlides.map((s, i) => (
               <div
-                aria-hidden
-                className="absolute inset-0 rounded-[2rem]"
-                style={{ background: "var(--gradient-primary)", opacity: 0.08 }}
-              />
-              <div
-                aria-hidden
-                className="absolute -top-6 -right-6 w-56 h-56 rounded-full blur-3xl opacity-30"
-                style={{ background: "var(--gradient-primary)" }}
-              />
+                key={s.eyebrow}
+                className={`absolute inset-0 transition-opacity duration-700 ease-out ${i === active ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+              >
+                <div className="grid grid-cols-2 h-full items-center gap-4 px-5 sm:px-8 md:px-14">
+                  {/* Left: copy */}
+                  <div className="max-w-xl">
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-background border border-border text-[10px] sm:text-xs font-medium text-muted-foreground mb-2 sm:mb-3">
+                      <BadgeCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-primary" /> {s.eyebrow}
+                    </div>
+                    <h2 className="font-display font-bold text-lg sm:text-2xl md:text-4xl lg:text-5xl tracking-tighter leading-[1.05] text-foreground">
+                      {s.title}{" "}
+                      <span className="text-primary">{s.highlight}</span>
+                    </h2>
+                    <p className="hidden sm:block mt-2 md:mt-3 text-xs md:text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                      {s.desc}
+                    </p>
+                    <div className="mt-2 sm:mt-4 flex items-center gap-3">
+                      <a
+                        href="#products"
+                        className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                        style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
+                      >
+                        {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                      </a>
+                      <div className="hidden md:flex items-baseline gap-1.5">
+                        <span className="font-display font-bold text-lg text-foreground">${s.price}</span>
+                        <span className="text-xs text-muted-foreground line-through">${s.original}</span>
+                      </div>
+                    </div>
+                  </div>
 
-              {/* main product card */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[68%] aspect-square rounded-3xl bg-background border border-border overflow-hidden shadow-2xl">
-                <img src={win11Pro.url} alt="Windows 11 Professional" className="w-full h-full object-contain p-6" />
-              </div>
-
-              {/* overlap card top-left */}
-              <div className="absolute top-4 left-2 sm:left-4 w-32 sm:w-40 aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-xl rotate-[-6deg]">
-                <img src={office2024Pro.url} alt="Office 2024" className="w-full h-full object-contain p-3" />
-              </div>
-
-              {/* overlap card bottom-right */}
-              <div className="absolute bottom-2 right-2 sm:right-6 w-36 sm:w-44 aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-xl rotate-[5deg]">
-                <img src={m365Family.url} alt="Microsoft 365 Family" className="w-full h-full object-contain p-3" />
-              </div>
-
-              {/* floating badge */}
-              <div className="hidden sm:flex absolute bottom-6 left-0 items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-background border border-border shadow-xl">
-                <div className="grid place-items-center w-8 h-8 rounded-xl bg-primary/10">
-                  <Zap className="w-4 h-4 text-primary" />
+                  {/* Right: layered product graphics */}
+                  <div className="relative h-full">
+                    <div
+                      aria-hidden
+                      className="absolute top-1/2 right-0 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 rounded-full blur-3xl opacity-30"
+                      style={{ background: "var(--gradient-primary)" }}
+                    />
+                    {/* main card */}
+                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[78%] aspect-square rounded-2xl bg-background border border-border overflow-hidden shadow-2xl">
+                      <img src={s.product} alt={s.eyebrow} className="w-full h-full object-contain p-3 sm:p-5" />
+                    </div>
+                    {/* accent card */}
+                    <div className="hidden sm:block absolute top-3 right-2 md:right-6 h-[40%] aspect-square rounded-xl bg-background border border-border overflow-hidden shadow-xl rotate-[6deg]">
+                      <img
+                        src={heroSlides[(i + 1) % heroSlides.length].product}
+                        alt=""
+                        className="w-full h-full object-contain p-2"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div className="leading-tight">
-                  <div className="text-[11px] text-muted-foreground">Delivery</div>
-                  <div className="text-xs font-semibold text-foreground">Instant by email</div>
-                </div>
               </div>
+            ))}
+
+            {/* arrows */}
+            <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
+              className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center z-10">
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Next slide"
+              className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center z-10">
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            {/* dots */}
+            <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
+              {heroSlides.map((_, i) => (
+                <button key={i} onClick={() => setActive(i)} aria-label={`Go to slide ${i + 1}`}
+                  className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
+              ))}
             </div>
           </div>
         </div>
