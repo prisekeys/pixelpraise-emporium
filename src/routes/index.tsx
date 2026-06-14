@@ -30,18 +30,18 @@ export const Route = createFileRoute("/")({
 });
 
 const products = [
-  { img: office,   tag: "Office", title: "Office 2019 Professional Plus Key", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.", price: 13,  original: 45,  rating: 4.9, sales: "24,500" },
-  { img: windows,  tag: "Windows", title: "Windows 11 Professional Key", desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.", price: 13,  original: 50,  rating: 4.8, sales: "31,200" },
-  { img: office,   tag: "Office", title: "Office 2021 Professional Plus Key", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.", price: 15,  original: 55,  rating: 4.9, sales: "18,700" },
-  { img: project,  tag: "Business", title: "Project Professional 2024 Key", desc: "Lifetime license for 1 PC. Advanced project management & planning tools.", price: 17,  original: 120, rating: 4.8, sales: "5,400" },
-  { img: project,  tag: "Business", title: "Visio Professional 2024 Key", desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.", price: 17,  original: 120, rating: 4.7, sales: "4,100" },
-  { img: office,   tag: "Office", title: "Office 2024 Professional Plus LTSC Key", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20,  original: 65,  rating: 4.9, sales: "9,300" },
-  { img: office,   tag: "Mac", title: "Office 2019 Home & Business for Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.", price: 32,  original: 120, rating: 4.8, sales: "7,800" },
-  { img: security, tag: "Security", title: "ESET Smart Security Premium", desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.", price: 32,  original: 80,  rating: 4.7, sales: "6,200" },
-  { img: office,   tag: "Mac", title: "Office 2021 Home & Business for Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.", price: 38,  original: 140, rating: 4.8, sales: "5,600" },
-  { img: xbox,     tag: "Subscription", title: "Microsoft 365 Family", desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.", price: 78,  original: 130, rating: 4.9, sales: "15,900" },
-  { img: office,   tag: "Mac", title: "Office 2024 Home & Business for Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.", price: 93,  original: 180, rating: 4.9, sales: "3,400" },
-  { img: office,   tag: "Office", title: "Office 365 Professional Plus", desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.", price: 13,  original: 60,  rating: 4.8, sales: "11,100" },
+  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus Key", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.",          price: 13, original: 45,  rating: 4.9, sales: "24,500" },
+  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional Key",       desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.",       price: 13, original: 50,  rating: 4.8, sales: "31,200" },
+  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus Key", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.",        price: 15, original: 55,  rating: 4.9, sales: "18,700" },
+  { img: office2024Pro.url, tag: "Business",     title: "Project Professional 2024 Key",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
+  { img: office2024Pro.url, tag: "Business",     title: "Visio Professional 2024 Key",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
+  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC Key", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20, original: 65,  rating: 4.9, sales: "9,300" },
+  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Home & Business for Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.",               price: 32, original: 120, rating: 4.8, sales: "7,800"  },
+  { img: esetPremium.url,   tag: "Security",     title: "ESET Smart Security Premium",        desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.",   price: 32, original: 80,  rating: 4.7, sales: "6,200"  },
+  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Home & Business for Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.",            price: 38, original: 140, rating: 4.8, sales: "5,600"  },
+  { img: m365Family.url,    tag: "Subscription", title: "Microsoft 365 Family",                desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.",      price: 78, original: 130, rating: 4.9, sales: "15,900" },
+  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Home & Business for Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.",            price: 93, original: 180, rating: 4.9, sales: "3,400"  },
+  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
 ];
 
 const heroSlides = [
