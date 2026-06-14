@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, Twitter, Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import office from "@/assets/product-office.jpg";
@@ -173,8 +173,13 @@ function Home() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {products.map((p) => (
+          {products.map((p) => {
+            const isOffice2019 = p.title.startsWith("Office 2019 Professional Plus");
+            const CardWrap: any = isOffice2019 ? Link : "div";
+            const wrapProps: any = isOffice2019 ? { to: "/product/office-2019-professional-plus" } : {};
+            return (
             <article key={p.title} className="card-tilt rounded-2xl border border-border bg-card overflow-hidden group">
+              <CardWrap {...wrapProps} className="block">
               <div className="relative aspect-square overflow-hidden bg-white">
                 <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
@@ -197,8 +202,10 @@ function Home() {
                   </button>
                 </div>
               </div>
+              </CardWrap>
             </article>
-          ))}
+            );
+          })}
         </div>
       </section>
 
