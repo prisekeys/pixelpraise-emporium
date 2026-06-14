@@ -141,10 +141,6 @@ function Home() {
                       >
                         {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       </a>
-                      <div className="flex items-baseline gap-1.5">
-                        <span className="font-display font-bold text-base sm:text-lg text-foreground">${s.price}</span>
-                        <span className="text-xs text-muted-foreground line-through">${s.original}</span>
-                      </div>
                     </div>
                   </div>
 
