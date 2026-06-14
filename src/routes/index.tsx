@@ -331,6 +331,48 @@ function Home() {
         </Carousel>
       </section>
 
+      {/* Individual Office 2024 Apps */}
+      <section className="mx-auto max-w-7xl px-6 pb-20">
+        <div className="mb-10">
+          <div className="text-sm font-medium text-primary mb-2">Office 2024</div>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Individual apps</h2>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            { title: "Outlook 2024 Product Key – 1 PC", img: office2024Pro.url },
+            { title: "Access 2024 Product Key – 1 PC", img: office2024Pro.url },
+            { title: "PowerPoint 2024 Product Key – 1 PC", img: office2024Pro.url },
+            { title: "Excel 2024 Product Key – 1 PC", img: office2024Pro.url },
+          ].map((p) => (
+            <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
+              <div className="relative aspect-square overflow-hidden bg-white">
+                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain" />
+                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">Office</div>
+              </div>
+              <div className="p-3 md:p-4">
+                <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
+                <div className="mt-1.5 flex items-center gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className={`w-3.5 h-3.5 ${i < 5 ? "fill-yellow-400 text-yellow-400" : "fill-none text-muted-foreground/20"}`} strokeWidth={2.5} />
+                  ))}
+                  <span className="ml-1 text-[11px] font-medium text-muted-foreground">4.9</span>
+                </div>
+                <div className="mt-3 flex flex-col gap-2">
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="font-display font-bold text-base md:text-lg">$18</span>
+                    <span className="text-xs text-muted-foreground line-through">$65</span>
+                  </div>
+                  <button className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
+                    <Download className="w-3 h-3" /> Buy now
+                  </button>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
