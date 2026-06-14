@@ -5,9 +5,17 @@ import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
-import security from "@/assets/product-security.jpg";
-import project from "@/assets/product-project.jpg";
 import logo from "@/assets/keygg-logo.png.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,18 +30,18 @@ export const Route = createFileRoute("/")({
 });
 
 const products = [
-  { img: office,   tag: "Office", title: "Office 2019 Professional Plus Key", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.", price: 13,  original: 45,  rating: 4.9, sales: "24,500" },
-  { img: windows,  tag: "Windows", title: "Windows 11 Professional Key", desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.", price: 13,  original: 50,  rating: 4.8, sales: "31,200" },
-  { img: office,   tag: "Office", title: "Office 2021 Professional Plus Key", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.", price: 15,  original: 55,  rating: 4.9, sales: "18,700" },
-  { img: project,  tag: "Business", title: "Project Professional 2024 Key", desc: "Lifetime license for 1 PC. Advanced project management & planning tools.", price: 17,  original: 120, rating: 4.8, sales: "5,400" },
-  { img: project,  tag: "Business", title: "Visio Professional 2024 Key", desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.", price: 17,  original: 120, rating: 4.7, sales: "4,100" },
-  { img: office,   tag: "Office", title: "Office 2024 Professional Plus LTSC Key", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20,  original: 65,  rating: 4.9, sales: "9,300" },
-  { img: office,   tag: "Mac", title: "Office 2019 Home & Business for Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.", price: 32,  original: 120, rating: 4.8, sales: "7,800" },
-  { img: security, tag: "Security", title: "ESET Smart Security Premium", desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.", price: 32,  original: 80,  rating: 4.7, sales: "6,200" },
-  { img: office,   tag: "Mac", title: "Office 2021 Home & Business for Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.", price: 38,  original: 140, rating: 4.8, sales: "5,600" },
-  { img: xbox,     tag: "Subscription", title: "Microsoft 365 Family", desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.", price: 78,  original: 130, rating: 4.9, sales: "15,900" },
-  { img: office,   tag: "Mac", title: "Office 2024 Home & Business for Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.", price: 93,  original: 180, rating: 4.9, sales: "3,400" },
-  { img: office,   tag: "Office", title: "Office 365 Professional Plus", desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.", price: 13,  original: 60,  rating: 4.8, sales: "11,100" },
+  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus Key", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.",          price: 13, original: 45,  rating: 4.9, sales: "24,500" },
+  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional Key",       desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.",       price: 13, original: 50,  rating: 4.8, sales: "31,200" },
+  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus Key", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.",        price: 15, original: 55,  rating: 4.9, sales: "18,700" },
+  { img: office2024Pro.url, tag: "Business",     title: "Project Professional 2024 Key",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
+  { img: office2024Pro.url, tag: "Business",     title: "Visio Professional 2024 Key",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
+  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC Key", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20, original: 65,  rating: 4.9, sales: "9,300" },
+  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Home & Business for Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.",               price: 32, original: 120, rating: 4.8, sales: "7,800"  },
+  { img: esetPremium.url,   tag: "Security",     title: "ESET Smart Security Premium",        desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.",   price: 32, original: 80,  rating: 4.7, sales: "6,200"  },
+  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Home & Business for Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.",            price: 38, original: 140, rating: 4.8, sales: "5,600"  },
+  { img: m365Family.url,    tag: "Subscription", title: "Microsoft 365 Family",                desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.",      price: 78, original: 130, rating: 4.9, sales: "15,900" },
+  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Home & Business for Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.",            price: 93, original: 180, rating: 4.9, sales: "3,400"  },
+  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
 ];
 
 const heroSlides = [
@@ -165,8 +173,8 @@ function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((p) => (
             <article key={p.title} className="card-tilt rounded-2xl border border-border bg-card overflow-hidden group">
-              <div className="relative aspect-square overflow-hidden bg-secondary">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="relative aspect-square overflow-hidden bg-white">
+                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
                 <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border inline-flex items-center gap-0.5">
                   <Star className="w-2.5 h-2.5 fill-primary text-primary" /> {p.rating}
