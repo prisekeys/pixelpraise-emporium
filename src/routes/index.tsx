@@ -6,7 +6,7 @@ import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
-import logo from "@/assets/keygg-logo.png.asset.json";
+import logo from "@/assets/keygg-logo-v2.png.asset.json";
 import microsoftCertified from "@/assets/microsoft-certified.png.asset.json";
 import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
 import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
