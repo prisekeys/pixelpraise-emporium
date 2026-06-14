@@ -181,7 +181,12 @@ function Home() {
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
-                <p className="mt-1 text-xs text-muted-foreground line-clamp-2">{p.desc}</p>
+                <div className="mt-1 flex items-center gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className={`w-3 h-3 ${i < Math.round(p.rating) ? "fill-primary text-primary" : "text-muted-foreground/30"}`} />
+                  ))}
+                  <span className="ml-1 text-[10px] text-muted-foreground">{p.rating}</span>
+                </div>
                 <div className="mt-3 flex flex-col gap-2">
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-display font-bold text-base md:text-lg">${p.price}</span>
