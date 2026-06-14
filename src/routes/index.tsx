@@ -84,7 +84,7 @@ function Home() {
       {/* HERO — compact image slider */}
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6 pt-4 pb-6">
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[21/9] md:aspect-[3/1]">
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-card aspect-[16/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
                 key={s.title}
@@ -99,11 +99,11 @@ function Home() {
                 />
                 <div className={`absolute inset-0 bg-gradient-to-r ${s.accent}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 p-5 md:p-8 max-w-md">
-                  <div className="text-xs font-medium text-primary mb-1">{s.eyebrow}</div>
-                  <h2 className="font-display font-bold text-xl md:text-3xl tracking-tighter">{s.title}</h2>
-                  <a href="#products" className="mt-3 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-primary-foreground" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}>
-                    {s.cta} <ArrowRight className="w-4 h-4" />
+                <div className="absolute bottom-0 left-0 p-4 sm:p-5 md:p-8 max-w-[85%] sm:max-w-md">
+                  <div className="text-[10px] sm:text-xs font-medium text-primary mb-1">{s.eyebrow}</div>
+                  <h2 className="font-display font-bold text-lg sm:text-xl md:text-3xl tracking-tighter">{s.title}</h2>
+                  <a href="#products" className="mt-2 sm:mt-3 inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-primary-foreground" style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}>
+                    {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </a>
                 </div>
               </div>
@@ -120,10 +120,10 @@ function Home() {
             </button>
 
             {/* dots */}
-            <div className="absolute bottom-5 right-6 flex items-center gap-2">
+            <div className="absolute bottom-3 sm:bottom-5 right-4 sm:right-6 flex items-center gap-2">
               {heroSlides.map((_, i) => (
                 <button key={i} onClick={() => setActive(i)} aria-label={`Go to slide ${i + 1}`}
-                  className={`h-1.5 rounded-full transition-all ${i === active ? "w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
+                  className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
               ))}
             </div>
           </div>
@@ -143,10 +143,10 @@ function Home() {
         </div>
 
         {/* Marquee strip */}
-        <div className="border-y border-border/60 py-3 overflow-hidden bg-secondary/40">
-          <div className="flex gap-12 animate-marquee whitespace-nowrap text-sm font-medium text-muted-foreground">
+        <div className="border-y border-border/60 py-2.5 sm:py-3 overflow-hidden bg-secondary/40">
+          <div className="flex gap-8 sm:gap-12 animate-marquee whitespace-nowrap text-xs sm:text-sm font-medium text-muted-foreground">
             {Array.from({ length: 2 }).map((_, i) => (
-              <div key={i} className="flex gap-12 shrink-0 items-center">
+              <div key={i} className="flex gap-8 sm:gap-12 shrink-0 items-center">
                 {[
                   { icon: Zap, text: "Instant digital delivery" },
                   { icon: BadgeCheck, text: "Genuine Microsoft licenses" },
@@ -155,8 +155,8 @@ function Home() {
                   { icon: Headphones, text: "24/7 support" },
                   { icon: Lock, text: "Secure checkout" },
                 ].map(({ icon: Icon, text }) => (
-                  <span key={text} className="inline-flex items-center gap-2">
-                    <Icon className="w-4 h-4 text-primary" /> {text}
+                  <span key={text} className="inline-flex items-center gap-1.5 sm:gap-2">
+                    <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" /> {text}
                   </span>
                 ))}
               </div>
