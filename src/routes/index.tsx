@@ -70,7 +70,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-secondary/30">
       {/* Nav */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
           {/* Mobile hamburger */}
           <button
