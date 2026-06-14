@@ -151,6 +151,21 @@ function Home() {
                         {s.cta} <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                       </a>
                     </div>
+                    {/* Mobile arrows — centered under CTA */}
+                    <div className="mt-3 flex sm:hidden items-center justify-center gap-2">
+                      <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
+                        className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                        <ChevronLeft className="w-4 h-4" />
+                      </button>
+                      <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Play slideshow" : "Pause slideshow"}
+                        className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                        {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
+                      </button>
+                      <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Next slide"
+                        className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
 
                   {/* Right: layered product graphics */}
@@ -177,8 +192,8 @@ function Home() {
               </div>
             ))}
 
-            {/* controls: bottom right */}
-            <div className="absolute bottom-3 sm:bottom-5 right-3 sm:right-5 flex items-center gap-2 z-10">
+            {/* controls: bottom right (desktop only) */}
+            <div className="absolute bottom-3 sm:bottom-5 right-3 sm:right-5 hidden sm:flex items-center gap-2 z-10">
               <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
                 className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 <ChevronLeft className="w-4 h-4" />
