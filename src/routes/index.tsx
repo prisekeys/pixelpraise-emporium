@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, Twitter, Facebook, Instagram, Mail, MapPin, Phone, Menu, X, CheckCircle2, Quote } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
@@ -273,44 +274,53 @@ function Home() {
           <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-lg mt-1">Excellent</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            { name: "Sarah M.", date: "2 days ago", rating: 5, title: "Instant delivery, genuine key", body: "Ordered Office 2019 and received the key within 2 minutes. Activated on first try. Will definitely buy again!", verified: true, country: "US" },
-            { name: "James K.", date: "1 week ago", rating: 5, title: "Best price I could find", body: "Saved over $100 compared to Microsoft direct. The key worked perfectly and the download link was provided immediately.", verified: true, country: "UK" },
-            { name: "Marco R.", date: "3 days ago", rating: 5, title: "Great customer support", body: "Had a small issue with activation. Contacted support and they resolved it within 15 minutes. Highly recommended!", verified: true, country: "IT" },
-            { name: "Anna L.", date: "5 days ago", rating: 4, title: "Fast and reliable", body: "Windows 11 Pro key arrived instantly. Everything works as expected. Only wish they had more payment options.", verified: true, country: "DE" },
-            { name: "David W.", date: "2 weeks ago", rating: 5, title: "Third purchase, always perfect", body: "Bought Office 2021, then M365 Family, now Visio 2024. Every single key has been genuine and worked flawlessly.", verified: true, country: "CA" },
-            { name: "Yuki T.", date: "4 days ago", rating: 5, title: "Mac Office works great", body: "Got Office 2021 for Mac. Easy install, all apps working perfectly. The instructions were clear and helpful.", verified: true, country: "JP" },
-            { name: "Lars P.", date: "1 week ago", rating: 5, title: "Business licenses done right", body: "Purchased 10 Project Pro 2024 keys for our team. Bulk discount was great and all keys activated without issues.", verified: true, country: "SE" },
-            { name: "Emily S.", date: "3 days ago", rating: 4, title: "Solid experience overall", body: "ESET license activated right away. Price was competitive and delivery was instant. Very satisfied with the service.", verified: true, country: "AU" },
-          ].map((r, i) => (
-            <div key={i} className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
-              <div className="flex items-center gap-1 mb-3">
-                {[1,2,3,4,5].map((s) => (
-                  <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-emerald-500 text-emerald-500" : "fill-none text-muted-foreground/20"}`} strokeWidth={0} />
-                ))}
-              </div>
-              <h4 className="font-semibold text-sm mb-1">{r.title}</h4>
-              <p className="text-sm text-muted-foreground leading-relaxed flex-1">{r.body}</p>
-              <div className="mt-4 pt-4 border-t border-border flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-700 dark:text-emerald-300 text-xs font-bold">
-                    {r.name.charAt(0)}
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {[
+              { name: "Sarah M.", date: "2 days ago", rating: 5, title: "Instant delivery, genuine key", body: "Ordered Office 2019 and received the key within 2 minutes. Activated on first try. Will definitely buy again!", verified: true, country: "US" },
+              { name: "James K.", date: "1 week ago", rating: 5, title: "Best price I could find", body: "Saved over $100 compared to Microsoft direct. The key worked perfectly and the download link was provided immediately.", verified: true, country: "UK" },
+              { name: "Marco R.", date: "3 days ago", rating: 5, title: "Great customer support", body: "Had a small issue with activation. Contacted support and they resolved it within 15 minutes. Highly recommended!", verified: true, country: "IT" },
+              { name: "Anna L.", date: "5 days ago", rating: 4, title: "Fast and reliable", body: "Windows 11 Pro key arrived instantly. Everything works as expected. Only wish they had more payment options.", verified: true, country: "DE" },
+              { name: "David W.", date: "2 weeks ago", rating: 5, title: "Third purchase, always perfect", body: "Bought Office 2021, then M365 Family, now Visio 2024. Every single key has been genuine and worked flawlessly.", verified: true, country: "CA" },
+              { name: "Yuki T.", date: "4 days ago", rating: 5, title: "Mac Office works great", body: "Got Office 2021 for Mac. Easy install, all apps working perfectly. The instructions were clear and helpful.", verified: true, country: "JP" },
+              { name: "Lars P.", date: "1 week ago", rating: 5, title: "Business licenses done right", body: "Purchased 10 Project Pro 2024 keys for our team. Bulk discount was great and all keys activated without issues.", verified: true, country: "SE" },
+              { name: "Emily S.", date: "3 days ago", rating: 4, title: "Solid experience overall", body: "ESET license activated right away. Price was competitive and delivery was instant. Very satisfied with the service.", verified: true, country: "AU" },
+            ].map((r, i) => (
+              <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/4">
+                <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
+                  <div className="flex items-center gap-1 mb-3">
+                    {[1,2,3,4,5].map((s) => (
+                      <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-emerald-500 text-emerald-500" : "fill-none text-muted-foreground/20"}`} strokeWidth={0} />
+                    ))}
                   </div>
-                  <div>
-                    <p className="text-xs font-medium">{r.name}</p>
-                    <p className="text-[10px] text-muted-foreground">{r.date}</p>
+                  <h4 className="font-semibold text-sm mb-1">{r.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">{r.body}</p>
+                  <div className="mt-4 pt-4 border-t border-border flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+                        {r.name.charAt(0)}
+                      </div>
+                      <div>
+                        <p className="text-xs font-medium">{r.name}</p>
+                        <p className="text-[10px] text-muted-foreground">{r.date}</p>
+                      </div>
+                    </div>
+                    {r.verified && (
+                      <span className="inline-flex items-center gap-1 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
+                        <CheckCircle2 className="w-3 h-3" /> Verified
+                      </span>
+                    )}
                   </div>
                 </div>
-                {r.verified && (
-                  <span className="inline-flex items-center gap-1 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
-                    <CheckCircle2 className="w-3 h-3" /> Verified
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-0 top-1/2 -translate-y-1/2" />
+          <CarouselNext className="right-0 top-1/2 -translate-y-1/2" />
+        </Carousel>
       </section>
 
       {/* Footer */}
