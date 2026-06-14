@@ -154,18 +154,6 @@ function Home() {
             </div>
           </div>
 
-          {/* thumbnail strip */}
-          <div className="mt-4 grid grid-cols-4 gap-3">
-            {heroSlides.map((s, i) => (
-              <button key={s.title} onClick={() => setActive(i)}
-                className={`relative overflow-hidden rounded-xl border aspect-[16/9] transition ${i === active ? "border-primary ring-2 ring-primary/30" : "border-border opacity-60 hover:opacity-100"}`}>
-                <img src={s.img} alt="" width={1024} height={1024} className="w-full h-full object-cover" />
-                <span className="absolute bottom-1.5 left-2 text-[10px] md:text-xs font-medium text-foreground/90 bg-background/80 backdrop-blur px-1.5 py-0.5 rounded">
-                  {s.eyebrow}
-                </span>
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Marquee strip */}
