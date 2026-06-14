@@ -249,13 +249,13 @@ function Home() {
             { i: Zap, t: "Instant delivery", d: "Activation keys & download links emailed the moment you check out." },
             { i: ShieldCheck, t: "Genuine licenses", d: "100% authentic Microsoft licenses, fully eligible for updates and support." },
             { i: Sparkles, t: "Best price guaranteed", d: "Found it cheaper elsewhere? We'll match it within 7 days, no questions." },
-          ].map(({ i: Icon, t, d }, idx) => (
-            <div key={t} className={`rounded-3xl p-8 border ${idx === 1 ? "border-transparent text-primary-foreground" : "border-border bg-card"}`} style={idx === 1 ? { background: "var(--gradient-primary)" } : {}}>
-              <div className={`w-11 h-11 rounded-xl grid place-items-center mb-5 ${idx === 1 ? "bg-background/20" : ""}`} style={idx !== 1 ? { background: "var(--gradient-lime)" } : {}}>
+          ].map(({ i: Icon, t, d }) => (
+            <div key={t} className="rounded-3xl p-8 border border-border bg-card">
+              <div className="w-11 h-11 rounded-xl grid place-items-center mb-5" style={{ background: "var(--gradient-lime)" }}>
                 <Icon className="w-5 h-5" />
               </div>
               <h3 className="font-display font-bold text-xl mb-2">{t}</h3>
-              <p className={`text-sm leading-relaxed ${idx === 1 ? "text-primary-foreground/80" : "text-muted-foreground"}`}>{d}</p>
+              <p className="text-sm leading-relaxed text-muted-foreground">{d}</p>
             </div>
           ))}
         </div>
