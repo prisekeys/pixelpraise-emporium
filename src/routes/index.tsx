@@ -64,7 +64,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-secondary/30">
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
@@ -110,7 +110,7 @@ function Home() {
       {/* HERO — slider with premium two-column slides */}
       <section className="relative">
         <div className="mx-auto max-w-7xl px-6 pt-4 pb-2">
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-secondary/40 aspect-[16/9] md:aspect-[3/1]">
+          <div className="relative overflow-hidden rounded-2xl bg-secondary/40 aspect-[16/9] md:aspect-[3/1]">
             {heroSlides.map((s, i) => (
               <div
                 key={s.eyebrow}
