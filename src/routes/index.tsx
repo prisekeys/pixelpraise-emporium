@@ -5,9 +5,17 @@ import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
 import copilot from "@/assets/product-copilot.jpg";
-import security from "@/assets/product-security.jpg";
-import project from "@/assets/product-project.jpg";
 import logo from "@/assets/keygg-logo.png.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
