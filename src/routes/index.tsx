@@ -171,10 +171,10 @@ function Home() {
             const CardWrap: any = isOffice2019 ? Link : "div";
             const wrapProps: any = isOffice2019 ? { to: "/product/office-2019-professional-plus" } : {};
             return (
-            <article key={p.title} className="card-tilt rounded-2xl border border-border bg-card overflow-hidden group">
+            <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <CardWrap {...wrapProps} className="block">
               <div className="relative aspect-square overflow-hidden bg-white">
-                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" />
+                <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain" />
                 <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full text-[10px] font-medium bg-background/90 backdrop-blur border border-border">{p.tag}</div>
               </div>
               <div className="p-3 md:p-4">
