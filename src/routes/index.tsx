@@ -171,15 +171,21 @@ function Home() {
               </div>
             ))}
 
-            {/* arrows */}
-            <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
-              className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center z-10">
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Next slide"
-              className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center z-10">
-              <ChevronRight className="w-5 h-5" />
-            </button>
+            {/* controls: bottom right */}
+            <div className="absolute bottom-3 sm:bottom-5 right-3 sm:right-5 flex items-center gap-2 z-10">
+              <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide"
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Play slideshow" : "Pause slideshow"}
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
+              </button>
+              <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Next slide"
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
 
             {/* dots */}
             <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
