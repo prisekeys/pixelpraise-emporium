@@ -10,6 +10,8 @@ import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1
 import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
 import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
 import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
+import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.png.asset.json";
+import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.png.asset.json";
 import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
 import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
 import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
@@ -33,8 +35,8 @@ const products = [
   { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus Key", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.",          price: 13, original: 45,  rating: 4.9, sales: "24,500" },
   { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional Key",       desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.",       price: 13, original: 50,  rating: 4.8, sales: "31,200" },
   { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus Key", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.",        price: 15, original: 55,  rating: 4.9, sales: "18,700" },
-  { img: office2024Pro.url, tag: "Business",     title: "Project Professional 2024 Key",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
-  { img: office2024Pro.url, tag: "Business",     title: "Visio Professional 2024 Key",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
+  { img: projectPro2024.url, tag: "Business",     title: "Project Professional 2024 Key",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
+  { img: visioPro2024.url, tag: "Business",     title: "Visio Professional 2024 Key",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
   { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC Key", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20, original: 65,  rating: 4.9, sales: "9,300" },
   { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Home & Business for Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.",               price: 32, original: 120, rating: 4.8, sales: "7,800"  },
   { img: esetPremium.url,   tag: "Security",     title: "ESET Smart Security Premium",        desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.",   price: 32, original: 80,  rating: 4.7, sales: "6,200"  },
