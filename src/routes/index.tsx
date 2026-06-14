@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, Twitter, Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, Twitter, Facebook, Instagram, Mail, MapPin, Phone, Menu, X } from "lucide-react";
 import office from "@/assets/product-office.jpg";
 import windows from "@/assets/product-windows.jpg";
 import xbox from "@/assets/product-xbox.jpg";
@@ -55,6 +55,7 @@ const heroSlides = [
 
 function Home() {
   const [active, setActive] = useState(0);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => setActive((i) => (i + 1) % heroSlides.length), 5000);
@@ -65,20 +66,44 @@ function Home() {
     <div className="min-h-screen bg-background">
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
-        <nav className="mx-auto max-w-7xl px-6 h-16 grid grid-cols-3 items-center">
+        <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
+          {/* Mobile hamburger */}
+          <button
+            onClick={() => setMobileOpen((o) => !o)}
+            aria-label="Toggle menu"
+            className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-card hover:bg-secondary transition"
+          >
+            {mobileOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+          </button>
+
+          {/* Desktop nav links */}
           <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground justify-start">
             <a href="#products" className="hover:text-foreground transition">Software</a>
             <a href="#products" className="hover:text-foreground transition">Gaming</a>
             <a href="#products" className="hover:text-foreground transition">AI</a>
             <a href="#features" className="hover:text-foreground transition">Support</a>
           </div>
+
+          {/* Logo - centered on both mobile and desktop */}
           <a href="/" className="flex items-center gap-2.5 justify-center">
-            <img src={logo.url} alt="KeyGG" className="h-9 md:h-10 w-auto" />
+            <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </a>
-          <button className="px-4 py-2 rounded-full text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end" style={{ background: "var(--gradient-primary)" }}>
-            <Headphones className="w-4 h-4" /> Support
+
+          {/* Support button */}
+          <button className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end" style={{ background: "var(--gradient-primary)" }}>
+            <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" /> <span className="hidden sm:inline">Support</span>
           </button>
         </nav>
+
+        {/* Mobile menu dropdown */}
+        {mobileOpen && (
+          <div className="md:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
+            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Software</a>
+            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Gaming</a>
+            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">AI</a>
+            <a href="#features" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Support</a>
+          </div>
+        )}
       </header>
 
       {/* HERO — compact image slider */}
