@@ -55,6 +55,7 @@ const heroSlides = [
 
 function Home() {
   const [active, setActive] = useState(0);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => setActive((i) => (i + 1) % heroSlides.length), 5000);
