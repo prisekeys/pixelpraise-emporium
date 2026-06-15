@@ -318,7 +318,7 @@ function Home() {
                 <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
                   <div className="flex items-center gap-1 mb-3">
                     {[1,2,3,4,5].map((s) => (
-                      <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-primary text-primary" : "fill-none text-muted-foreground/20"}`} strokeWidth={0} />
+                      <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-primary text-primary" : "fill-none text-muted-foreground/50"}`} strokeWidth={s <= r.rating ? 0 : 1.5} />
                     ))}
                   </div>
                   <h4 className="font-semibold text-sm mb-1">{r.title}</h4>
