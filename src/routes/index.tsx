@@ -279,21 +279,21 @@ function Home() {
       {/* Reviews — Trustpilot style */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 mb-4">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-            <span className="text-sm font-medium text-emerald-700 dark:text-emerald-300">Verified Reviews</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 dark:bg-primary/10 border border-primary/20 dark:border-primary/30 mb-4">
+            <CheckCircle2 className="w-4 h-4 text-primary dark:text-primary/80" />
+            <span className="text-sm font-medium text-primary dark:text-primary/70">Verified Reviews</span>
           </div>
           <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter mb-3">What our customers say</h2>
           <div className="flex items-center justify-center gap-3">
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((s) => (
-                <Star key={s} className="w-6 h-6 fill-emerald-500 text-emerald-500" strokeWidth={0} />
+                <Star key={s} className="w-6 h-6 fill-primary text-primary" strokeWidth={0} />
               ))}
             </div>
             <span className="text-2xl font-bold text-foreground">4.9</span>
             <span className="text-sm text-muted-foreground">out of 5 • 12,847 reviews</span>
           </div>
-          <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-lg mt-1">Excellent</p>
+          <p className="text-primary dark:text-primary/80 font-semibold text-lg mt-1">Excellent</p>
         </div>
 
         <Carousel
@@ -318,14 +318,14 @@ function Home() {
                 <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
                   <div className="flex items-center gap-1 mb-3">
                     {[1,2,3,4,5].map((s) => (
-                      <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-emerald-500 text-emerald-500" : "fill-none text-muted-foreground/20"}`} strokeWidth={0} />
+                      <Star key={s} className={`w-4 h-4 ${s <= r.rating ? "fill-primary text-primary" : "fill-none text-muted-foreground/20"}`} strokeWidth={0} />
                     ))}
                   </div>
                   <h4 className="font-semibold text-sm mb-1">{r.title}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed flex-1">{r.body}</p>
                   <div className="mt-4 pt-4 border-t border-border flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <div className="w-7 h-7 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-700 dark:text-emerald-300 text-xs font-bold">
+                      <div className="w-7 h-7 rounded-full bg-primary/10 dark:bg-primary/15 flex items-center justify-center text-primary dark:text-primary/80 text-xs font-bold">
                         {r.name.charAt(0)}
                       </div>
                       <div>
@@ -334,7 +334,7 @@ function Home() {
                       </div>
                     </div>
                     {r.verified && (
-                      <span className="inline-flex items-center gap-1 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
+                      <span className="inline-flex items-center gap-1 text-[10px] font-medium text-primary dark:text-primary/80">
                         <CheckCircle2 className="w-3 h-3" /> Verified
                       </span>
                     )}
