@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play, Search } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, CheckCircle2, Quote, Pause, Play, Search } from "lucide-react";
 import payStripe from "@/assets/payments/stripe.svg.asset.json";
 import payPaypal from "@/assets/payments/paypal.svg.asset.json";
 import payVisa from "@/assets/payments/visa.svg.asset.json";
@@ -66,7 +66,6 @@ const heroSlides = [
 
 function Home() {
   const [active, setActive] = useState(0);
-  const [mobileOpen, setMobileOpen] = useState(false);
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
@@ -81,16 +80,6 @@ function Home() {
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
-          {/* Mobile hamburger */}
-          <button
-            onClick={() => setMobileOpen((o) => !o)}
-            aria-label="Toggle menu"
-            className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-card hover:bg-secondary transition"
-          >
-            {mobileOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
-          </button>
-
-
           {/* Logo */}
           <a href="/" className="flex items-center gap-2.5 justify-start md:pl-2">
             <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
