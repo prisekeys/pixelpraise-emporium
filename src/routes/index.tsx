@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play, Search } from "lucide-react";
 import payStripe from "@/assets/payments/stripe.svg.asset.json";
 import payPaypal from "@/assets/payments/paypal.svg.asset.json";
 import payVisa from "@/assets/payments/visa.svg.asset.json";
@@ -96,8 +96,20 @@ function Home() {
             <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </a>
 
+          {/* Search — desktop only */}
+          <div className="hidden md:flex justify-center w-full max-w-md mx-auto">
+            <div className="relative w-full">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <input
+                type="text"
+                placeholder="Search products..."
+                className="w-full pl-9 pr-4 py-2 rounded-full bg-card border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
+              />
+            </div>
+          </div>
+
           {/* Support button */}
-          <button className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end" style={{ background: "var(--gradient-primary)" }}>
+          <button className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0" style={{ background: "var(--gradient-primary)" }}>
             <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" /> <span className="hidden sm:inline">Support</span>
           </button>
         </nav>
