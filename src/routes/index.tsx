@@ -78,11 +78,6 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-secondary/30">
-      {/* Promo bar */}
-      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground text-center py-2 text-xs sm:text-sm font-medium">
-        🎉 Special Offer — Use code <span className="font-bold underline decoration-dotted">SAVE10</span> for 10% OFF your order
-      </div>
-
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
