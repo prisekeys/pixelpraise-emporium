@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck, Sparkles, BadgeCheck, RefreshCcw, Headphones, Lock, MapPin, Phone, Menu, X, CheckCircle2, Quote, Pause, Play, Search } from "lucide-react";
 import payStripe from "@/assets/payments/stripe.svg.asset.json";
 import payPaypal from "@/assets/payments/paypal.svg.asset.json";
 import payVisa from "@/assets/payments/visa.svg.asset.json";
