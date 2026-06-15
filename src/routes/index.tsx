@@ -102,12 +102,6 @@ function Home() {
             <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" /> <span className="hidden sm:inline">Support</span>
           </button>
         </nav>
-
-        {/* Mobile menu dropdown */}
-        {mobileOpen && (
-          <div className="md:hidden border-t border-border/60 bg-secondary/30 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
-          </div>
-        )}
       </header>
 
       {/* HERO — slider with premium two-column slides */}
