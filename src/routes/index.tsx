@@ -310,6 +310,9 @@ function Home() {
               { name: "Yuki T.", date: "4 days ago", rating: 5, title: "Mac Office works great", body: "Got Office 2021 for Mac. Easy install, all apps working perfectly. The instructions were clear and helpful.", verified: true, country: "JP" },
               { name: "Lars P.", date: "1 week ago", rating: 5, title: "Business licenses done right", body: "Purchased 10 Project Pro 2024 keys for our team. Bulk discount was great and all keys activated without issues.", verified: true, country: "SE" },
               { name: "Emily S.", date: "3 days ago", rating: 4, title: "Solid experience overall", body: "ESET license activated right away. Price was competitive and delivery was instant. Very satisfied with the service.", verified: true, country: "AU" },
+              { name: "Tom H.", date: "6 days ago", rating: 3, title: "Key worked, instructions lacking", body: "The Office key was genuine and activated fine, but the setup guide could've been clearer. Had to Google a couple steps.", verified: true, country: "US" },
+              { name: "Priya N.", date: "1 week ago", rating: 3, title: "Good product, slow email", body: "Software is legit and works well, but I waited almost 15 minutes for the delivery email. Support was helpful when I asked.", verified: true, country: "IN" },
+              { name: "Omar F.", date: "4 days ago", rating: 4, title: "Happy but one hiccup", body: "First key didn't work, but they sent a replacement within an hour. Second one activated perfectly. Decent service.", verified: true, country: "EG" },
             ].map((r, i) => (
               <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/4">
                 <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
