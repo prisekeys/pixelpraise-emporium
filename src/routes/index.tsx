@@ -92,7 +92,7 @@ function Home() {
 
 
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5 justify-center md:justify-start">
+          <a href="/" className="flex items-center gap-2.5 justify-center md:justify-start md:pl-2">
             <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </a>
 
