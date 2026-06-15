@@ -239,12 +239,6 @@ function Home() {
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
-                <div className="mt-1.5 flex items-center gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className={`w-3.5 h-3.5 ${i < Math.round(p.rating) ? "fill-yellow-400 text-yellow-400" : "fill-none text-muted-foreground/20"}`} strokeWidth={2.5} />
-                  ))}
-                  <span className="ml-1 text-[11px] font-medium text-muted-foreground">{p.rating}</span>
-                </div>
                 <div className="mt-3 flex flex-col gap-2">
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-display font-bold text-base md:text-lg">${p.price}</span>
@@ -370,12 +364,6 @@ function Home() {
               </div>
               <div className="p-3 md:p-4">
                 <h3 className="font-display font-bold text-sm md:text-base tracking-tight leading-snug">{p.title}</h3>
-                <div className="mt-1.5 flex items-center gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className={`w-3.5 h-3.5 ${i < 5 ? "fill-yellow-400 text-yellow-400" : "fill-none text-muted-foreground/20"}`} strokeWidth={2.5} />
-                  ))}
-                  <span className="ml-1 text-[11px] font-medium text-muted-foreground">4.9</span>
-                </div>
                 <div className="mt-3 flex flex-col gap-2">
                   <div className="flex items-baseline gap-1.5">
                     <span className="font-display font-bold text-base md:text-lg">$18</span>
