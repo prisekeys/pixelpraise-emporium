@@ -85,14 +85,14 @@ function Home() {
           <button
             onClick={() => setMobileOpen((o) => !o)}
             aria-label="Toggle menu"
-            className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-card hover:bg-secondary transition"
+            className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-lg border border-border bg-card hover:bg-secondary transition"
           >
             {mobileOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
 
 
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5 justify-center md:justify-start md:pl-2">
+          <a href="/" className="flex items-center gap-2.5 justify-start md:pl-2">
             <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </a>
 
