@@ -80,7 +80,7 @@ function Home() {
     <div className="min-h-screen bg-secondary/30">
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30">
-        <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
+        <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen((o) => !o)}
