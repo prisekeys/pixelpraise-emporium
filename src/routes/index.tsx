@@ -78,6 +78,11 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-secondary/30">
+      {/* Promo bar */}
+      <div className="bg-gradient-to-r from-primary to-primary-glow text-primary-foreground text-center py-2 text-xs sm:text-sm font-medium">
+        🎉 Special Offer — Use code <span className="font-bold underline decoration-dotted">SAVE10</span> for 10% OFF your order
+      </div>
+
       {/* Nav */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] md:grid-cols-3 items-center gap-3">
@@ -90,12 +95,9 @@ function Home() {
             {mobileOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
 
-          {/* Desktop nav links */}
+          {/* Desktop nav links — removed Software/Gaming/AI/Support */}
           <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground justify-start">
-            <a href="#products" className="hover:text-foreground transition">Software</a>
-            <a href="#products" className="hover:text-foreground transition">Gaming</a>
-            <a href="#products" className="hover:text-foreground transition">AI</a>
-            <a href="#features" className="hover:text-foreground transition">Support</a>
+            <a href="#products" className="hover:text-foreground transition">All Products</a>
           </div>
 
           {/* Logo - centered on both mobile and desktop */}
@@ -112,10 +114,7 @@ function Home() {
         {/* Mobile menu dropdown */}
         {mobileOpen && (
           <div className="md:hidden border-t border-border/60 bg-secondary/30 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
-            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Software</a>
-            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Gaming</a>
-            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">AI</a>
-            <a href="#features" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">Support</a>
+            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">All Products</a>
           </div>
         )}
       </header>
