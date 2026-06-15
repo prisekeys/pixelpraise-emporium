@@ -97,7 +97,9 @@ function Home() {
 
           {/* Desktop nav links — removed Software/Gaming/AI/Support */}
           <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground justify-start">
-            <a href="#products" className="hover:text-foreground transition">All Products</a>
+            <a href="#products" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
+              🎉 SAVE10 — 10% OFF
+            </a>
           </div>
 
           {/* Logo - centered on both mobile and desktop */}
@@ -114,7 +116,7 @@ function Home() {
         {/* Mobile menu dropdown */}
         {mobileOpen && (
           <div className="md:hidden border-t border-border/60 bg-secondary/30 backdrop-blur-xl px-4 pb-4 pt-2 space-y-1">
-            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition">All Products</a>
+            <a href="#products" onClick={() => setMobileOpen(false)} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-primary-foreground text-center" style={{ background: "var(--gradient-primary)" }}>🎉 SAVE10 — 10% OFF</a>
           </div>
         )}
       </header>
