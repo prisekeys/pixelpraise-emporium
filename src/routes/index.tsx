@@ -287,7 +287,7 @@ function Home() {
           <div className="flex items-center justify-center gap-3">
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((s) => (
-                <Star key={s} className="w-6 h-6 fill-primary text-primary" strokeWidth={0} />
+                <Star key={s} className={`w-6 h-6 ${s <= 4 ? "fill-primary text-primary" : "fill-none text-muted-foreground/50"}`} strokeWidth={s <= 4 ? 0 : 1.5} />
               ))}
             </div>
             <span className="text-2xl font-bold text-foreground">4.9</span>
