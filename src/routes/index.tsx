@@ -33,10 +33,127 @@ import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "KeyGG — Genuine Microsoft Keys, Games & AI" },
-      { name: "description", content: "KeyGG: Office 365, Windows 11, Xbox Game Pass and Copilot at the best prices. Instant digital delivery." },
-      { property: "og:title", content: "KeyGG — Genuine Microsoft Keys" },
-      { property: "og:description", content: "Office 365, Windows 11, Xbox Game Pass and Copilot. Instant digital delivery." },
+      { title: "Buy Microsoft Office & Windows 11 Pro Keys — Lifetime License | KeyGG" },
+      { name: "description", content: "Buy genuine Microsoft Office 2019, 2021, 2024 & Windows 11 Pro product keys at the lowest price. Lifetime license, instant digital delivery, 24/7 support. Trusted by 100,000+ customers." },
+      { name: "keywords", content: "microsoft office product key, windows 11 pro key, buy office 2021, office 2024 professional plus, microsoft office lifetime license, cheap office key, windows 11 key, microsoft 365 family, office for mac key, project professional 2024, visio professional 2024" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { property: "og:title", content: "Buy Microsoft Office & Windows 11 Pro Keys — Lifetime License | KeyGG" },
+      { property: "og:description", content: "Genuine Microsoft Office and Windows 11 Pro product keys at unbeatable prices. Lifetime license, instant delivery, secure checkout." },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:site_name", content: "KeyGG" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Buy Microsoft Office & Windows 11 Pro Keys — KeyGG" },
+      { name: "twitter:description", content: "Genuine Microsoft product keys. Lifetime license. Instant delivery." },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://keygg.com/#organization",
+              name: "KeyGG",
+              url: "https://keygg.com/",
+              description: "Genuine Microsoft product keys at the best price with instant digital delivery.",
+              sameAs: [],
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://keygg.com/#website",
+              url: "https://keygg.com/",
+              name: "KeyGG",
+              publisher: { "@id": "https://keygg.com/#organization" },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://keygg.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            },
+            {
+              "@type": "Store",
+              name: "KeyGG",
+              url: "https://keygg.com/",
+              priceRange: "$13–$93",
+              paymentAccepted: "Visa, Mastercard, PayPal, Apple Pay, Stripe",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "12847",
+                bestRating: "5",
+                worstRating: "1",
+              },
+            },
+            {
+              "@type": "ItemList",
+              name: "Microsoft Product Keys",
+              itemListElement: products.map((p, idx) => ({
+                "@type": "ListItem",
+                position: idx + 1,
+                item: {
+                  "@type": "Product",
+                  name: p.title,
+                  image: p.img,
+                  description: p.desc,
+                  brand: { "@type": "Brand", name: "Microsoft" },
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: p.rating.toString(),
+                    reviewCount: p.sales.replace(/,/g, ""),
+                  },
+                  offers: {
+                    "@type": "Offer",
+                    price: p.price.toString(),
+                    priceCurrency: "USD",
+                    availability: "https://schema.org/InStock",
+                    itemCondition: "https://schema.org/NewCondition",
+                  },
+                },
+              })),
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Are KeyGG Microsoft product keys genuine?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes. Every Microsoft Office and Windows 11 key sold on KeyGG is 100% genuine, activates directly with Microsoft servers, and comes with a lifetime license guarantee.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How fast is delivery?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Your product key is emailed instantly after purchase — typically within 30 seconds — along with download and activation instructions.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Is the license lifetime or subscription?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Office 2019, 2021, 2024 and Windows 11 Pro keys are lifetime licenses tied to one PC. Microsoft 365 Family is a 1-year subscription for 6 users.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Why are your prices so much cheaper than Microsoft?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We source genuine volume and OEM licenses directly, removing retail markup. You get the exact same product Microsoft sells, at a fraction of the price.",
+                  },
+                },
+              ],
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: Home,
