@@ -268,18 +268,18 @@ function ProductPage() {
             </ul>
 
             {/* Price card */}
-            <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
-              <div className="flex items-end gap-3">
-                <span className="font-display font-bold text-4xl">${price}</span>
-                <span className="text-lg text-muted-foreground line-through mb-1">${original}</span>
-                <span className="ml-auto text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+            <div className="mt-6 p-4 sm:p-5 rounded-2xl border border-border bg-card">
+              <div className="flex items-end flex-wrap gap-x-3 gap-y-2">
+                <span className="font-display font-bold text-3xl sm:text-4xl">${price}</span>
+                <span className="text-base sm:text-lg text-muted-foreground line-through mb-0.5 sm:mb-1">${original}</span>
+                <span className="sm:ml-auto text-[11px] sm:text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
                   Save ${original - price} ({savings}%)
                 </span>
               </div>
               <div className="mt-1 text-xs text-muted-foreground">One-time payment · Tax included · USD</div>
 
-              <div className="mt-5 flex items-center gap-3">
-                <div className="flex items-center border border-border rounded-full overflow-hidden">
+              <div className="mt-5 flex items-center gap-3 flex-wrap sm:flex-nowrap">
+                <div className="flex items-center border border-border rounded-full overflow-hidden shrink-0">
                   <button
                     onClick={() => setQty((q) => Math.max(1, q - 1))}
                     className="w-9 h-9 grid place-items-center hover:bg-secondary transition"
@@ -297,14 +297,14 @@ function ProductPage() {
                   </button>
                 </div>
                 <button
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  className="flex-1 min-w-[160px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
                 </button>
               </div>
 
-              <div className="mt-5 pt-5 border-t border-border grid grid-cols-2 gap-y-2.5 gap-x-3 text-xs">
+              <div className="mt-5 pt-5 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-3 text-xs">
                 {trust.map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-2">
                     <Icon className="w-4 h-4 text-primary shrink-0" /> {label}
@@ -312,6 +312,7 @@ function ProductPage() {
                 ))}
               </div>
             </div>
+
 
             <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
               <Mail className="w-3.5 h-3.5" />
