@@ -417,23 +417,23 @@ function ProductPage() {
 
 
       {/* Reviews */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <div className="mb-6 flex items-end justify-between flex-wrap gap-4">
-          <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <div className="mb-6 flex items-start sm:items-end justify-between flex-wrap gap-3 sm:gap-4">
+          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
             Rated 4.9 by 24,500+ verified customers
           </h2>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-0.5">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
+                <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
               ))}
             </div>
-            <span className="text-lg font-display font-bold">4.9</span>
+            <span className="text-base sm:text-lg font-display font-bold">4.9</span>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {reviews.map((r) => (
-            <div key={r.name} className="p-6 rounded-2xl border border-border bg-card">
+            <div key={r.name} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <div className="flex items-center gap-0.5 mb-3">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
@@ -456,13 +456,13 @@ function ProductPage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-6">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
           Office 2019 Professional Plus — frequently asked questions
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {faqs.map((f) => (
-            <div key={f.q} className="p-6 rounded-2xl border border-border bg-card">
+            <div key={f.q} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <h3 className="font-display font-bold text-base mb-2">{f.q}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
             </div>
@@ -471,12 +471,12 @@ function ProductPage() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-6xl px-6 py-12">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12">
         <div
-          className="rounded-3xl p-10 md:p-14 text-center text-primary-foreground"
+          className="rounded-3xl p-6 sm:p-10 md:p-14 text-center text-primary-foreground"
           style={{ background: "var(--gradient-primary)" }}
         >
-          <h2 className="font-display font-bold text-3xl md:text-4xl tracking-tight">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight">
             Buy Office 2019 Professional Plus key for just ${price}
           </h2>
           <p className="mt-3 text-sm md:text-base text-primary-foreground/85 max-w-xl mx-auto">
@@ -490,6 +490,7 @@ function ProductPage() {
           </a>
         </div>
       </section>
+
 
       <Footer />
     </div>
