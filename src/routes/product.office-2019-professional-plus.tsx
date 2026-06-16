@@ -411,45 +411,6 @@ function ProductPage() {
       </section>
 
 
-      {/* Reviews */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
-        <div className="mb-6 flex items-start sm:items-end justify-between flex-wrap gap-3 sm:gap-4">
-          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
-            Rated 4.9 by 24,500+ verified customers
-          </h2>
-          <div className="flex items-center gap-2">
-            <div className="flex items-center gap-0.5">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
-              ))}
-            </div>
-            <span className="text-base sm:text-lg font-display font-bold">4.9</span>
-          </div>
-        </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {reviews.map((r) => (
-            <div key={r.name} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
-              <div className="flex items-center gap-0.5 mb-3">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`w-3.5 h-3.5 ${
-                      i < r.rating ? "fill-yellow-400 text-yellow-400" : "fill-none text-muted-foreground/20"
-                    }`}
-                    strokeWidth={2.5}
-                  />
-                ))}
-              </div>
-              <p className="text-sm leading-relaxed mb-4">"{r.text}"</p>
-              <div className="flex items-center justify-between text-xs">
-                <span className="font-semibold">{r.name}</span>
-                <span className="text-muted-foreground">{r.date}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
         <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
