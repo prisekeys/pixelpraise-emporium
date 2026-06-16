@@ -197,19 +197,20 @@ function ProductPage() {
       <Navbar />
 
       {/* Breadcrumb */}
-      <div className="mx-auto max-w-6xl px-6 pt-6">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-4 sm:pt-6">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link to="/" className="hover:text-foreground transition">Home</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRight className="w-3 h-3 shrink-0" />
           <Link to="/" className="hover:text-foreground transition">Microsoft Office</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRight className="w-3 h-3 shrink-0" />
           <span className="text-foreground font-medium">Office 2019 Professional Plus Key</span>
         </nav>
       </div>
 
       {/* Product hero */}
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-6 sm:py-8 md:py-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-start">
+
           {/* Image */}
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
