@@ -323,20 +323,20 @@ function ProductPage() {
       </section>
 
       {/* Included apps */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
         <div className="mb-6">
-          <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight">
+          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
             What's included with your Office 2019 Pro Plus license
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
             All 8 desktop applications — installed locally, no subscription, no cloud lock-in.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {includedApps.map((app) => (
             <div
               key={app}
-              className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card"
+              className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-border bg-card"
             >
               <div
                 className="w-9 h-9 rounded-lg grid place-items-center text-primary-foreground font-display font-bold text-sm shrink-0"
@@ -344,17 +344,18 @@ function ProductPage() {
               >
                 {app[0]}
               </div>
-              <span className="text-sm font-medium">{app}</span>
+              <span className="text-sm font-medium truncate">{app}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* Description + Requirements */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <div className="grid lg:grid-cols-5 gap-10">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10">
           <div className="lg:col-span-3">
-            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-4">
+            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
+
               Office 2019 Professional Plus — product description
             </h2>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
