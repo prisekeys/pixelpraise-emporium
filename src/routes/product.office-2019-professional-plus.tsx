@@ -298,7 +298,7 @@ function ProductPage() {
                   className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
-                  <Download className="w-4 h-4" /> Buy now — ${price * qty}
+                  <Download className="w-4 h-4" /> Buy now
                 </button>
               </div>
 
@@ -481,7 +481,7 @@ function ProductPage() {
             href="#buy"
             className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground hover:opacity-90 transition"
           >
-            <Download className="w-4 h-4" /> Buy now — ${price}
+            <Download className="w-4 h-4" /> Buy now
           </a>
         </div>
       </section>
