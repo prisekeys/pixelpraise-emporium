@@ -216,13 +216,13 @@ function ProductPage() {
             <img
               src={productImg.url}
               alt="Buy Office 2019 Professional Plus product key for 1 PC — lifetime license"
-              className="w-full h-full object-contain p-8"
+              className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
-            <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground">
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-primary text-primary-foreground">
               -{savings}% OFF
             </div>
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium bg-background/90 backdrop-blur border border-border">
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-medium bg-background/90 backdrop-blur border border-border">
               In stock
             </div>
           </div>
@@ -232,9 +232,10 @@ function ProductPage() {
             <div className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
               Microsoft Office · Lifetime License
             </div>
-            <h1 className="font-display font-bold text-3xl md:text-4xl tracking-tight leading-tight">
+            <h1 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight leading-tight">
               Buy Office 2019 Professional Plus Key – 1 PC
             </h1>
+
 
             <div className="mt-3 flex items-center gap-3">
               <div className="flex items-center gap-0.5" aria-label="Rated 4.9 out of 5">
