@@ -211,12 +211,6 @@ function ProductPage() {
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
-            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-primary text-primary-foreground">
-              -{savings}% OFF
-            </div>
-            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-medium bg-background/90 backdrop-blur border border-border">
-              In stock
-            </div>
           </div>
 
           {/* Details */}
