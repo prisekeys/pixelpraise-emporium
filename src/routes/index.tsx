@@ -33,17 +33,17 @@ import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Buy Microsoft Office & Windows 11 Pro Keys — Lifetime License | KeyGG" },
-      { name: "description", content: "Buy genuine Microsoft Office 2019, 2021, 2024 & Windows 11 Pro product keys at the lowest price. Lifetime license, instant digital delivery, 24/7 support. Trusted by 100,000+ customers." },
-      { name: "keywords", content: "microsoft office product key, windows 11 pro key, buy office 2021, office 2024 professional plus, microsoft office lifetime license, cheap office key, windows 11 key, microsoft 365 family, office for mac key, project professional 2024, visio professional 2024" },
+      { title: "Buy Microsoft Office & Windows 11 Pro Keys | KeyGG" },
+      { name: "description", content: "Genuine Microsoft Office 2019, 2021, 2024 and Windows 11 Pro keys. Lifetime license, instant digital delivery, 24/7 support." },
+      { name: "keywords", content: "microsoft office product key, windows 11 pro key, buy office 2021, office 2024 professional plus, microsoft office lifetime license, microsoft 365 family, office for mac key" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
-      { property: "og:title", content: "Buy Microsoft Office & Windows 11 Pro Keys — Lifetime License | KeyGG" },
-      { property: "og:description", content: "Genuine Microsoft Office and Windows 11 Pro product keys at unbeatable prices. Lifetime license, instant delivery, secure checkout." },
+      { property: "og:title", content: "Buy Microsoft Office & Windows 11 Pro Keys | KeyGG" },
+      { property: "og:description", content: "Genuine Microsoft Office and Windows 11 Pro keys. Lifetime license, instant delivery." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { property: "og:site_name", content: "KeyGG" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Buy Microsoft Office & Windows 11 Pro Keys — KeyGG" },
+      { name: "twitter:title", content: "Buy Microsoft Office & Windows 11 Pro Keys | KeyGG" },
       { name: "twitter:description", content: "Genuine Microsoft product keys. Lifetime license. Instant delivery." },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -209,17 +209,20 @@ function Home() {
           <div className="hidden md:flex justify-center w-full max-w-md mx-auto">
             <div className="relative w-full">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <label htmlFor="site-search" className="sr-only">Search products</label>
               <input
+                id="site-search"
                 type="text"
                 placeholder="Search products..."
+                aria-label="Search products"
                 className="w-full pl-9 pr-4 py-2 rounded-full bg-card border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
               />
             </div>
           </div>
 
           {/* Support button */}
-          <button className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0" style={{ background: "var(--gradient-primary)" }}>
-            <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" /> <span className="hidden sm:inline">Support</span>
+          <button aria-label="Support" className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0" style={{ background: "var(--gradient-primary)" }}>
+            <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden="true" /> <span className="hidden sm:inline">Support</span>
           </button>
         </nav>
       </header>
