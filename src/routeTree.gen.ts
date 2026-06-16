@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/product.office-2019-professional-plus'
+import { Route as BlogHowToFindMicrosoftOfficeProductKeyRouteImport } from './routes/blog.how-to-find-microsoft-office-product-key'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
@@ -29,38 +30,57 @@ const ProductOffice2019ProfessionalPlusRoute =
     path: '/product/office-2019-professional-plus',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogHowToFindMicrosoftOfficeProductKeyRoute =
+  BlogHowToFindMicrosoftOfficeProductKeyRouteImport.update({
+    id: '/blog/how-to-find-microsoft-office-product-key',
+    path: '/blog/how-to-find-microsoft-office-product-key',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/sitemap.xml' | '/product/office-2019-professional-plus'
+  fullPaths:
+    | '/'
+    | '/sitemap.xml'
+    | '/blog/how-to-find-microsoft-office-product-key'
+    | '/product/office-2019-professional-plus'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/sitemap.xml' | '/product/office-2019-professional-plus'
+  to:
+    | '/'
+    | '/sitemap.xml'
+    | '/blog/how-to-find-microsoft-office-product-key'
+    | '/product/office-2019-professional-plus'
   id:
     | '__root__'
     | '/'
     | '/sitemap.xml'
+    | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  BlogHowToFindMicrosoftOfficeProductKeyRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   ProductOffice2019ProfessionalPlusRoute: typeof ProductOffice2019ProfessionalPlusRoute
 }
 
@@ -87,12 +107,21 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductOffice2019ProfessionalPlusRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/how-to-find-microsoft-office-product-key': {
+      id: '/blog/how-to-find-microsoft-office-product-key'
+      path: '/blog/how-to-find-microsoft-office-product-key'
+      fullPath: '/blog/how-to-find-microsoft-office-product-key'
+      preLoaderRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  BlogHowToFindMicrosoftOfficeProductKeyRoute:
+    BlogHowToFindMicrosoftOfficeProductKeyRoute,
   ProductOffice2019ProfessionalPlusRoute:
     ProductOffice2019ProfessionalPlusRoute,
 }
