@@ -21,7 +21,7 @@ import productImg from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC
 
 const PAGE_TITLE = "Buy Office 2019 Professional Plus Key – 1 PC Lifetime | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Office 2019 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, official Microsoft activation — only $13.";
+  "Buy a genuine Office 2019 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, official Microsoft activation. Only $13.";
 const PAGE_URL = "/product/office-2019-professional-plus";
 
 export const Route = createFileRoute("/product/office-2019-professional-plus")({
@@ -160,7 +160,7 @@ const faqs = [
   },
   {
     q: "Is this Office 2019 Pro Plus license lifetime?",
-    a: "Yes — this is a one-time purchase that gives you a lifetime activation for 1 Windows PC. No subscription, no recurring fees.",
+    a: "Yes. This is a one-time purchase that gives you a lifetime activation for 1 Windows PC. No subscription, no recurring fees.",
   },
   {
     q: "How fast will I receive my Office 2019 product key?",
@@ -215,7 +215,7 @@ function ProductPage() {
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
               src={productImg.url}
-              alt="Buy Office 2019 Professional Plus product key for 1 PC — lifetime license"
+              alt="Buy Office 2019 Professional Plus product key for 1 PC lifetime license"
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
@@ -249,15 +249,15 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2019 Professional Plus product key for 1 Windows PC. One-time
-              payment, lifetime activation, instant email delivery — no subscription required.
+              payment, lifetime activation, instant email delivery. No subscription required.
             </p>
 
             <ul className="mt-5 space-y-2">
               {[
-                "Lifetime license — one-time payment, no subscription",
+                "Lifetime license. One-time payment, no subscription",
                 "Activates on 1 Windows 10 or Windows 11 PC",
                 "Includes Word, Excel, PowerPoint, Outlook, Access, Publisher",
-                "Genuine key — activates on Microsoft's official servers",
+                "Genuine key. Activates on Microsoft's official servers",
                 "Delivered to your email within 5–10 minutes",
               ].map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm">
@@ -329,7 +329,7 @@ function ProductPage() {
             What's included with your Office 2019 Pro Plus license
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            All 8 desktop applications — installed locally, no subscription, no cloud lock-in.
+            All 8 desktop applications installed locally. No subscription, no cloud lock-in.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -355,8 +355,7 @@ function ProductPage() {
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-10">
           <div className="lg:col-span-3">
             <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
-
-              Office 2019 Professional Plus — product description
+              Office 2019 Professional Plus product description
             </h2>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               <p>
@@ -366,8 +365,8 @@ function ProductPage() {
               </p>
               <p>
                 Your purchase includes a genuine Office 2019 Pro Plus product key with lifetime
-                activation, plus the official Microsoft download link. You get all the premium apps —
-                Word, Excel, PowerPoint, Outlook, Access and Publisher — installed locally for fast,
+                activation, plus the official Microsoft download link. You get all the premium apps
+                installed locally: Word, Excel, PowerPoint, Outlook, Access and Publisher. Fast,
                 offline work.
               </p>
               <p>
@@ -401,7 +400,7 @@ function ProductPage() {
         </h2>
         <ol className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[
-            { n: 1, t: "Buy your key", d: "Complete checkout securely on KeyGG — $13, one-time payment." },
+            { n: 1, t: "Buy your key", d: "Complete checkout securely on KeyGG. $13, one-time payment." },
             { n: 2, t: "Check your email", d: "Receive your Office 2019 Pro Plus product key and the official download link within minutes." },
             { n: 3, t: "Activate on your PC", d: "Install Office, enter the product key, and enjoy lifetime activation on 1 Windows PC." },
           ].map((s) => (
@@ -458,7 +457,7 @@ function ProductPage() {
       {/* FAQ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
         <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
-          Office 2019 Professional Plus — frequently asked questions
+          Office 2019 Professional Plus frequently asked questions
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {faqs.map((f) => (
