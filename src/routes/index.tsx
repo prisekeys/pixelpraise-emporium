@@ -197,35 +197,7 @@ function Home() {
       <h1 className="sr-only">
         Buy Genuine Microsoft Office &amp; Windows 11 Pro Product Keys — Lifetime License, Instant Delivery
       </h1>
-      {/* Nav */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30">
-        <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
-          {/* Logo */}
-          <a href="/" className="flex items-center gap-2.5 justify-start md:pl-2">
-            <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
-          </a>
-
-          {/* Search — desktop only */}
-          <div className="hidden md:flex justify-center w-full max-w-md mx-auto">
-            <div className="relative w-full">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
-              <label htmlFor="site-search" className="sr-only">Search products</label>
-              <input
-                id="site-search"
-                type="text"
-                placeholder="Search products..."
-                aria-label="Search products"
-                className="w-full pl-9 pr-4 py-2 rounded-full bg-card border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition"
-              />
-            </div>
-          </div>
-
-          {/* Support button */}
-          <button aria-label="Support" className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0" style={{ background: "var(--gradient-primary)" }}>
-            <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden="true" /> <span className="hidden sm:inline">Support</span>
-          </button>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* HERO — slider with premium two-column slides */}
       <section className="relative">
@@ -489,77 +461,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-secondary/30">
-        <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
-          {/* Top section: logo + links */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
-            <div className="col-span-2 md:col-span-1">
-              <img src={logo.url} alt="KeyGG" className="h-8 w-auto mb-4" />
-              <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-                Genuine Microsoft keys, games & AI tools. Instant digital delivery, unbeatable prices.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-display font-bold text-sm mb-4">Products</h4>
-              <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition">Microsoft 365</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Windows 11</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Xbox Game Pass</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Microsoft Copilot</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-display font-bold text-sm mb-4">Support</h4>
-              <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition">Help Center</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Activation Guide</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Refund Policy</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Contact Us</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-display font-bold text-sm mb-4">Legal</h4>
-              <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground transition">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Cookie Policy</a></li>
-                <li><a href="#" className="hover:text-foreground transition">Licenses</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-display font-bold text-sm mb-4">Partners</h4>
-              <img src={microsoftCertified.url} alt="Microsoft Certified" className="h-12 w-auto" />
-            </div>
-          </div>
-
-          {/* Divider */}
-          <div className="border-t border-border/60" />
-
-          {/* Bottom bar: payments + copyright */}
-          <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3 flex-wrap justify-center">
-              <span className="text-xs text-muted-foreground mr-1">We accept:</span>
-              {[
-                { src: payStripe.url, alt: "Stripe" },
-                { src: payPaypal.url, alt: "PayPal" },
-                { src: payVisa.url, alt: "Visa" },
-                { src: payMastercard.url, alt: "Mastercard" },
-                { src: payApple.url, alt: "Apple Pay" },
-              ].map((p) => (
-                <span key={p.alt} className="inline-flex items-center justify-center h-6 px-2 rounded bg-white border border-border" title={p.alt}>
-                  <img src={p.src} alt={p.alt} className="h-3.5 w-auto object-contain" loading="lazy" />
-                </span>
-              ))}
-            </div>
-            <p className="text-xs text-muted-foreground">© 2026 KeyGG. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
