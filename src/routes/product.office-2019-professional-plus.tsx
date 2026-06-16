@@ -197,31 +197,32 @@ function ProductPage() {
       <Navbar />
 
       {/* Breadcrumb */}
-      <div className="mx-auto max-w-6xl px-6 pt-6">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-4 sm:pt-6">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link to="/" className="hover:text-foreground transition">Home</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRight className="w-3 h-3 shrink-0" />
           <Link to="/" className="hover:text-foreground transition">Microsoft Office</Link>
-          <ChevronRight className="w-3 h-3" />
+          <ChevronRight className="w-3 h-3 shrink-0" />
           <span className="text-foreground font-medium">Office 2019 Professional Plus Key</span>
         </nav>
       </div>
 
       {/* Product hero */}
-      <section className="mx-auto max-w-6xl px-6 py-8 md:py-12">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-6 sm:py-8 md:py-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-start">
+
           {/* Image */}
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
               src={productImg.url}
               alt="Buy Office 2019 Professional Plus product key for 1 PC — lifetime license"
-              className="w-full h-full object-contain p-8"
+              className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
-            <div className="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground">
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-primary text-primary-foreground">
               -{savings}% OFF
             </div>
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium bg-background/90 backdrop-blur border border-border">
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-2.5 py-1 rounded-full text-[11px] sm:text-xs font-medium bg-background/90 backdrop-blur border border-border">
               In stock
             </div>
           </div>
@@ -231,9 +232,10 @@ function ProductPage() {
             <div className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
               Microsoft Office · Lifetime License
             </div>
-            <h1 className="font-display font-bold text-3xl md:text-4xl tracking-tight leading-tight">
+            <h1 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight leading-tight">
               Buy Office 2019 Professional Plus Key – 1 PC
             </h1>
+
 
             <div className="mt-3 flex items-center gap-3">
               <div className="flex items-center gap-0.5" aria-label="Rated 4.9 out of 5">
@@ -266,18 +268,18 @@ function ProductPage() {
             </ul>
 
             {/* Price card */}
-            <div className="mt-6 p-5 rounded-2xl border border-border bg-card">
-              <div className="flex items-end gap-3">
-                <span className="font-display font-bold text-4xl">${price}</span>
-                <span className="text-lg text-muted-foreground line-through mb-1">${original}</span>
-                <span className="ml-auto text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
+            <div className="mt-6 p-4 sm:p-5 rounded-2xl border border-border bg-card">
+              <div className="flex items-end flex-wrap gap-x-3 gap-y-2">
+                <span className="font-display font-bold text-3xl sm:text-4xl">${price}</span>
+                <span className="text-base sm:text-lg text-muted-foreground line-through mb-0.5 sm:mb-1">${original}</span>
+                <span className="sm:ml-auto text-[11px] sm:text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
                   Save ${original - price} ({savings}%)
                 </span>
               </div>
               <div className="mt-1 text-xs text-muted-foreground">One-time payment · Tax included · USD</div>
 
-              <div className="mt-5 flex items-center gap-3">
-                <div className="flex items-center border border-border rounded-full overflow-hidden">
+              <div className="mt-5 flex items-center gap-3 flex-wrap sm:flex-nowrap">
+                <div className="flex items-center border border-border rounded-full overflow-hidden shrink-0">
                   <button
                     onClick={() => setQty((q) => Math.max(1, q - 1))}
                     className="w-9 h-9 grid place-items-center hover:bg-secondary transition"
@@ -295,14 +297,14 @@ function ProductPage() {
                   </button>
                 </div>
                 <button
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  className="flex-1 min-w-[160px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
                 </button>
               </div>
 
-              <div className="mt-5 pt-5 border-t border-border grid grid-cols-2 gap-y-2.5 gap-x-3 text-xs">
+              <div className="mt-5 pt-5 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-3 text-xs">
                 {trust.map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-2">
                     <Icon className="w-4 h-4 text-primary shrink-0" /> {label}
@@ -310,6 +312,7 @@ function ProductPage() {
                 ))}
               </div>
             </div>
+
 
             <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
               <Mail className="w-3.5 h-3.5" />
@@ -320,20 +323,20 @@ function ProductPage() {
       </section>
 
       {/* Included apps */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
         <div className="mb-6">
-          <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight">
+          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
             What's included with your Office 2019 Pro Plus license
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
             All 8 desktop applications — installed locally, no subscription, no cloud lock-in.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {includedApps.map((app) => (
             <div
               key={app}
-              className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card"
+              className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-border bg-card"
             >
               <div
                 className="w-9 h-9 rounded-lg grid place-items-center text-primary-foreground font-display font-bold text-sm shrink-0"
@@ -341,17 +344,18 @@ function ProductPage() {
               >
                 {app[0]}
               </div>
-              <span className="text-sm font-medium">{app}</span>
+              <span className="text-sm font-medium truncate">{app}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* Description + Requirements */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <div className="grid lg:grid-cols-5 gap-10">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10">
           <div className="lg:col-span-3">
-            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-4">
+            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
+
               Office 2019 Professional Plus — product description
             </h2>
             <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -375,14 +379,14 @@ function ProductPage() {
           </div>
 
           <div className="lg:col-span-2">
-            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-4">
+            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
               System requirements
             </h2>
             <div className="rounded-2xl border border-border bg-card divide-y divide-border">
               {requirements.map((r) => (
-                <div key={r.label} className="flex items-start justify-between gap-4 px-5 py-3 text-sm">
+                <div key={r.label} className="grid grid-cols-[110px_minmax(0,1fr)] sm:grid-cols-[140px_minmax(0,1fr)] gap-3 px-4 sm:px-5 py-3 text-sm">
                   <span className="text-muted-foreground">{r.label}</span>
-                  <span className="font-medium text-right">{r.value}</span>
+                  <span className="font-medium text-right break-words">{r.value}</span>
                 </div>
               ))}
             </div>
@@ -391,17 +395,17 @@ function ProductPage() {
       </section>
 
       {/* How to activate */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-6">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
           How to activate Office 2019 Professional Plus
         </h2>
-        <ol className="grid md:grid-cols-3 gap-4">
+        <ol className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[
             { n: 1, t: "Buy your key", d: "Complete checkout securely on KeyGG — $13, one-time payment." },
             { n: 2, t: "Check your email", d: "Receive your Office 2019 Pro Plus product key and the official download link within minutes." },
             { n: 3, t: "Activate on your PC", d: "Install Office, enter the product key, and enjoy lifetime activation on 1 Windows PC." },
           ].map((s) => (
-            <li key={s.n} className="p-6 rounded-2xl border border-border bg-card">
+            <li key={s.n} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <div className="w-8 h-8 rounded-full grid place-items-center font-display font-bold text-sm text-primary-foreground mb-3"
                 style={{ background: "var(--gradient-primary)" }}>{s.n}</div>
               <h3 className="font-display font-bold text-base mb-1.5">{s.t}</h3>
@@ -411,24 +415,25 @@ function ProductPage() {
         </ol>
       </section>
 
+
       {/* Reviews */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <div className="mb-6 flex items-end justify-between flex-wrap gap-4">
-          <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <div className="mb-6 flex items-start sm:items-end justify-between flex-wrap gap-3 sm:gap-4">
+          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
             Rated 4.9 by 24,500+ verified customers
           </h2>
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-0.5">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
+                <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
               ))}
             </div>
-            <span className="text-lg font-display font-bold">4.9</span>
+            <span className="text-base sm:text-lg font-display font-bold">4.9</span>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {reviews.map((r) => (
-            <div key={r.name} className="p-6 rounded-2xl border border-border bg-card">
+            <div key={r.name} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <div className="flex items-center gap-0.5 mb-3">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
@@ -451,13 +456,13 @@ function ProductPage() {
       </section>
 
       {/* FAQ */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-6">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
           Office 2019 Professional Plus — frequently asked questions
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {faqs.map((f) => (
-            <div key={f.q} className="p-6 rounded-2xl border border-border bg-card">
+            <div key={f.q} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <h3 className="font-display font-bold text-base mb-2">{f.q}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
             </div>
@@ -466,12 +471,12 @@ function ProductPage() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-6xl px-6 py-12">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12">
         <div
-          className="rounded-3xl p-10 md:p-14 text-center text-primary-foreground"
+          className="rounded-3xl p-6 sm:p-10 md:p-14 text-center text-primary-foreground"
           style={{ background: "var(--gradient-primary)" }}
         >
-          <h2 className="font-display font-bold text-3xl md:text-4xl tracking-tight">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight">
             Buy Office 2019 Professional Plus key for just ${price}
           </h2>
           <p className="mt-3 text-sm md:text-base text-primary-foreground/85 max-w-xl mx-auto">
@@ -485,6 +490,7 @@ function ProductPage() {
           </a>
         </div>
       </section>
+
 
       <Footer />
     </div>
