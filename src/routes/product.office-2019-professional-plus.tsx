@@ -322,74 +322,75 @@ function ProductPage() {
         </div>
       </section>
 
-      {/* Included apps */}
+      {/* Product Details */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
-        <div className="mb-6">
-          <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight">
-            What's included with your Office 2019 Pro Plus license
-          </h2>
-          <p className="mt-2 text-sm text-muted-foreground">
-            All 8 desktop applications installed locally. No subscription, no cloud lock-in.
+        <div className="max-w-3xl">
+          <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
+            A reliable and powerful office suite designed for businesses, students, and everyday users. Office 2019 provides all the essential tools with stable performance and a familiar interface.
           </p>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-          {includedApps.map((app) => (
-            <div
-              key={app}
-              className="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-border bg-card"
-            >
-              <div
-                className="w-9 h-9 rounded-lg grid place-items-center text-primary-foreground font-display font-bold text-sm shrink-0"
-                style={{ background: "var(--gradient-primary)" }}
-              >
-                {app[0]}
-              </div>
-              <span className="text-sm font-medium truncate">{app}</span>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* Description + Requirements */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-10">
-          <div className="lg:col-span-3">
-            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
-              Office 2019 Professional Plus product description
-            </h2>
-            <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
-              <p>
-                Office 2019 Professional Plus is Microsoft's most complete desktop productivity suite,
-                built for professionals, students and small businesses who want the full power of Office
-                without a Microsoft 365 subscription. Buy once, activate on 1 PC, use it forever.
-              </p>
-              <p>
-                Your purchase includes a genuine Office 2019 Pro Plus product key with lifetime
-                activation, plus the official Microsoft download link. You get all the premium apps
-                installed locally: Word, Excel, PowerPoint, Outlook, Access and Publisher. Fast,
-                offline work.
-              </p>
-              <p>
-                Activation takes about a minute: download Office 2019 from Microsoft's official servers,
-                enter the product key we email you, and you're ready to go. Your license is permanent and
-                never expires.
-              </p>
-            </div>
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-3">Product Information</h3>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Product Type:</strong> Digital License Key</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Delivery:</strong> Send via chat (from 5 minutes to a maximum of 6 hours)</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Platform:</strong> Windows PC</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Supported OS:</strong> Windows 10, Windows 11</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Devices:</strong> 1 PC</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Language:</strong> Multilingual</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span><strong>Activation:</strong> Online activation</span></li>
+          </ul>
+
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-3">Included apps</h3>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Word</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Excel</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>PowerPoint</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Outlook</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>OneNote</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Publisher</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Access</span></li>
+          </ul>
+
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-3">Key features</h3>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Stable and proven version of Office</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>One-time purchase. No subscription</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Classic interface with essential tools</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Powerful performance for everyday tasks</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Full offline functionality after installation</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Ideal for work, study, and business</span></li>
+          </ul>
+
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-3">What you will get</h3>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Original 25-character license key</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Official download link for Office 2019</span></li>
+            <li className="flex items-start gap-2"><span className="shrink-0">•</span><span>Step-by-step installation instructions</span></li>
+          </ul>
+
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-3">Installation instructions</h3>
+          <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+            <p><strong>Step 1: Download Office 2019</strong><br />After your purchase, you will receive an email with your product key and download link.</p>
+            <p><strong>Step 2: Install the package</strong><br />Run the installer and follow the on-screen instructions. Installation takes 5-15 minutes, depending on your internet speed.</p>
+            <p><strong>Step 3: Activate the license</strong><br />Open any Office application (Word, Excel, etc.) and enter the 25-character key. Office 2019 will be activated.</p>
           </div>
 
-          <div className="lg:col-span-2">
-            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
-              System requirements
-            </h2>
-            <div className="rounded-2xl border border-border bg-card divide-y divide-border">
-              {requirements.map((r) => (
-                <div key={r.label} className="grid grid-cols-[110px_minmax(0,1fr)] sm:grid-cols-[140px_minmax(0,1fr)] gap-3 px-4 sm:px-5 py-3 text-sm">
-                  <span className="text-muted-foreground">{r.label}</span>
-                  <span className="font-medium text-right break-words">{r.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <div className="border-t border-border my-4" />
+
+          <h3 className="font-display font-bold text-lg sm:text-xl mb-2">Need help?</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Our support team is available 24/7 to assist you with installation and activation. Contact us anytime via email or live chat.
+          </p>
         </div>
       </section>
 
