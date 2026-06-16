@@ -179,7 +179,7 @@ const faqs = [
 
 
 function ProductPage() {
-  const [qty, setQty] = useState(1);
+  
   const price = 13;
   const original = 45;
   const savings = Math.round(((original - price) / original) * 100);
@@ -268,28 +268,9 @@ function ProductPage() {
                   Save ${original - price} ({savings}%)
                 </span>
               </div>
-              <div className="mt-1 text-xs text-muted-foreground">One-time payment · Tax included · USD</div>
-
-              <div className="mt-5 flex items-center gap-3 flex-wrap sm:flex-nowrap">
-                <div className="flex items-center border border-border rounded-full overflow-hidden shrink-0">
-                  <button
-                    onClick={() => setQty((q) => Math.max(1, q - 1))}
-                    className="w-9 h-9 grid place-items-center hover:bg-secondary transition"
-                    aria-label="Decrease quantity"
-                  >
-                    <Minus className="w-3.5 h-3.5" />
-                  </button>
-                  <span className="w-8 text-center text-sm font-medium" aria-live="polite">{qty}</span>
-                  <button
-                    onClick={() => setQty((q) => q + 1)}
-                    className="w-9 h-9 grid place-items-center hover:bg-secondary transition"
-                    aria-label="Increase quantity"
-                  >
-                    <Plus className="w-3.5 h-3.5" />
-                  </button>
-                </div>
+              <div className="mt-5">
                 <button
-                  className="flex-1 min-w-[160px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
