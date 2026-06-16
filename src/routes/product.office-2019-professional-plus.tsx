@@ -15,7 +15,8 @@ import {
   Minus,
   Plus,
 } from "lucide-react";
-import logo from "@/assets/keygg-logo.png.asset.json";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import productImg from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
 
 const PAGE_TITLE = "Buy Office 2019 Professional Plus Key – 1 PC Lifetime | KeyGG";
