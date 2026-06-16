@@ -180,11 +180,6 @@ const faqs = [
   },
 ];
 
-const reviews = [
-  { name: "Daniel R.", rating: 5, date: "2 weeks ago", text: "Activation worked first try. Got the key in under 5 minutes. Highly recommend." },
-  { name: "Sofia M.", rating: 5, date: "1 month ago", text: "Way cheaper than buying directly from Microsoft. Same product, full features." },
-  { name: "James K.", rating: 4, date: "1 month ago", text: "Smooth experience, support helped me with install. Saved a lot of money." },
-];
 
 function ProductPage() {
   const [qty, setQty] = useState(1);
