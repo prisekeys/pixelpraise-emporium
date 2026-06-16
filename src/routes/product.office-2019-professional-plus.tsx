@@ -15,7 +15,8 @@ import {
   Minus,
   Plus,
 } from "lucide-react";
-import logo from "@/assets/keygg-logo.png.asset.json";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import productImg from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
 
 const PAGE_TITLE = "Buy Office 2019 Professional Plus Key – 1 PC Lifetime | KeyGG";
@@ -193,26 +194,7 @@ function ProductPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Nav */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/85 border-b border-border/60">
-        <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo.url} alt="KeyGG — buy genuine software keys" className="h-9 md:h-10 w-auto" />
-          </Link>
-          <div className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-foreground transition">Software</Link>
-            <Link to="/" className="hover:text-foreground transition">Microsoft Office</Link>
-            <Link to="/" className="hover:text-foreground transition">Support</Link>
-          </div>
-          <a
-            href="#buy"
-            className="px-4 py-2 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
-            style={{ background: "var(--gradient-primary)" }}
-          >
-            Buy now ${price}
-          </a>
-        </nav>
-      </header>
+      <Navbar />
 
       {/* Breadcrumb */}
       <div className="mx-auto max-w-6xl px-6 pt-6">
@@ -504,18 +486,7 @@ function ProductPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border/60 bg-secondary/30">
-        <div className="mx-auto max-w-6xl px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <img src={logo.url} alt="KeyGG" className="h-7 w-auto" />
-            <span className="text-xs text-muted-foreground">© 2026 KeyGG. All rights reserved.</span>
-          </div>
-          <div className="text-xs text-muted-foreground">
-            Microsoft and Office are trademarks of Microsoft Corporation. KeyGG is an independent reseller.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
