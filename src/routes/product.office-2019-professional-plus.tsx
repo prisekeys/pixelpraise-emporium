@@ -379,14 +379,14 @@ function ProductPage() {
           </div>
 
           <div className="lg:col-span-2">
-            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-4">
+            <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-4">
               System requirements
             </h2>
             <div className="rounded-2xl border border-border bg-card divide-y divide-border">
               {requirements.map((r) => (
-                <div key={r.label} className="flex items-start justify-between gap-4 px-5 py-3 text-sm">
+                <div key={r.label} className="grid grid-cols-[110px_minmax(0,1fr)] sm:grid-cols-[140px_minmax(0,1fr)] gap-3 px-4 sm:px-5 py-3 text-sm">
                   <span className="text-muted-foreground">{r.label}</span>
-                  <span className="font-medium text-right">{r.value}</span>
+                  <span className="font-medium text-right break-words">{r.value}</span>
                 </div>
               ))}
             </div>
@@ -395,17 +395,17 @@ function ProductPage() {
       </section>
 
       {/* How to activate */}
-      <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
-        <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mb-6">
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
+        <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
           How to activate Office 2019 Professional Plus
         </h2>
-        <ol className="grid md:grid-cols-3 gap-4">
+        <ol className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[
             { n: 1, t: "Buy your key", d: "Complete checkout securely on KeyGG — $13, one-time payment." },
             { n: 2, t: "Check your email", d: "Receive your Office 2019 Pro Plus product key and the official download link within minutes." },
             { n: 3, t: "Activate on your PC", d: "Install Office, enter the product key, and enjoy lifetime activation on 1 Windows PC." },
           ].map((s) => (
-            <li key={s.n} className="p-6 rounded-2xl border border-border bg-card">
+            <li key={s.n} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
               <div className="w-8 h-8 rounded-full grid place-items-center font-display font-bold text-sm text-primary-foreground mb-3"
                 style={{ background: "var(--gradient-primary)" }}>{s.n}</div>
               <h3 className="font-display font-bold text-base mb-1.5">{s.t}</h3>
@@ -414,6 +414,7 @@ function ProductPage() {
           ))}
         </ol>
       </section>
+
 
       {/* Reviews */}
       <section className="mx-auto max-w-6xl px-6 py-12 border-t border-border/60">
