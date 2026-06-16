@@ -29,15 +29,95 @@ export const Route = createFileRoute("/product/office-2019-professional-plus")({
       {
         name: "description",
         content:
-          "Buy a genuine Office 2019 Professional Plus lifetime license key for 1 PC. Instant digital delivery, official Microsoft activation, 24/7 support.",
+          "Genuine Office 2019 Professional Plus lifetime license key for 1 PC. Instant digital delivery, official Microsoft activation, 24/7 support.",
       },
-      { property: "og:title", content: "Office 2019 Professional Plus Key – 1 PC" },
+      { property: "og:title", content: "Office 2019 Professional Plus Key – 1 PC | KeyGG" },
       {
         property: "og:description",
         content:
           "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook, Access, Publisher & more.",
       },
+      { property: "og:type", content: "product" },
+      { property: "og:url", content: "/product/office-2019-professional-plus" },
       { property: "og:image", content: productImg.url },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: productImg.url },
+    ],
+    links: [{ rel: "canonical", href: "/product/office-2019-professional-plus" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              name: "Office 2019 Professional Plus Key – 1 PC",
+              image: productImg.url,
+              description:
+                "Genuine Microsoft Office 2019 Professional Plus lifetime license key for 1 Windows PC. Includes Word, Excel, PowerPoint, Outlook, Access and Publisher.",
+              brand: { "@type": "Brand", name: "Microsoft" },
+              sku: "KEYGG-OFFICE-2019-PRO-PLUS",
+              offers: {
+                "@type": "Offer",
+                price: "13",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                itemCondition: "https://schema.org/NewCondition",
+                url: "/product/office-2019-professional-plus",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "24500",
+                bestRating: "5",
+                worstRating: "1",
+              },
+              review: [
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Daniel R." },
+                  datePublished: "2026-06-02",
+                  reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+                  reviewBody: "Activation worked first try. Got the key in under 5 minutes. Highly recommend.",
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "Sofia M." },
+                  datePublished: "2026-05-16",
+                  reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+                  reviewBody: "Way cheaper than buying directly from Microsoft. Same product, full features.",
+                },
+                {
+                  "@type": "Review",
+                  author: { "@type": "Person", name: "James K." },
+                  datePublished: "2026-05-12",
+                  reviewRating: { "@type": "Rating", ratingValue: "4", bestRating: "5" },
+                  reviewBody: "Smooth experience, support helped me with install. Saved a lot of money.",
+                },
+              ],
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+                { "@type": "ListItem", position: 2, name: "Software", item: "/" },
+                { "@type": "ListItem", position: 3, name: "Office", item: "/" },
+                { "@type": "ListItem", position: 4, name: "Office 2019 Professional Plus", item: "/product/office-2019-professional-plus" },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: [
+                { "@type": "Question", name: "Is this a lifetime license?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you a lifetime activation for 1 PC. No subscription, no recurring fees." } },
+                { "@type": "Question", name: "How fast will I receive my key?", acceptedAnswer: { "@type": "Answer", text: "Keys are delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "Can I transfer the license to another PC?", acceptedAnswer: { "@type": "Answer", text: "The license is bound to the first device it's activated on. If you replace your PC, contact our support team and we'll help you with reactivation." } },
+                { "@type": "Question", name: "Will I receive updates?", acceptedAnswer: { "@type": "Answer", text: "Yes. You'll receive all official Microsoft security updates and patches for Office 2019." } },
+              ],
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: ProductPage,
