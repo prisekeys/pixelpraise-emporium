@@ -264,13 +264,10 @@ function ProductPage() {
               <div className="flex items-end flex-wrap gap-x-3 gap-y-2">
                 <span className="font-display font-bold text-3xl sm:text-4xl">${price}</span>
                 <span className="text-base sm:text-lg text-muted-foreground line-through mb-0.5 sm:mb-1">${original}</span>
-                <span className="sm:ml-auto text-[11px] sm:text-xs font-semibold text-primary bg-primary/10 px-2.5 py-1 rounded-full">
-                  Save ${original - price} ({savings}%)
-                </span>
               </div>
               <div className="mt-5">
                 <button
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
