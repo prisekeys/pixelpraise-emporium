@@ -229,15 +229,22 @@ function ProductPage() {
             </h1>
 
 
-            <div className="mt-3 flex items-center gap-3">
+            <a
+              href="#"
+              className="mt-3 inline-flex items-center gap-3 group"
+            >
               <div className="flex items-center gap-0.5" aria-label="Rated 4.9 out of 5">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" strokeWidth={2.5} />
+                  <Star
+                    key={i}
+                    className={`w-4 h-4 text-yellow-400 ${i === 4 ? "fill-yellow-400/80" : "fill-yellow-400"}`}
+                    strokeWidth={2}
+                  />
                 ))}
               </div>
-              <span className="text-sm font-medium">4.9</span>
-              <span className="text-sm text-muted-foreground">· 24,500+ sold</span>
-            </div>
+              <span className="text-sm font-medium underline underline-offset-2 decoration-foreground/30 group-hover:decoration-foreground transition">4.9</span>
+              <span className="text-sm text-muted-foreground">· 50+</span>
+            </a>
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2019 Professional Plus product key for 1 Windows PC. One-time
