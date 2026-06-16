@@ -231,7 +231,7 @@ function ProductPage() {
 
             <a
               href="#"
-              className="mt-3 inline-flex items-center gap-3 group"
+              className="mt-3 inline-flex items-center gap-3 group underline underline-offset-2 decoration-foreground/30 hover:decoration-foreground transition"
             >
               <div className="flex items-center gap-0.5" aria-label="Rated 4.9 out of 5">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -242,8 +242,8 @@ function ProductPage() {
                   />
                 ))}
               </div>
-              <span className="text-sm font-medium underline underline-offset-2 decoration-foreground/30 group-hover:decoration-foreground transition">4.9</span>
-              <span className="text-sm text-muted-foreground">· 50+</span>
+              <span className="text-sm font-medium">4.9</span>
+              <span className="text-sm text-muted-foreground">· 50+ Sold</span>
             </a>
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
