@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import payStripe from "@/assets/payments/stripe.svg.asset.json";
 import payPaypal from "@/assets/payments/paypal.svg.asset.json";
 import payVisa from "@/assets/payments/visa.svg.asset.json";
@@ -35,7 +36,7 @@ export default function Footer() {
               <li><a href="#" className="hover:text-foreground transition">Help Center</a></li>
               <li><a href="#" className="hover:text-foreground transition">Activation Guide</a></li>
               <li><a href="#" className="hover:text-foreground transition">Refund Policy</a></li>
-              <li><a href="#" className="hover:text-foreground transition">Contact Us</a></li>
+              <li><Link to="/support" className="hover:text-foreground transition">Contact Us</Link></li>
             </ul>
           </div>
 
