@@ -27,9 +27,13 @@ export default function Navbar() {
         </div>
 
         {/* Support button */}
-        <button aria-label="Support" className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0" style={{ background: "var(--gradient-primary)" }}>
+        <Link
+          to="/support"
+          className="px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium text-primary-foreground transition hover:opacity-90 inline-flex items-center gap-1.5 justify-self-end shrink-0"
+          style={{ background: "var(--gradient-primary)" }}
+        >
           <Headphones className="w-3.5 h-3.5 md:w-4 md:h-4" aria-hidden="true" /> <span className="hidden sm:inline">Support</span>
-        </button>
+        </Link>
       </nav>
     </header>
   );
