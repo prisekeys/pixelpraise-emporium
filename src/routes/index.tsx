@@ -303,8 +303,10 @@ function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((p) => {
             const isOffice2019 = p.title.startsWith("Office 2019 Professional Plus");
-            const CardWrap: any = isOffice2019 ? Link : "div";
-            const wrapProps: any = isOffice2019 ? { to: "/product/office-2019-professional-plus" } : {};
+            const isWin11 = p.title.startsWith("Windows 11 Professional");
+            const hasRoute = isOffice2019 || isWin11;
+            const CardWrap: any = hasRoute ? Link : "div";
+            const wrapProps: any = isOffice2019 ? { to: "/product/office-2019-professional-plus" } : isWin11 ? { to: "/product/windows-11-professional-key-1-pc" } : {};
             return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <CardWrap {...wrapProps} className="block">
