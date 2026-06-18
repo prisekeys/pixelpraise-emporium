@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition">Help Center</a></li>
               <li><a href="#" className="hover:text-foreground transition">Activation Guide</a></li>
-              <li><a href="#" className="hover:text-foreground transition">Refund Policy</a></li>
+              <li><Link to="/refund-policy" className="hover:text-foreground transition">Refund Policy</Link></li>
               <li><Link to="/support" className="hover:text-foreground transition">Contact Us</Link></li>
             </ul>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li><Link to="/terms-of-service" className="hover:text-foreground transition">Terms of Service</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-foreground transition">Privacy Policy</Link></li>
               <li><Link to="/cookie-policy" className="hover:text-foreground transition">Cookie Policy</Link></li>
-              <li><a href="#" className="hover:text-foreground transition">Licenses</a></li>
+              <li><Link to="/licenses" className="hover:text-foreground transition">Licenses</Link></li>
             </ul>
           </div>
 
