@@ -467,12 +467,16 @@ function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url },
+            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc" },
             { title: "Access 2024 Product Key – 1 PC", img: access2024.url },
             { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024.url },
             { title: "Excel 2024 Product Key – 1 PC", img: excel2024.url },
-          ].map((p) => (
+          ].map((p) => {
+            const Wrap = p.to ? Link : "div";
+            const wrapProps = p.to ? { to: p.to } : {};
+            return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
+              <Wrap {...wrapProps} className="block">
               <div className="relative aspect-square overflow-hidden bg-white">
                 <img src={p.img} alt={p.title} loading="lazy" width={1024} height={1024} className="w-full h-full object-contain" />
               </div>
@@ -488,8 +492,10 @@ function Home() {
                   </button>
                 </div>
               </div>
+              </Wrap>
             </article>
-          ))}
+            );
+          })}
         </div>
       </section>
 

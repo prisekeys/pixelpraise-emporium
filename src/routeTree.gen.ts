@@ -15,6 +15,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
 import { Route as ProductVisioProfessional2024Key1PcRouteImport } from './routes/product.visio-professional-2024-key-1-pc'
 import { Route as ProductProjectProfessional2024Key1PcRouteImport } from './routes/product.project-professional-2024-key-1-pc'
+import { Route as ProductOutlook2024ProductKey1PcRouteImport } from './routes/product.outlook-2024-product-key-1-pc'
 import { Route as ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRouteImport } from './routes/product.office-365-professional-plus-5-devices-100gb-1-year-key'
 import { Route as ProductOffice2024ProfessionalPlusLtscKey1PcRouteImport } from './routes/product.office-2024-professional-plus-ltsc-key-1-pc'
 import { Route as ProductOffice2024HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2024-home-business-for-mac-1-mac-key'
@@ -57,6 +58,12 @@ const ProductProjectProfessional2024Key1PcRoute =
   ProductProjectProfessional2024Key1PcRouteImport.update({
     id: '/product/project-professional-2024-key-1-pc',
     path: '/product/project-professional-2024-key-1-pc',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProductOutlook2024ProductKey1PcRoute =
+  ProductOutlook2024ProductKey1PcRouteImport.update({
+    id: '/product/outlook-2024-product-key-1-pc',
+    path: '/product/outlook-2024-product-key-1-pc',
     getParentRoute: () => rootRouteImport,
   } as any)
 const ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute =
@@ -134,6 +141,7 @@ export interface FileRoutesByFullPath {
   '/product/office-2024-home-business-for-mac-1-mac-key': typeof ProductOffice2024HomeBusinessForMac1MacKeyRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/office-365-professional-plus-5-devices-100gb-1-year-key': typeof ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute
+  '/product/outlook-2024-product-key-1-pc': typeof ProductOutlook2024ProductKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
   '/product/visio-professional-2024-key-1-pc': typeof ProductVisioProfessional2024Key1PcRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
@@ -152,6 +160,7 @@ export interface FileRoutesByTo {
   '/product/office-2024-home-business-for-mac-1-mac-key': typeof ProductOffice2024HomeBusinessForMac1MacKeyRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/office-365-professional-plus-5-devices-100gb-1-year-key': typeof ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute
+  '/product/outlook-2024-product-key-1-pc': typeof ProductOutlook2024ProductKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
   '/product/visio-professional-2024-key-1-pc': typeof ProductVisioProfessional2024Key1PcRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
@@ -171,6 +180,7 @@ export interface FileRoutesById {
   '/product/office-2024-home-business-for-mac-1-mac-key': typeof ProductOffice2024HomeBusinessForMac1MacKeyRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/office-365-professional-plus-5-devices-100gb-1-year-key': typeof ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute
+  '/product/outlook-2024-product-key-1-pc': typeof ProductOutlook2024ProductKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
   '/product/visio-professional-2024-key-1-pc': typeof ProductVisioProfessional2024Key1PcRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
@@ -191,6 +201,7 @@ export interface FileRouteTypes {
     | '/product/office-2024-home-business-for-mac-1-mac-key'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/office-365-professional-plus-5-devices-100gb-1-year-key'
+    | '/product/outlook-2024-product-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
     | '/product/visio-professional-2024-key-1-pc'
     | '/product/windows-11-professional-key-1-pc'
@@ -209,6 +220,7 @@ export interface FileRouteTypes {
     | '/product/office-2024-home-business-for-mac-1-mac-key'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/office-365-professional-plus-5-devices-100gb-1-year-key'
+    | '/product/outlook-2024-product-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
     | '/product/visio-professional-2024-key-1-pc'
     | '/product/windows-11-professional-key-1-pc'
@@ -227,6 +239,7 @@ export interface FileRouteTypes {
     | '/product/office-2024-home-business-for-mac-1-mac-key'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/office-365-professional-plus-5-devices-100gb-1-year-key'
+    | '/product/outlook-2024-product-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
     | '/product/visio-professional-2024-key-1-pc'
     | '/product/windows-11-professional-key-1-pc'
@@ -246,6 +259,7 @@ export interface RootRouteChildren {
   ProductOffice2024HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2024HomeBusinessForMac1MacKeyRoute
   ProductOffice2024ProfessionalPlusLtscKey1PcRoute: typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute: typeof ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute
+  ProductOutlook2024ProductKey1PcRoute: typeof ProductOutlook2024ProductKey1PcRoute
   ProductProjectProfessional2024Key1PcRoute: typeof ProductProjectProfessional2024Key1PcRoute
   ProductVisioProfessional2024Key1PcRoute: typeof ProductVisioProfessional2024Key1PcRoute
   ProductWindows11ProfessionalKey1PcRoute: typeof ProductWindows11ProfessionalKey1PcRoute
@@ -293,6 +307,13 @@ declare module '@tanstack/react-router' {
       path: '/product/project-professional-2024-key-1-pc'
       fullPath: '/product/project-professional-2024-key-1-pc'
       preLoaderRoute: typeof ProductProjectProfessional2024Key1PcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product/outlook-2024-product-key-1-pc': {
+      id: '/product/outlook-2024-product-key-1-pc'
+      path: '/product/outlook-2024-product-key-1-pc'
+      fullPath: '/product/outlook-2024-product-key-1-pc'
+      preLoaderRoute: typeof ProductOutlook2024ProductKey1PcRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/product/office-365-professional-plus-5-devices-100gb-1-year-key': {
@@ -392,6 +413,7 @@ const rootRouteChildren: RootRouteChildren = {
     ProductOffice2024ProfessionalPlusLtscKey1PcRoute,
   ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute:
     ProductOffice365ProfessionalPlus5Devices100gb1YearKeyRoute,
+  ProductOutlook2024ProductKey1PcRoute: ProductOutlook2024ProductKey1PcRoute,
   ProductProjectProfessional2024Key1PcRoute:
     ProductProjectProfessional2024Key1PcRoute,
   ProductVisioProfessional2024Key1PcRoute:
