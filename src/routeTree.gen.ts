@@ -16,6 +16,7 @@ import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as LicensesRouteImport } from './routes/licenses'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
+import { Route as ActivationGuideRouteImport } from './routes/activation-guide'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
 import { Route as ProductVisioProfessional2024Key1PcRouteImport } from './routes/product.visio-professional-2024-key-1-pc'
@@ -68,6 +69,11 @@ const LicensesRoute = LicensesRouteImport.update({
 const CookiePolicyRoute = CookiePolicyRouteImport.update({
   id: '/cookie-policy',
   path: '/cookie-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActivationGuideRoute = ActivationGuideRouteImport.update({
+  id: '/activation-guide',
+  path: '/activation-guide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -180,6 +186,7 @@ const BlogHowToFindMicrosoftOfficeProductKeyRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -207,6 +214,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -235,6 +243,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -264,6 +273,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/activation-guide'
     | '/cookie-policy'
     | '/licenses'
     | '/privacy-policy'
@@ -291,6 +301,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/activation-guide'
     | '/cookie-policy'
     | '/licenses'
     | '/privacy-policy'
@@ -318,6 +329,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/activation-guide'
     | '/cookie-policy'
     | '/licenses'
     | '/privacy-policy'
@@ -346,6 +358,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ActivationGuideRoute: typeof ActivationGuideRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
   LicensesRoute: typeof LicensesRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -421,6 +434,13 @@ declare module '@tanstack/react-router' {
       path: '/cookie-policy'
       fullPath: '/cookie-policy'
       preLoaderRoute: typeof CookiePolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/activation-guide': {
+      id: '/activation-guide'
+      path: '/activation-guide'
+      fullPath: '/activation-guide'
+      preLoaderRoute: typeof ActivationGuideRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -554,6 +574,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ActivationGuideRoute: ActivationGuideRoute,
   CookiePolicyRoute: CookiePolicyRoute,
   LicensesRoute: LicensesRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
