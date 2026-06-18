@@ -306,7 +306,8 @@ function Home() {
             const isWin11 = p.title.startsWith("Windows 11 Professional");
             const isOffice2021 = p.title.startsWith("Office 2021 Professional Plus");
             const isProject2024 = p.title.startsWith("Project Professional 2024");
-            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024;
+            const isVisio2024 = p.title.startsWith("Visio Professional 2024");
+            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024;
             const CardWrap: any = hasRoute ? Link : "div";
             const wrapProps: any = isOffice2019
               ? { to: "/product/office-2019-professional-plus" }
@@ -316,6 +317,8 @@ function Home() {
               ? { to: "/product/office-2021-professional-plus" }
               : isProject2024
               ? { to: "/product/project-professional-2024-key-1-pc" }
+              : isVisio2024
+              ? { to: "/product/visio-professional-2024-key-1-pc" }
               : {};
             return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
