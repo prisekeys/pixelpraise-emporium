@@ -33,7 +33,7 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-sm mb-4">Support</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition">Help Center</a></li>
+              <li><Link to="/help-center" className="hover:text-foreground transition">Help Center</Link></li>
               <li><Link to="/activation-guide" className="hover:text-foreground transition">Activation Guide</Link></li>
               <li><Link to="/refund-policy" className="hover:text-foreground transition">Refund Policy</Link></li>
               <li><Link to="/support" className="hover:text-foreground transition">Contact Us</Link></li>

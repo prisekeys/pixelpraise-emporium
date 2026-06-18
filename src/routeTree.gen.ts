@@ -15,6 +15,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as LicensesRouteImport } from './routes/licenses'
+import { Route as HelpCenterRouteImport } from './routes/help-center'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as ActivationGuideRouteImport } from './routes/activation-guide'
 import { Route as IndexRouteImport } from './routes/index'
@@ -64,6 +65,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
 const LicensesRoute = LicensesRouteImport.update({
   id: '/licenses',
   path: '/licenses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HelpCenterRoute = HelpCenterRouteImport.update({
+  id: '/help-center',
+  path: '/help-center',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiePolicyRoute = CookiePolicyRouteImport.update({
@@ -188,6 +194,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -216,6 +223,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -245,6 +253,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/refund-policy': typeof RefundPolicyRoute
@@ -275,6 +284,7 @@ export interface FileRouteTypes {
     | '/'
     | '/activation-guide'
     | '/cookie-policy'
+    | '/help-center'
     | '/licenses'
     | '/privacy-policy'
     | '/refund-policy'
@@ -303,6 +313,7 @@ export interface FileRouteTypes {
     | '/'
     | '/activation-guide'
     | '/cookie-policy'
+    | '/help-center'
     | '/licenses'
     | '/privacy-policy'
     | '/refund-policy'
@@ -331,6 +342,7 @@ export interface FileRouteTypes {
     | '/'
     | '/activation-guide'
     | '/cookie-policy'
+    | '/help-center'
     | '/licenses'
     | '/privacy-policy'
     | '/refund-policy'
@@ -360,6 +372,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ActivationGuideRoute: typeof ActivationGuideRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
+  HelpCenterRoute: typeof HelpCenterRoute
   LicensesRoute: typeof LicensesRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
@@ -427,6 +440,13 @@ declare module '@tanstack/react-router' {
       path: '/licenses'
       fullPath: '/licenses'
       preLoaderRoute: typeof LicensesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/help-center': {
+      id: '/help-center'
+      path: '/help-center'
+      fullPath: '/help-center'
+      preLoaderRoute: typeof HelpCenterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookie-policy': {
@@ -576,6 +596,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ActivationGuideRoute: ActivationGuideRoute,
   CookiePolicyRoute: CookiePolicyRoute,
+  HelpCenterRoute: HelpCenterRoute,
   LicensesRoute: LicensesRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   RefundPolicyRoute: RefundPolicyRoute,
