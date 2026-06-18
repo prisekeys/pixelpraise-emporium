@@ -17,6 +17,7 @@ import { Route as ProductVisioProfessional2024Key1PcRouteImport } from './routes
 import { Route as ProductProjectProfessional2024Key1PcRouteImport } from './routes/product.project-professional-2024-key-1-pc'
 import { Route as ProductOffice2024ProfessionalPlusLtscKey1PcRouteImport } from './routes/product.office-2024-professional-plus-ltsc-key-1-pc'
 import { Route as ProductOffice2021ProfessionalPlusRouteImport } from './routes/product.office-2021-professional-plus'
+import { Route as ProductOffice2021HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2021-home-business-for-mac-1-mac-key'
 import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/product.office-2019-professional-plus'
 import { Route as ProductOffice2019HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2019-home-business-for-mac-1-mac-key'
 import { Route as ProductEsetSmartSecurityPremium1Device1YearKeyRouteImport } from './routes/product.eset-smart-security-premium-1-device-1-year-key'
@@ -67,6 +68,12 @@ const ProductOffice2021ProfessionalPlusRoute =
     path: '/product/office-2021-professional-plus',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProductOffice2021HomeBusinessForMac1MacKeyRoute =
+  ProductOffice2021HomeBusinessForMac1MacKeyRouteImport.update({
+    id: '/product/office-2021-home-business-for-mac-1-mac-key',
+    path: '/product/office-2021-home-business-for-mac-1-mac-key',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductOffice2019ProfessionalPlusRoute =
   ProductOffice2019ProfessionalPlusRouteImport.update({
     id: '/product/office-2019-professional-plus',
@@ -100,6 +107,7 @@ export interface FileRoutesByFullPath {
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
   '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
@@ -114,6 +122,7 @@ export interface FileRoutesByTo {
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
   '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
@@ -129,6 +138,7 @@ export interface FileRoutesById {
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
   '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/office-2024-professional-plus-ltsc-key-1-pc': typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   '/product/project-professional-2024-key-1-pc': typeof ProductProjectProfessional2024Key1PcRoute
@@ -145,6 +155,7 @@ export interface FileRouteTypes {
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-home-business-for-mac-1-mac-key'
     | '/product/office-2021-professional-plus'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
@@ -159,6 +170,7 @@ export interface FileRouteTypes {
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-home-business-for-mac-1-mac-key'
     | '/product/office-2021-professional-plus'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
@@ -173,6 +185,7 @@ export interface FileRouteTypes {
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-home-business-for-mac-1-mac-key'
     | '/product/office-2021-professional-plus'
     | '/product/office-2024-professional-plus-ltsc-key-1-pc'
     | '/product/project-professional-2024-key-1-pc'
@@ -188,6 +201,7 @@ export interface RootRouteChildren {
   ProductEsetSmartSecurityPremium1Device1YearKeyRoute: typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   ProductOffice2019HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   ProductOffice2019ProfessionalPlusRoute: typeof ProductOffice2019ProfessionalPlusRoute
+  ProductOffice2021HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
   ProductOffice2021ProfessionalPlusRoute: typeof ProductOffice2021ProfessionalPlusRoute
   ProductOffice2024ProfessionalPlusLtscKey1PcRoute: typeof ProductOffice2024ProfessionalPlusLtscKey1PcRoute
   ProductProjectProfessional2024Key1PcRoute: typeof ProductProjectProfessional2024Key1PcRoute
@@ -253,6 +267,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductOffice2021ProfessionalPlusRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product/office-2021-home-business-for-mac-1-mac-key': {
+      id: '/product/office-2021-home-business-for-mac-1-mac-key'
+      path: '/product/office-2021-home-business-for-mac-1-mac-key'
+      fullPath: '/product/office-2021-home-business-for-mac-1-mac-key'
+      preLoaderRoute: typeof ProductOffice2021HomeBusinessForMac1MacKeyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/product/office-2019-professional-plus': {
       id: '/product/office-2019-professional-plus'
       path: '/product/office-2019-professional-plus'
@@ -296,6 +317,8 @@ const rootRouteChildren: RootRouteChildren = {
     ProductOffice2019HomeBusinessForMac1MacKeyRoute,
   ProductOffice2019ProfessionalPlusRoute:
     ProductOffice2019ProfessionalPlusRoute,
+  ProductOffice2021HomeBusinessForMac1MacKeyRoute:
+    ProductOffice2021HomeBusinessForMac1MacKeyRoute,
   ProductOffice2021ProfessionalPlusRoute:
     ProductOffice2021ProfessionalPlusRoute,
   ProductOffice2024ProfessionalPlusLtscKey1PcRoute:
