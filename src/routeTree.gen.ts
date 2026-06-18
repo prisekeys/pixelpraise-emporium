@@ -13,6 +13,7 @@ import { Route as SupportRouteImport } from './routes/support'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
+import { Route as ProductOffice2021ProfessionalPlusRouteImport } from './routes/product.office-2021-professional-plus'
 import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/product.office-2019-professional-plus'
 import { Route as BlogHowToFindMicrosoftOfficeProductKeyRouteImport } from './routes/blog.how-to-find-microsoft-office-product-key'
 
@@ -37,6 +38,12 @@ const ProductWindows11ProfessionalKey1PcRoute =
     path: '/product/windows-11-professional-key-1-pc',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProductOffice2021ProfessionalPlusRoute =
+  ProductOffice2021ProfessionalPlusRouteImport.update({
+    id: '/product/office-2021-professional-plus',
+    path: '/product/office-2021-professional-plus',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductOffice2019ProfessionalPlusRoute =
   ProductOffice2019ProfessionalPlusRouteImport.update({
     id: '/product/office-2019-professional-plus',
@@ -56,6 +63,7 @@ export interface FileRoutesByFullPath {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRoutesByTo {
@@ -64,6 +72,7 @@ export interface FileRoutesByTo {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRoutesById {
@@ -73,6 +82,7 @@ export interface FileRoutesById {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/office-2021-professional-plus': typeof ProductOffice2021ProfessionalPlusRoute
   '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRouteTypes {
@@ -83,6 +93,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-professional-plus'
     | '/product/windows-11-professional-key-1-pc'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -91,6 +102,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-professional-plus'
     | '/product/windows-11-professional-key-1-pc'
   id:
     | '__root__'
@@ -99,6 +111,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/office-2021-professional-plus'
     | '/product/windows-11-professional-key-1-pc'
   fileRoutesById: FileRoutesById
 }
@@ -108,6 +121,7 @@ export interface RootRouteChildren {
   SupportRoute: typeof SupportRoute
   BlogHowToFindMicrosoftOfficeProductKeyRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   ProductOffice2019ProfessionalPlusRoute: typeof ProductOffice2019ProfessionalPlusRoute
+  ProductOffice2021ProfessionalPlusRoute: typeof ProductOffice2021ProfessionalPlusRoute
   ProductWindows11ProfessionalKey1PcRoute: typeof ProductWindows11ProfessionalKey1PcRoute
 }
 
@@ -141,6 +155,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductWindows11ProfessionalKey1PcRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product/office-2021-professional-plus': {
+      id: '/product/office-2021-professional-plus'
+      path: '/product/office-2021-professional-plus'
+      fullPath: '/product/office-2021-professional-plus'
+      preLoaderRoute: typeof ProductOffice2021ProfessionalPlusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/product/office-2019-professional-plus': {
       id: '/product/office-2019-professional-plus'
       path: '/product/office-2019-professional-plus'
@@ -166,6 +187,8 @@ const rootRouteChildren: RootRouteChildren = {
     BlogHowToFindMicrosoftOfficeProductKeyRoute,
   ProductOffice2019ProfessionalPlusRoute:
     ProductOffice2019ProfessionalPlusRoute,
+  ProductOffice2021ProfessionalPlusRoute:
+    ProductOffice2021ProfessionalPlusRoute,
   ProductWindows11ProfessionalKey1PcRoute:
     ProductWindows11ProfessionalKey1PcRoute,
 }

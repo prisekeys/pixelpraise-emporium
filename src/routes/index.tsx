@@ -304,9 +304,16 @@ function Home() {
           {products.map((p) => {
             const isOffice2019 = p.title.startsWith("Office 2019 Professional Plus");
             const isWin11 = p.title.startsWith("Windows 11 Professional");
-            const hasRoute = isOffice2019 || isWin11;
+            const isOffice2021 = p.title.startsWith("Office 2021 Professional Plus");
+            const hasRoute = isOffice2019 || isWin11 || isOffice2021;
             const CardWrap: any = hasRoute ? Link : "div";
-            const wrapProps: any = isOffice2019 ? { to: "/product/office-2019-professional-plus" } : isWin11 ? { to: "/product/windows-11-professional-key-1-pc" } : {};
+            const wrapProps: any = isOffice2019
+              ? { to: "/product/office-2019-professional-plus" }
+              : isWin11
+              ? { to: "/product/windows-11-professional-key-1-pc" }
+              : isOffice2021
+              ? { to: "/product/office-2021-professional-plus" }
+              : {};
             return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <CardWrap {...wrapProps} className="block">
