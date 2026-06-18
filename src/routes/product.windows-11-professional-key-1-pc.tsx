@@ -137,7 +137,7 @@ const requirements = [
   { label: "System firmware", value: "UEFI, Secure Boot capable" },
   { label: "TPM", value: "Trusted Platform Module (TPM) version 2.0" },
   { label: "Graphics", value: "DirectX 12 compatible graphics / WDDM 2.x" },
-  { label: "Display", value: ">9" with HD Resolution (720p)" },
+  { label: "Display", value: '9" with HD Resolution (720p)' },
 ];
 
 const faqs = [
