@@ -355,26 +355,6 @@ function ProductPage() {
         </div>
       </section>
 
-      {/* How to activate */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 py-10 sm:py-12 border-t border-border/60">
-        <h2 className="font-display font-bold text-xl sm:text-2xl md:text-3xl tracking-tight mb-6">
-          How to activate Windows 11 Professional
-        </h2>
-        <ol className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {[
-            { n: 1, t: "Buy your key", d: "Complete checkout securely on KeyGG. $13, one-time payment." },
-            { n: 2, t: "Check your email", d: "Receive your Windows 11 Pro product key and the official download link within minutes." },
-            { n: 3, t: "Activate on your PC", d: "Enter the product key in Settings → Activation and enjoy lifetime Windows 11 Pro on 1 PC." },
-          ].map((s) => (
-            <li key={s.n} className="p-5 sm:p-6 rounded-2xl border border-border bg-card">
-              <div className="w-8 h-8 rounded-full grid place-items-center font-display font-bold text-sm text-primary-foreground mb-3"
-                style={{ background: "var(--gradient-primary)" }}>{s.n}</div>
-              <h3 className="font-display font-bold text-base mb-1.5">{s.t}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
-            </li>
-          ))}
-        </ol>
-      </section>
 
 
       {/* FAQ */}
