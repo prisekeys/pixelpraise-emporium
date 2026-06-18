@@ -313,7 +313,8 @@ function Home() {
             const isOffice2021Mac = p.title.startsWith("Office 2021 Home & Business for Mac");
             const isM365Family = p.title.startsWith("Microsoft 365 Family");
             const isOffice2024Mac = p.title.startsWith("Office 2024 Home & Business for Mac");
-            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac || isESET || isOffice2021Mac || isM365Family || isOffice2024Mac;
+            const isOffice365Pro = p.title.startsWith("Office 365 Professional Plus");
+            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac || isESET || isOffice2021Mac || isM365Family || isOffice2024Mac || isOffice365Pro;
             const CardWrap: any = hasRoute ? Link : "div";
             const wrapProps: any = isOffice2019
               ? { to: "/product/office-2019-professional-plus" }
@@ -337,7 +338,10 @@ function Home() {
               ? { to: "/product/microsoft-365-family-6-users-6-tb-1-year-key" }
               : isOffice2024Mac
               ? { to: "/product/office-2024-home-business-for-mac-1-mac-key" }
+              : isOffice365Pro
+              ? { to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key" }
               : {};
+
             return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <CardWrap {...wrapProps} className="block">
