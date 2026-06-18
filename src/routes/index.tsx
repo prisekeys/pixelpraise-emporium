@@ -468,7 +468,7 @@ function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc" },
-            { title: "Access 2024 Product Key – 1 PC", img: access2024.url },
+            { title: "Access 2024 Product Key – 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc" },
             { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024.url },
             { title: "Excel 2024 Product Key – 1 PC", img: excel2024.url },
           ].map((p) => {

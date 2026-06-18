@@ -25,6 +25,7 @@ import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/
 import { Route as ProductOffice2019HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2019-home-business-for-mac-1-mac-key'
 import { Route as ProductMicrosoft365Family6Users6Tb1YearKeyRouteImport } from './routes/product.microsoft-365-family-6-users-6-tb-1-year-key'
 import { Route as ProductEsetSmartSecurityPremium1Device1YearKeyRouteImport } from './routes/product.eset-smart-security-premium-1-device-1-year-key'
+import { Route as ProductAccess2024ProductKey1PcRouteImport } from './routes/product.access-2024-product-key-1-pc'
 import { Route as BlogHowToFindMicrosoftOfficeProductKeyRouteImport } from './routes/blog.how-to-find-microsoft-office-product-key'
 
 const SupportRoute = SupportRouteImport.update({
@@ -120,6 +121,12 @@ const ProductEsetSmartSecurityPremium1Device1YearKeyRoute =
     path: '/product/eset-smart-security-premium-1-device-1-year-key',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProductAccess2024ProductKey1PcRoute =
+  ProductAccess2024ProductKey1PcRouteImport.update({
+    id: '/product/access-2024-product-key-1-pc',
+    path: '/product/access-2024-product-key-1-pc',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogHowToFindMicrosoftOfficeProductKeyRoute =
   BlogHowToFindMicrosoftOfficeProductKeyRouteImport.update({
     id: '/blog/how-to-find-microsoft-office-product-key',
@@ -132,6 +139,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
+  '/product/access-2024-product-key-1-pc': typeof ProductAccess2024ProductKey1PcRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
@@ -151,6 +159,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
+  '/product/access-2024-product-key-1-pc': typeof ProductAccess2024ProductKey1PcRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
@@ -171,6 +180,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
+  '/product/access-2024-product-key-1-pc': typeof ProductAccess2024ProductKey1PcRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
@@ -192,6 +202,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
+    | '/product/access-2024-product-key-1-pc'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
@@ -211,6 +222,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
+    | '/product/access-2024-product-key-1-pc'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
@@ -230,6 +242,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
+    | '/product/access-2024-product-key-1-pc'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
     | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
@@ -250,6 +263,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SupportRoute: typeof SupportRoute
   BlogHowToFindMicrosoftOfficeProductKeyRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
+  ProductAccess2024ProductKey1PcRoute: typeof ProductAccess2024ProductKey1PcRoute
   ProductEsetSmartSecurityPremium1Device1YearKeyRoute: typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
   ProductMicrosoft365Family6Users6Tb1YearKeyRoute: typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   ProductOffice2019HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
@@ -379,6 +393,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductEsetSmartSecurityPremium1Device1YearKeyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product/access-2024-product-key-1-pc': {
+      id: '/product/access-2024-product-key-1-pc'
+      path: '/product/access-2024-product-key-1-pc'
+      fullPath: '/product/access-2024-product-key-1-pc'
+      preLoaderRoute: typeof ProductAccess2024ProductKey1PcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/how-to-find-microsoft-office-product-key': {
       id: '/blog/how-to-find-microsoft-office-product-key'
       path: '/blog/how-to-find-microsoft-office-product-key'
@@ -395,6 +416,7 @@ const rootRouteChildren: RootRouteChildren = {
   SupportRoute: SupportRoute,
   BlogHowToFindMicrosoftOfficeProductKeyRoute:
     BlogHowToFindMicrosoftOfficeProductKeyRoute,
+  ProductAccess2024ProductKey1PcRoute: ProductAccess2024ProductKey1PcRoute,
   ProductEsetSmartSecurityPremium1Device1YearKeyRoute:
     ProductEsetSmartSecurityPremium1Device1YearKeyRoute,
   ProductMicrosoft365Family6Users6Tb1YearKeyRoute:
