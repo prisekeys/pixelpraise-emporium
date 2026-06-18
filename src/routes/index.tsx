@@ -309,7 +309,8 @@ function Home() {
             const isVisio2024 = p.title.startsWith("Visio Professional 2024");
             const isOffice2024 = p.title.startsWith("Office 2024 Professional Plus LTSC");
             const isOffice2019Mac = p.title.startsWith("Office 2019 Home & Business for Mac");
-            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac;
+            const isESET = p.title.startsWith("ESET Smart Security Premium");
+            const hasRoute = isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac || isESET;
             const CardWrap: any = hasRoute ? Link : "div";
             const wrapProps: any = isOffice2019
               ? { to: "/product/office-2019-professional-plus" }
@@ -325,6 +326,8 @@ function Home() {
               ? { to: "/product/office-2024-professional-plus-ltsc-key-1-pc" }
               : isOffice2019Mac
               ? { to: "/product/office-2019-home-business-for-mac-1-mac-key" }
+              : isESET
+              ? { to: "/product/eset-smart-security-premium-1-device-1-year-key" }
               : {};
             return (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
