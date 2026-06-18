@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SupportRouteImport } from './routes/support'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
 import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/product.office-2019-professional-plus'
 import { Route as BlogHowToFindMicrosoftOfficeProductKeyRouteImport } from './routes/blog.how-to-find-microsoft-office-product-key'
 
@@ -30,6 +31,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductWindows11ProfessionalKey1PcRoute =
+  ProductWindows11ProfessionalKey1PcRouteImport.update({
+    id: '/product/windows-11-professional-key-1-pc',
+    path: '/product/windows-11-professional-key-1-pc',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductOffice2019ProfessionalPlusRoute =
   ProductOffice2019ProfessionalPlusRouteImport.update({
     id: '/product/office-2019-professional-plus',
@@ -49,6 +56,7 @@ export interface FileRoutesByFullPath {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -56,6 +64,7 @@ export interface FileRoutesByTo {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -64,6 +73,7 @@ export interface FileRoutesById {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
+  '/product/windows-11-professional-key-1-pc': typeof ProductWindows11ProfessionalKey1PcRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -73,6 +83,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/windows-11-professional-key-1-pc'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -80,6 +91,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/windows-11-professional-key-1-pc'
   id:
     | '__root__'
     | '/'
@@ -87,6 +99,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/office-2019-professional-plus'
+    | '/product/windows-11-professional-key-1-pc'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -95,6 +108,7 @@ export interface RootRouteChildren {
   SupportRoute: typeof SupportRoute
   BlogHowToFindMicrosoftOfficeProductKeyRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   ProductOffice2019ProfessionalPlusRoute: typeof ProductOffice2019ProfessionalPlusRoute
+  ProductWindows11ProfessionalKey1PcRoute: typeof ProductWindows11ProfessionalKey1PcRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -118,6 +132,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product/windows-11-professional-key-1-pc': {
+      id: '/product/windows-11-professional-key-1-pc'
+      path: '/product/windows-11-professional-key-1-pc'
+      fullPath: '/product/windows-11-professional-key-1-pc'
+      preLoaderRoute: typeof ProductWindows11ProfessionalKey1PcRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/product/office-2019-professional-plus': {
@@ -145,17 +166,9 @@ const rootRouteChildren: RootRouteChildren = {
     BlogHowToFindMicrosoftOfficeProductKeyRoute,
   ProductOffice2019ProfessionalPlusRoute:
     ProductOffice2019ProfessionalPlusRoute,
+  ProductWindows11ProfessionalKey1PcRoute:
+    ProductWindows11ProfessionalKey1PcRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
