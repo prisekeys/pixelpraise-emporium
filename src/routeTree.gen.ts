@@ -20,6 +20,7 @@ import { Route as ProductOffice2021ProfessionalPlusRouteImport } from './routes/
 import { Route as ProductOffice2021HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2021-home-business-for-mac-1-mac-key'
 import { Route as ProductOffice2019ProfessionalPlusRouteImport } from './routes/product.office-2019-professional-plus'
 import { Route as ProductOffice2019HomeBusinessForMac1MacKeyRouteImport } from './routes/product.office-2019-home-business-for-mac-1-mac-key'
+import { Route as ProductMicrosoft365Family6Users6Tb1YearKeyRouteImport } from './routes/product.microsoft-365-family-6-users-6-tb-1-year-key'
 import { Route as ProductEsetSmartSecurityPremium1Device1YearKeyRouteImport } from './routes/product.eset-smart-security-premium-1-device-1-year-key'
 import { Route as BlogHowToFindMicrosoftOfficeProductKeyRouteImport } from './routes/blog.how-to-find-microsoft-office-product-key'
 
@@ -86,6 +87,12 @@ const ProductOffice2019HomeBusinessForMac1MacKeyRoute =
     path: '/product/office-2019-home-business-for-mac-1-mac-key',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ProductMicrosoft365Family6Users6Tb1YearKeyRoute =
+  ProductMicrosoft365Family6Users6Tb1YearKeyRouteImport.update({
+    id: '/product/microsoft-365-family-6-users-6-tb-1-year-key',
+    path: '/product/microsoft-365-family-6-users-6-tb-1-year-key',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductEsetSmartSecurityPremium1Device1YearKeyRoute =
   ProductEsetSmartSecurityPremium1Device1YearKeyRouteImport.update({
     id: '/product/eset-smart-security-premium-1-device-1-year-key',
@@ -105,6 +112,7 @@ export interface FileRoutesByFullPath {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
+  '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
   '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
@@ -120,6 +128,7 @@ export interface FileRoutesByTo {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
+  '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
   '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
@@ -136,6 +145,7 @@ export interface FileRoutesById {
   '/support': typeof SupportRoute
   '/blog/how-to-find-microsoft-office-product-key': typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   '/product/eset-smart-security-premium-1-device-1-year-key': typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
+  '/product/microsoft-365-family-6-users-6-tb-1-year-key': typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   '/product/office-2019-home-business-for-mac-1-mac-key': typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   '/product/office-2019-professional-plus': typeof ProductOffice2019ProfessionalPlusRoute
   '/product/office-2021-home-business-for-mac-1-mac-key': typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
@@ -153,6 +163,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
+    | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
     | '/product/office-2021-home-business-for-mac-1-mac-key'
@@ -168,6 +179,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
+    | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
     | '/product/office-2021-home-business-for-mac-1-mac-key'
@@ -183,6 +195,7 @@ export interface FileRouteTypes {
     | '/support'
     | '/blog/how-to-find-microsoft-office-product-key'
     | '/product/eset-smart-security-premium-1-device-1-year-key'
+    | '/product/microsoft-365-family-6-users-6-tb-1-year-key'
     | '/product/office-2019-home-business-for-mac-1-mac-key'
     | '/product/office-2019-professional-plus'
     | '/product/office-2021-home-business-for-mac-1-mac-key'
@@ -199,6 +212,7 @@ export interface RootRouteChildren {
   SupportRoute: typeof SupportRoute
   BlogHowToFindMicrosoftOfficeProductKeyRoute: typeof BlogHowToFindMicrosoftOfficeProductKeyRoute
   ProductEsetSmartSecurityPremium1Device1YearKeyRoute: typeof ProductEsetSmartSecurityPremium1Device1YearKeyRoute
+  ProductMicrosoft365Family6Users6Tb1YearKeyRoute: typeof ProductMicrosoft365Family6Users6Tb1YearKeyRoute
   ProductOffice2019HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2019HomeBusinessForMac1MacKeyRoute
   ProductOffice2019ProfessionalPlusRoute: typeof ProductOffice2019ProfessionalPlusRoute
   ProductOffice2021HomeBusinessForMac1MacKeyRoute: typeof ProductOffice2021HomeBusinessForMac1MacKeyRoute
@@ -288,6 +302,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductOffice2019HomeBusinessForMac1MacKeyRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/product/microsoft-365-family-6-users-6-tb-1-year-key': {
+      id: '/product/microsoft-365-family-6-users-6-tb-1-year-key'
+      path: '/product/microsoft-365-family-6-users-6-tb-1-year-key'
+      fullPath: '/product/microsoft-365-family-6-users-6-tb-1-year-key'
+      preLoaderRoute: typeof ProductMicrosoft365Family6Users6Tb1YearKeyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/product/eset-smart-security-premium-1-device-1-year-key': {
       id: '/product/eset-smart-security-premium-1-device-1-year-key'
       path: '/product/eset-smart-security-premium-1-device-1-year-key'
@@ -313,6 +334,8 @@ const rootRouteChildren: RootRouteChildren = {
     BlogHowToFindMicrosoftOfficeProductKeyRoute,
   ProductEsetSmartSecurityPremium1Device1YearKeyRoute:
     ProductEsetSmartSecurityPremium1Device1YearKeyRoute,
+  ProductMicrosoft365Family6Users6Tb1YearKeyRoute:
+    ProductMicrosoft365Family6Users6Tb1YearKeyRoute,
   ProductOffice2019HomeBusinessForMac1MacKeyRoute:
     ProductOffice2019HomeBusinessForMac1MacKeyRoute,
   ProductOffice2019ProfessionalPlusRoute:
