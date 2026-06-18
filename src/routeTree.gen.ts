@@ -12,7 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
 import { Route as SupportRouteImport } from './routes/support'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as LicensesRouteImport } from './routes/licenses'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
@@ -48,9 +50,19 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LicensesRoute = LicensesRouteImport.update({
+  id: '/licenses',
+  path: '/licenses',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiePolicyRoute = CookiePolicyRouteImport.update({
@@ -169,7 +181,9 @@ const BlogHowToFindMicrosoftOfficeProductKeyRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/terms-of-service': typeof TermsOfServiceRoute
@@ -194,7 +208,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/terms-of-service': typeof TermsOfServiceRoute
@@ -220,7 +236,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cookie-policy': typeof CookiePolicyRoute
+  '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/terms-of-service': typeof TermsOfServiceRoute
@@ -247,7 +265,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cookie-policy'
+    | '/licenses'
     | '/privacy-policy'
+    | '/refund-policy'
     | '/sitemap.xml'
     | '/support'
     | '/terms-of-service'
@@ -272,7 +292,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cookie-policy'
+    | '/licenses'
     | '/privacy-policy'
+    | '/refund-policy'
     | '/sitemap.xml'
     | '/support'
     | '/terms-of-service'
@@ -297,7 +319,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cookie-policy'
+    | '/licenses'
     | '/privacy-policy'
+    | '/refund-policy'
     | '/sitemap.xml'
     | '/support'
     | '/terms-of-service'
@@ -323,7 +347,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
+  LicensesRoute: typeof LicensesRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SupportRoute: typeof SupportRoute
   TermsOfServiceRoute: typeof TermsOfServiceRoute
@@ -369,11 +395,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy-policy': {
       id: '/privacy-policy'
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/licenses': {
+      id: '/licenses'
+      path: '/licenses'
+      fullPath: '/licenses'
+      preLoaderRoute: typeof LicensesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookie-policy': {
@@ -515,7 +555,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CookiePolicyRoute: CookiePolicyRoute,
+  LicensesRoute: LicensesRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SupportRoute: SupportRoute,
   TermsOfServiceRoute: TermsOfServiceRoute,
