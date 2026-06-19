@@ -163,7 +163,7 @@ function HelpCenterPage() {
               <div>
                 <h3 className="font-semibold text-foreground mb-1">How do I request a refund?</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Contact our support team at <a href="mailto:support@keygg.io" className="text-primary hover:underline">support@keygg.io</a> or through the <Link to="/support" className="text-primary hover:underline">Support Center</Link>. Include your order number, the email used for purchase, and a description of the issue. Please allow up to 7 days for our team to evaluate and process your request.
+                  Contact our support team at <a href="mailto:support@keygg.com" className="text-primary hover:underline">support@keygg.com</a> or through the <Link to="/support" className="text-primary hover:underline">Support Center</Link>. Include your order number, the email used for purchase, and a description of the issue. Please allow up to 7 days for our team to evaluate and process your request.
                 </p>
               </div>
 
@@ -207,7 +207,7 @@ function HelpCenterPage() {
             <h2 className="font-display text-xl font-semibold mb-4">Still Have Questions?</h2>
             <p className="text-muted-foreground leading-relaxed">
               Our support team is available to help with any issue not covered here. Reach out at{" "}
-              <a href="mailto:support@keygg.io" className="text-primary hover:underline">support@keygg.io</a>{" "}
+              <a href="mailto:support@keygg.com" className="text-primary hover:underline">support@keygg.com</a>{" "}
               or visit the <Link to="/support" className="text-primary hover:underline">Support Center</Link> to submit a ticket or start a live chat. We typically respond within 24 hours.
             </p>
           </section>
