@@ -169,14 +169,15 @@ const products = [
   { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
 ];
 
-const WHOP_URL = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
+const WHOP_URL_OFFICE2019 = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
+const WHOP_URL_WIN11 = "https://whop.com/checkout/plan_oDPDDAU0cg3Lf";
 
-const openCheckout = (e?: React.MouseEvent) => {
+const openCheckout = (url: string) => (e?: React.MouseEvent) => {
   e?.preventDefault();
   e?.stopPropagation();
   if (typeof window !== "undefined") {
     window.open(
-      WHOP_URL,
+      url,
       "keygg-checkout",
       "width=560,height=720,top=40,left=40,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no"
     );
