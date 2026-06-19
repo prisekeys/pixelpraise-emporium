@@ -169,6 +169,20 @@ const products = [
   { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
 ];
 
+const WHOP_URL = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
+
+const openCheckout = (e?: React.MouseEvent) => {
+  e?.preventDefault();
+  e?.stopPropagation();
+  if (typeof window !== "undefined") {
+    window.open(
+      WHOP_URL,
+      "keygg-checkout",
+      "width=560,height=720,top=40,left=40,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no"
+    );
+  }
+};
+
 const heroSlides = [
   { product: win11Pro.url,    eyebrow: "Windows 11 Pro",        title: "Genuine software.",   highlight: "Unbeatable prices.",     desc: "Lifetime license, instant email delivery, and friendly support whenever you need it.", cta: "Shop Windows 11",  price: 13, original: 50 },
   { product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "The latest Office.",  highlight: "Activated in minutes.",  desc: "Word, Excel, PowerPoint and Outlook — one key, one PC, forever.",                       cta: "Get Office 2024",  price: 20, original: 65 },
@@ -355,7 +369,12 @@ function Home() {
                     <span className="font-display font-bold text-base md:text-lg">${p.price}</span>
                     <span className="text-xs text-muted-foreground line-through">${p.original}</span>
                   </div>
-                  <button className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
+                  <button
+                    type="button"
+                    onClick={isOffice2019 ? openCheckout : undefined}
+                    className={`w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 ${isOffice2019 ? "cursor-pointer" : ""}`}
+                    style={{ background: "var(--gradient-primary)" }}
+                  >
                     <Download className="w-3 h-3" /> Buy now
                   </button>
                 </div>
