@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2021 Home & Business for Mac – Key for 1 Mac | 
 const PAGE_DESC =
   "Buy a genuine Microsoft Office 2021 Home & Business product key for 1 Mac. Lifetime license, instant email delivery, updated Word, Excel, PowerPoint & Outlook for macOS. Only $38.";
 const PAGE_URL = "/product/office-2021-home-business-for-mac-1-mac-key";
+const WHOP_URL = "https://whop.com/checkout/plan_Hr9I3rbmMaIij";
+
 
 export const Route = createFileRoute("/product/office-2021-home-business-for-mac-1-mac-key")({
   head: () => ({

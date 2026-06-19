@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 365 Professional Plus – 5 Devices | 100GB Cloud
 const PAGE_DESC =
   "Buy a genuine Office 365 Professional Plus 1-year subscription key – 5 devices, 100 GB cloud storage, Word, Excel, PowerPoint, Outlook, Teams & more. Instant email delivery. Only $13.";
 const PAGE_URL = "/product/office-365-professional-plus-5-devices-100gb-1-year-key";
+const WHOP_URL = "https://whop.com/checkout/plan_GDDIytjYJffS0";
+
 
 export const Route = createFileRoute("/product/office-365-professional-plus-5-devices-100gb-1-year-key")({
   head: () => ({

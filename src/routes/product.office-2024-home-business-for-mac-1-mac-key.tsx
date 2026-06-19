@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2024 Home & Business for Mac – Key for 1 Mac | 
 const PAGE_DESC =
   "Buy a genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime license, instant email delivery, latest Word, Excel, PowerPoint & Outlook optimized for Apple Silicon. Only $93.";
 const PAGE_URL = "/product/office-2024-home-business-for-mac-1-mac-key";
+const WHOP_URL = "https://whop.com/checkout/plan_ohtX2pZDYAK6K";
+
 
 export const Route = createFileRoute("/product/office-2024-home-business-for-mac-1-mac-key")({
   head: () => ({

@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key | K
 const PAGE_DESC =
   "Buy a genuine Microsoft 365 Family key for 6 users, 6 TB cloud storage, 1 year. Premium Office apps, 1 TB OneDrive per user, instant email delivery. Only $78.";
 const PAGE_URL = "/product/microsoft-365-family-6-users-6-tb-1-year-key";
+const WHOP_URL = "https://whop.com/checkout/plan_8yC2bC1nvRG4Y";
+
 
 export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb-1-year-key")({
   head: () => ({
