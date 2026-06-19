@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2021 Professional Plus Key – 1 PC | KeyGG";
 const PAGE_DESC =
   "Buy a genuine Microsoft Office 2021 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, Word, Excel, PowerPoint, Outlook & more. Only $15.";
 const PAGE_URL = "/product/office-2021-professional-plus";
+const WHOP_URL = "https://whop.com/checkout/plan_cXRmNGflpuN4c";
+
 
 export const Route = createFileRoute("/product/office-2021-professional-plus")({
   head: () => ({
@@ -162,6 +164,17 @@ function ProductPage() {
   const price = 15;
   const original = 55;
 
+  const openCheckout = () => {
+    if (typeof window !== "undefined") {
+      window.open(
+        WHOP_URL,
+        "keygg-checkout",
+        "width=560,height=720,top=40,left=40,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no"
+      );
+    }
+  };
+
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -246,7 +259,9 @@ function ProductPage() {
               </div>
               <div className="mt-5">
                 <button
-                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  type="button"
+                  onClick={openCheckout}
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground cursor-pointer transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
@@ -383,12 +398,13 @@ function ProductPage() {
           <p className="mt-3 text-sm md:text-base text-primary-foreground/85 max-w-xl mx-auto">
             Genuine Microsoft product key. Lifetime activation for 1 PC. Delivered to your inbox in minutes.
           </p>
-          <a
-            href="#buy"
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground hover:opacity-90 transition"
+          <button
+            type="button"
+            onClick={openCheckout}
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground cursor-pointer hover:opacity-90 transition"
           >
             <Download className="w-4 h-4" /> Buy now
-          </a>
+          </button>
         </div>
       </section>
 
