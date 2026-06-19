@@ -283,7 +283,7 @@ function ProductPage() {
                 <button
                   type="button"
                   onClick={openCheckout}
-                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground cursor-pointer transition hover:opacity-90"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now
@@ -412,7 +412,7 @@ function ProductPage() {
           <button
             type="button"
             onClick={openCheckout}
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground hover:opacity-90 transition"
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground cursor-pointer hover:opacity-90 transition"
           >
             <Download className="w-4 h-4" /> Buy now
           </button>
