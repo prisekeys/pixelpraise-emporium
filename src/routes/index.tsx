@@ -177,6 +177,10 @@ const WHOP_URL_VISIO2024 = "https://whop.com/checkout/plan_pcZakGTskqbmb";
 const WHOP_URL_OFFICE2024 = "https://whop.com/checkout/plan_FkmvpRpakB5ld";
 const WHOP_URL_OFFICE2019MAC = "https://whop.com/checkout/plan_eDGTcPRB6DiyP";
 const WHOP_URL_ESET = "https://whop.com/checkout/plan_rCZIOlElFaDd2";
+const WHOP_URL_OFFICE2021MAC = "https://whop.com/checkout/plan_Hr9I3rbmMaIij";
+const WHOP_URL_M365FAMILY = "https://whop.com/checkout/plan_8yC2bC1nvRG4Y";
+const WHOP_URL_OFFICE2024MAC = "https://whop.com/checkout/plan_ohtX2pZDYAK6K";
+const WHOP_URL_OFFICE365PRO = "https://whop.com/checkout/plan_GDDIytjYJffS0";
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
   e?.preventDefault();
@@ -395,9 +399,17 @@ function Home() {
                         ? openCheckout(WHOP_URL_OFFICE2019MAC)
                         : isESET
                         ? openCheckout(WHOP_URL_ESET)
+                        : isOffice2021Mac
+                        ? openCheckout(WHOP_URL_OFFICE2021MAC)
+                        : isM365Family
+                        ? openCheckout(WHOP_URL_M365FAMILY)
+                        : isOffice2024Mac
+                        ? openCheckout(WHOP_URL_OFFICE2024MAC)
+                        : isOffice365Pro
+                        ? openCheckout(WHOP_URL_OFFICE365PRO)
                         : undefined
                     }
-                    className={`w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 ${isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac || isESET ? "cursor-pointer" : ""}`}
+                    className={`w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 ${isOffice2019 || isWin11 || isOffice2021 || isProject2024 || isVisio2024 || isOffice2024 || isOffice2019Mac || isESET || isOffice2021Mac || isM365Family || isOffice2024Mac || isOffice365Pro ? "cursor-pointer" : ""}`}
                     style={{ background: "var(--gradient-primary)" }}
                   >
                     <Download className="w-3 h-3" /> Buy now
