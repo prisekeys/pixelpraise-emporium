@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2019 Home & Business for Mac – Key for 1 Mac | 
 const PAGE_DESC =
   "Buy a genuine Microsoft Office 2019 Home & Business product key for 1 Mac. Lifetime license, instant email delivery, Word, Excel, PowerPoint & Outlook for macOS. Only $32.";
 const PAGE_URL = "/product/office-2019-home-business-for-mac-1-mac-key";
+const WHOP_URL = "https://whop.com/checkout/plan_eDGTcPRB6DiyP";
+
 
 export const Route = createFileRoute("/product/office-2019-home-business-for-mac-1-mac-key")({
   head: () => ({
