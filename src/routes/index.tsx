@@ -174,6 +174,7 @@ const WHOP_URL_WIN11 = "https://whop.com/checkout/plan_oDPDDAU0cg3Lf";
 const WHOP_URL_OFFICE2021 = "https://whop.com/checkout/plan_cXRmNGflpuN4c";
 const WHOP_URL_PROJECT2024 = "https://whop.com/checkout/plan_E667X7ZZLRvMj";
 const WHOP_URL_VISIO2024 = "https://whop.com/checkout/plan_pcZakGTskqbmb";
+const WHOP_URL_OFFICE2024 = "https://whop.com/checkout/plan_FkmvpRpakB5ld";
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
   e?.preventDefault();
