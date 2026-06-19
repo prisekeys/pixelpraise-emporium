@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2019 Professional Plus Key – 1 PC Lifetime | Ke
 const PAGE_DESC =
   "Buy a genuine Office 2019 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, official Microsoft activation. Only $13.";
 const PAGE_URL = "/product/office-2019-professional-plus";
+const WHOP_URL = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
+
 
 export const Route = createFileRoute("/product/office-2019-professional-plus")({
   head: () => ({
