@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy ESET Smart Security Premium – 1 Device | 1-Year Key | 
 const PAGE_DESC =
   "Buy a genuine ESET Smart Security Premium key for 1 Device | 1 Year. Advanced antivirus, firewall, ransomware shield & privacy protection. Instant email delivery. Only $32.";
 const PAGE_URL = "/product/eset-smart-security-premium-1-device-1-year-key";
+const WHOP_URL = "https://whop.com/checkout/plan_rCZIOlElFaDd2";
+
 
 export const Route = createFileRoute("/product/eset-smart-security-premium-1-device-1-year-key")({
   head: () => ({
