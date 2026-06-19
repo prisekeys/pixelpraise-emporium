@@ -186,6 +186,17 @@ function ProductPage() {
   const original = 45;
   const savings = Math.round(((original - price) / original) * 100);
 
+  const openCheckout = () => {
+    if (typeof window !== "undefined") {
+      window.open(
+        WHOP_URL,
+        "keygg-checkout",
+        "width=560,height=720,top=40,left=40,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no"
+      );
+    }
+  };
+
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
