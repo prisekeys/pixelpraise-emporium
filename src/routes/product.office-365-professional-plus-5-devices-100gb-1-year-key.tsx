@@ -409,12 +409,13 @@ function ProductPage() {
           <p className="mt-3 text-sm md:text-base text-primary-foreground/85 max-w-xl mx-auto">
             Genuine Microsoft subscription key. 5 devices, 100 GB cloud storage, full 1-year activation. Delivered to your inbox in minutes.
           </p>
-          <a
-            href="#buy"
-            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground hover:opacity-90 transition"
+          <button
+            type="button"
+            onClick={openCheckout}
+            className="mt-6 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold bg-background text-foreground cursor-pointer hover:opacity-90 transition"
           >
             <Download className="w-4 h-4" /> Buy now
-          </a>
+          </button>
         </div>
       </section>
 
