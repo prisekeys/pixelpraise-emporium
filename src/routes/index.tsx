@@ -373,8 +373,16 @@ function Home() {
                   </div>
                   <button
                     type="button"
-                    onClick={isOffice2019 ? openCheckout(WHOP_URL_OFFICE2019) : isWin11 ? openCheckout(WHOP_URL_WIN11) : undefined}
-                    className={`w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 ${isOffice2019 || isWin11 ? "cursor-pointer" : ""}`}
+                    onClick={
+                      isOffice2019
+                        ? openCheckout(WHOP_URL_OFFICE2019)
+                        : isWin11
+                        ? openCheckout(WHOP_URL_WIN11)
+                        : isOffice2021
+                        ? openCheckout(WHOP_URL_OFFICE2021)
+                        : undefined
+                    }
+                    className={`w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 ${isOffice2019 || isWin11 || isOffice2021 ? "cursor-pointer" : ""}`}
                     style={{ background: "var(--gradient-primary)" }}
                   >
                     <Download className="w-3 h-3" /> Buy now
