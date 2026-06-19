@@ -20,6 +20,8 @@ const PAGE_TITLE = "Buy Office 2024 Professional Plus LTSC Key – 1 PC | KeyGG"
 const PAGE_DESC =
   "Buy a genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 PC. Lifetime license, instant email delivery, Word, Excel, PowerPoint, Outlook & more. Only $20.";
 const PAGE_URL = "/product/office-2024-professional-plus-ltsc-key-1-pc";
+const WHOP_URL = "https://whop.com/checkout/plan_FkmvpRpakB5ld";
+
 
 export const Route = createFileRoute("/product/office-2024-professional-plus-ltsc-key-1-pc")({
   head: () => ({
