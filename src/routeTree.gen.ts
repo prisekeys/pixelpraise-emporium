@@ -16,6 +16,7 @@ import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PtRouteImport } from './routes/pt'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as LicensesRouteImport } from './routes/licenses'
+import { Route as JpRouteImport } from './routes/jp'
 import { Route as HelpCenterRouteImport } from './routes/help-center'
 import { Route as FrRouteImport } from './routes/fr'
 import { Route as EsRouteImport } from './routes/es'
@@ -74,6 +75,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
 const LicensesRoute = LicensesRouteImport.update({
   id: '/licenses',
   path: '/licenses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JpRoute = JpRouteImport.update({
+  id: '/jp',
+  path: '/jp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HelpCenterRoute = HelpCenterRouteImport.update({
@@ -222,6 +228,7 @@ export interface FileRoutesByFullPath {
   '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
+  '/jp': typeof JpRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/pt': typeof PtRoute
@@ -255,6 +262,7 @@ export interface FileRoutesByTo {
   '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
+  '/jp': typeof JpRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/pt': typeof PtRoute
@@ -289,6 +297,7 @@ export interface FileRoutesById {
   '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
+  '/jp': typeof JpRoute
   '/licenses': typeof LicensesRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/pt': typeof PtRoute
@@ -324,6 +333,7 @@ export interface FileRouteTypes {
     | '/es'
     | '/fr'
     | '/help-center'
+    | '/jp'
     | '/licenses'
     | '/privacy-policy'
     | '/pt'
@@ -357,6 +367,7 @@ export interface FileRouteTypes {
     | '/es'
     | '/fr'
     | '/help-center'
+    | '/jp'
     | '/licenses'
     | '/privacy-policy'
     | '/pt'
@@ -390,6 +401,7 @@ export interface FileRouteTypes {
     | '/es'
     | '/fr'
     | '/help-center'
+    | '/jp'
     | '/licenses'
     | '/privacy-policy'
     | '/pt'
@@ -424,6 +436,7 @@ export interface RootRouteChildren {
   EsRoute: typeof EsRoute
   FrRoute: typeof FrRoute
   HelpCenterRoute: typeof HelpCenterRoute
+  JpRoute: typeof JpRoute
   LicensesRoute: typeof LicensesRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   PtRoute: typeof PtRoute
@@ -499,6 +512,13 @@ declare module '@tanstack/react-router' {
       path: '/licenses'
       fullPath: '/licenses'
       preLoaderRoute: typeof LicensesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jp': {
+      id: '/jp'
+      path: '/jp'
+      fullPath: '/jp'
+      preLoaderRoute: typeof JpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/help-center': {
@@ -680,6 +700,7 @@ const rootRouteChildren: RootRouteChildren = {
   EsRoute: EsRoute,
   FrRoute: FrRoute,
   HelpCenterRoute: HelpCenterRoute,
+  JpRoute: JpRoute,
   LicensesRoute: LicensesRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   PtRoute: PtRoute,
