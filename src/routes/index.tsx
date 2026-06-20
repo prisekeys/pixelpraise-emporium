@@ -42,12 +42,14 @@ export const Route = createFileRoute("/")({
       { name: "twitter:description", content: "Genuine Microsoft product keys. Lifetime license. Instant delivery." },
       { property: "og:locale", content: "en_US" },
       { property: "og:locale:alternate", content: "fr_FR" },
+      { property: "og:locale:alternate", content: "de_DE" },
       { httpEquiv: "content-language", content: "en" },
     ],
     links: [
       { rel: "canonical", href: "/" },
       { rel: "alternate", hrefLang: "en", href: "/" },
       { rel: "alternate", hrefLang: "fr", href: "/fr" },
+      { rel: "alternate", hrefLang: "de", href: "/de" },
       { rel: "alternate", hrefLang: "x-default", href: "/" },
     ],
     scripts: [
