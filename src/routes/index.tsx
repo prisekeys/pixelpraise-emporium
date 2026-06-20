@@ -4,10 +4,6 @@ import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import office from "@/assets/product-office.jpg";
-import windows from "@/assets/product-windows.jpg";
-import xbox from "@/assets/product-xbox.jpg";
-import copilot from "@/assets/product-copilot.jpg";
 import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
 import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
 import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
