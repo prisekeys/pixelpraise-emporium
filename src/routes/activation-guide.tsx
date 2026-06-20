@@ -7,7 +7,7 @@ export const Route = createFileRoute("/activation-guide")({
   head: () => ({
     meta: [
       { title: "Activation Guide | KeyGG" },
-      { name: "description", content: "Step-by-step activation guide for Microsoft Office, Windows 11, and Microsoft 365 product keys. Learn how to download, install, and activate your genuine software quickly and easily." },
+      { name: "description", content: "Step-by-step guide to activate Microsoft Office, Windows 11, and Microsoft 365 product keys from KeyGG." },
       { name: "keywords", content: "Microsoft Office activation guide, Windows 11 activation, product key activation, Microsoft 365 setup, install Office 2024, activate Windows key" },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Activation Guide | KeyGG" },
