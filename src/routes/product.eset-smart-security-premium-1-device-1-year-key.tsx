@@ -243,7 +243,7 @@ function ProductPage() {
                 "Firewall, anti-phishing & ransomware shield",
                 "Built-in password manager & secure browser banking",
                 "Genuine key. Activates on ESET's official servers",
-                "Delivered to your email within 5–10 minutes",
+                "Delivered to your email fast",
               ].map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm">
                   <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
