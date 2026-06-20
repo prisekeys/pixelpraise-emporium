@@ -11,6 +11,7 @@ import {
   BadgeCheck,
   Check,
   ChevronRight,
+  AlertTriangle,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
