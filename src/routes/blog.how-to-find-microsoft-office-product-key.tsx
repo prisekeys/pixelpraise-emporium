@@ -14,12 +14,13 @@ import logo from "@/assets/keygg-logo-v2.png.asset.json";
 export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product-key")({
   head: () => ({
     meta: [
-      { title: "How to Find Your Microsoft Office Product Key (2019 & 2021) | KeyGG" },
+      { title: "How to Find Your Microsoft Office Product Key | KeyGG" },
       {
         name: "description",
         content:
-          "Lost your Microsoft Office product key? Learn 5 proven methods to recover Office 2019 & 2021 keys — from Microsoft account to registry. If it's gone forever, get a new lifetime license from KeyGG instantly.",
+          "Lost your Office key? 5 proven methods to recover Office 2019 & 2021 product keys — or get a new lifetime license from KeyGG.",
       },
+
       {
         name: "keywords",
         content:
