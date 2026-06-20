@@ -247,7 +247,7 @@ function Home() {
                     </p>
                     <div className="mt-3 sm:mt-4 flex items-center justify-center sm:justify-start gap-3">
                       <a
-                        href="#products"
+                        href={s.href}
                         className="inline-flex items-center gap-1.5 sm:gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold text-primary-foreground transition hover:opacity-90"
                         style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                       >
