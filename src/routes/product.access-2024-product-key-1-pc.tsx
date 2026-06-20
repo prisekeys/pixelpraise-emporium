@@ -231,7 +231,7 @@ function ProductPage() {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4 h-4 text-yellow-400 ${i === 4 ? "fill-yellow-400/80" : "fill-yellow-400"}`}
+                    className={`w-4 h-4 ${i === 4 ? "text-muted-foreground/40" : "text-yellow-400 fill-yellow-400"}`}
                     strokeWidth={2}
                   />
                 ))}
