@@ -20,7 +20,44 @@ export const Route = createFileRoute("/activation-guide")({
       { name: "twitter:description", content: "Step-by-step guide to activate Microsoft Office, Windows 11, and Microsoft 365 product keys from KeyGG." },
     ],
     links: [{ rel: "canonical", href: "/activation-guide" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Activation Guide for Microsoft Office, Windows 11, and Microsoft 365",
+          description: "Step-by-step activation guide for Microsoft Office, Windows 11, and Microsoft 365 product keys.",
+          datePublished: "2025-01-01",
+          dateModified: "2026-06-20",
+          author: { "@type": "Organization", name: "KeyGG" },
+          publisher: {
+            "@type": "Organization",
+            name: "KeyGG",
+            logo: { "@type": "ImageObject", url: "/favicon.ico" },
+          },
+          mainEntityOfPage: { "@type": "WebPage", "@id": "/activation-guide" },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: "How to Activate Microsoft Office, Windows 11, and Microsoft 365",
+          description: "Activate your KeyGG product key for Microsoft Office, Windows 11, or Microsoft 365.",
+          step: [
+            { "@type": "HowToStep", name: "Download the installer", text: "Visit the official Microsoft download page or use the link in your order email." },
+            { "@type": "HowToStep", name: "Install the software", text: "Run the installer and follow on-screen prompts to install the product." },
+            { "@type": "HowToStep", name: "Enter your product key", text: "Open the app or Settings > Activation and enter your 25-character KeyGG product key." },
+            { "@type": "HowToStep", name: "Activate", text: "Click Activate and wait for Microsoft to verify the key online." },
+            { "@type": "HowToStep", name: "Confirmation", text: "Your product is now fully activated and ready to use." },
+          ],
+        }),
+      },
+    ],
   }),
+
   component: ActivationGuidePage,
 });
 
