@@ -20,6 +20,15 @@ const PAGE_TITLE = "Buy Excel 2024 Product Key – 1 PC | KeyGG";
 const PAGE_DESC =
   "Buy a genuine Microsoft Excel 2024 product key for 1 PC. Lifetime license, instant email delivery. Advanced formulas, pivot tables, data analysis & charts. Only $18.";
 const PAGE_URL = "/product/excel-2024-product-key-1-pc";
+const WHOP_URL = "https://whop.com/checkout/plan_pOfQfJAk0xrAX";
+
+const openCheckout = (e?: React.MouseEvent) => {
+  e?.preventDefault();
+  e?.stopPropagation();
+  if (typeof window !== "undefined") {
+    window.open(WHOP_URL, "keygg-checkout", "width=560,height=720,top=40,left=40,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no");
+  }
+};
 
 export const Route = createFileRoute("/product/excel-2024-product-key-1-pc")({
   head: () => ({
@@ -249,7 +258,9 @@ function ProductPage() {
               </div>
               <div className="mt-5">
                 <button
-                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+                  type="button"
+                  onClick={openCheckout}
+                  className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90 cursor-pointer"
                   style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
                 >
                   <Download className="w-4 h-4" /> Buy now

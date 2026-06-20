@@ -181,6 +181,10 @@ const WHOP_URL_OFFICE2021MAC = "https://whop.com/checkout/plan_Hr9I3rbmMaIij";
 const WHOP_URL_M365FAMILY = "https://whop.com/checkout/plan_8yC2bC1nvRG4Y";
 const WHOP_URL_OFFICE2024MAC = "https://whop.com/checkout/plan_ohtX2pZDYAK6K";
 const WHOP_URL_OFFICE365PRO = "https://whop.com/checkout/plan_GDDIytjYJffS0";
+const WHOP_URL_OUTLOOK2024 = "https://whop.com/checkout/plan_hLUpquD3dwJkZ";
+const WHOP_URL_ACCESS2024 = "https://whop.com/checkout/plan_RY3qEBO6CBQrM";
+const WHOP_URL_POWERPOINT2024 = "https://whop.com/checkout/plan_Nse08h3qGlKcB";
+const WHOP_URL_EXCEL2024 = "https://whop.com/checkout/plan_pOfQfJAk0xrAX";
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
   e?.preventDefault();
@@ -523,10 +527,10 @@ function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc" },
-            { title: "Access 2024 Product Key – 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc" },
-            { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc" },
-            { title: "Excel 2024 Product Key – 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc" },
+            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: WHOP_URL_OUTLOOK2024 },
+            { title: "Access 2024 Product Key – 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: WHOP_URL_ACCESS2024 },
+            { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: WHOP_URL_POWERPOINT2024 },
+            { title: "Excel 2024 Product Key – 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: WHOP_URL_EXCEL2024 },
           ].map((p) => {
             const Wrap = p.to ? Link : "div";
             const wrapProps = p.to ? { to: p.to } : {};
@@ -543,7 +547,7 @@ function Home() {
                     <span className="font-display font-bold text-base md:text-lg">$18</span>
                     <span className="text-xs text-muted-foreground line-through">$65</span>
                   </div>
-                  <button className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90" style={{ background: "var(--gradient-primary)" }}>
+                  <button type="button" onClick={openCheckout(p.whop)} className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 cursor-pointer" style={{ background: "var(--gradient-primary)" }}>
                     <Download className="w-3 h-3" /> Buy now
                   </button>
                 </div>
