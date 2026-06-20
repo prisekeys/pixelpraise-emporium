@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export const Route = createFileRoute("/support")({
   head: () => ({
@@ -191,9 +192,23 @@ function SupportPage() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Subject</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Order activation question" {...field} />
-                          </FormControl>
+                          <Select onValueChange={field.onChange} value={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select a topic" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              <SelectItem value="Order & Payment">Order & Payment</SelectItem>
+                              <SelectItem value="Product Key Delivery">Product Key Delivery</SelectItem>
+                              <SelectItem value="Activation Help">Activation Help</SelectItem>
+                              <SelectItem value="Installation Issue">Installation Issue</SelectItem>
+                              <SelectItem value="Refund Request">Refund Request</SelectItem>
+                              <SelectItem value="Invoice / Billing">Invoice / Billing</SelectItem>
+                              <SelectItem value="Pre-sale Question">Pre-sale Question</SelectItem>
+                              <SelectItem value="Other">Other</SelectItem>
+                            </SelectContent>
+                          </Select>
                           <FormMessage />
                         </FormItem>
                       )}
