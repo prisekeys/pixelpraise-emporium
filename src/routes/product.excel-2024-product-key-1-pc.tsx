@@ -241,7 +241,7 @@ function ProductPage() {
                 "Dynamic arrays, XLOOKUP & 500+ advanced formulas",
                 "Pivot tables, Power Query & Power Pivot included",
                 "Genuine key. Activates on Microsoft's official servers",
-                "Delivered to your email within 5–10 minutes",
+                "Delivered to your email fast",
               ].map((h) => (
                 <li key={h} className="flex items-start gap-2 text-sm">
                   <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
