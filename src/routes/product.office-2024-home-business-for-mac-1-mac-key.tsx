@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Ma
 
 const PAGE_TITLE = "Buy Office 2024 Home & Business for Mac – Key for 1 Mac | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime license, instant email delivery, latest Word, Excel, PowerPoint & Outlook optimized for Apple Silicon. Only $93.";
+  "Buy a genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime license, quick email delivery, latest Word, Excel, PowerPoint & Outlook optimized for Apple Silicon. Only $93.";
 const PAGE_URL = "/product/office-2024-home-business-for-mac-1-mac-key";
 const WHOP_URL = "https://whop.com/checkout/plan_ohtX2pZDYAK6K";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
               name: "Office 2024 Home & Business for Mac – Key for 1 Mac Lifetime License",
               image: productImg.url,
               description:
-                "Genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime activation, instant email delivery. Latest Word, Excel, PowerPoint and Outlook natively optimized for Apple Silicon and Intel Macs.",
+                "Genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime activation, quick email delivery. Latest Word, Excel, PowerPoint and Outlook natively optimized for Apple Silicon and Intel Macs.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-OFFICE-2024-HB-MAC-1MAC",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Office 2024 for Mac key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Home & Business product key for Mac right here on KeyGG for $93 with instant email delivery and lifetime activation for 1 Mac." } },
+                { "@type": "Question", name: "Where can I buy a cheap Office 2024 for Mac key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Home & Business product key for Mac right here on KeyGG for $93 with quick email delivery and lifetime activation for 1 Mac." } },
                 { "@type": "Question", name: "Is the Office 2024 for Mac license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2024 Home & Business for 1 Mac. No subscription, no recurring fees." } },
                 { "@type": "Question", name: "How fast will I receive my Office 2024 Mac product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Home & Business for Mac key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2024 Mac key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap Office 2024 for Mac key?",
-    a: "You can buy a genuine Microsoft Office 2024 Home & Business product key for Mac right here on KeyGG for $93, with instant email delivery and lifetime activation for 1 Mac.",
+    a: "You can buy a genuine Microsoft Office 2024 Home & Business product key for Mac right here on KeyGG for $93, with quick email delivery and lifetime activation for 1 Mac.",
   },
   {
     q: "Is the Office 2024 for Mac license lifetime?",
@@ -232,7 +232,7 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2024 Home & Business product key for 1 Mac.
-              One-time payment, lifetime activation, instant email delivery. Includes the latest
+              One-time payment, lifetime activation, quick email delivery. Includes the latest
               Word, Excel, PowerPoint and Outlook — natively optimized for Apple Silicon with
               improved performance and new features.
             </p>

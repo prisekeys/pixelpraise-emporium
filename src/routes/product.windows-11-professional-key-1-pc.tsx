@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Windows_11_Professional_Key_1_PC.png.a
 
 const PAGE_TITLE = "Buy Windows 11 Professional Key – 1 PC | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Windows 11 Pro product key for 1 PC. Lifetime license, instant email delivery, official Microsoft activation. Only $13.";
+  "Buy a genuine Windows 11 Pro product key for 1 PC. Lifetime license, quick email delivery, official Microsoft activation. Only $13.";
 const PAGE_URL = "/product/windows-11-professional-key-1-pc";
 const WHOP_URL = "https://whop.com/checkout/plan_oDPDDAU0cg3Lf";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/windows-11-professional-key-1-pc"
               name: "Windows 11 Professional Key – 1 PC Lifetime License",
               image: productImg.url,
               description:
-                "Genuine Microsoft Windows 11 Professional product key for 1 Windows PC. Lifetime activation, instant email delivery. Pro features, BitLocker, Remote Desktop, and enhanced security.",
+                "Genuine Microsoft Windows 11 Professional product key for 1 Windows PC. Lifetime activation, quick email delivery. Pro features, BitLocker, Remote Desktop, and enhanced security.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-WIN11-PRO-1PC",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/windows-11-professional-key-1-pc"
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Windows 11 Pro key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Windows 11 Professional product key right here on KeyGG for $13 with instant email delivery and lifetime activation for 1 PC." } },
+                { "@type": "Question", name: "Where can I buy a cheap Windows 11 Pro key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Windows 11 Professional product key right here on KeyGG for $13 with quick email delivery and lifetime activation for 1 PC." } },
                 { "@type": "Question", name: "Is this Windows 11 Pro license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you a lifetime activation for 1 Windows PC. No subscription, no recurring fees." } },
                 { "@type": "Question", name: "How fast will I receive my Windows 11 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Windows 11 Professional key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Windows 11 Pro key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
@@ -124,7 +124,7 @@ export const Route = createFileRoute("/product/windows-11-professional-key-1-pc"
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -145,7 +145,7 @@ const requirements = [
 const faqs = [
   {
     q: "Where can I buy a cheap Windows 11 Pro key?",
-    a: "You can buy a genuine Windows 11 Professional product key right here on KeyGG for $13, with instant email delivery and lifetime activation for 1 PC.",
+    a: "You can buy a genuine Windows 11 Professional product key right here on KeyGG for $13, with quick email delivery and lifetime activation for 1 PC.",
   },
   {
     q: "Is this Windows 11 Pro license lifetime?",
@@ -245,7 +245,7 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Windows 11 Professional product key for 1 Windows PC. One-time
-              payment, lifetime activation, instant email delivery. Enhanced security, modern interface, and pro features.
+              payment, lifetime activation, quick email delivery. Enhanced security, modern interface, and pro features.
             </p>
 
             <ul className="mt-5 space-y-2">

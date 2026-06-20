@@ -18,7 +18,7 @@ import productImg from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1
 
 const PAGE_TITLE = "Buy ESET Smart Security Premium – 1 Device | 1-Year Key | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine ESET Smart Security Premium key for 1 Device | 1 Year. Advanced antivirus, firewall, ransomware shield & privacy protection. Instant email delivery. Only $32.";
+  "Buy a genuine ESET Smart Security Premium key for 1 Device | 1 Year. Advanced antivirus, firewall, ransomware shield & privacy protection. Quick email delivery. Only $32.";
 const PAGE_URL = "/product/eset-smart-security-premium-1-device-1-year-key";
 const WHOP_URL = "https://whop.com/checkout/plan_rCZIOlElFaDd2";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
               name: "ESET Smart Security Premium – 1 Device | 1-Year Key",
               image: productImg.url,
               description:
-                "Genuine ESET Smart Security Premium product key for 1 device, 1 year. Advanced antivirus, firewall, ransomware shield, password manager and privacy protection with instant email delivery.",
+                "Genuine ESET Smart Security Premium product key for 1 device, 1 year. Advanced antivirus, firewall, ransomware shield, password manager and privacy protection with quick email delivery.",
               brand: { "@type": "Brand", name: "ESET" },
               sku: "KEYGG-ESET-SSP-1DEV-1YR",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap ESET Smart Security Premium key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine ESET Smart Security Premium key for 1 device / 1 year right here on KeyGG for $32 with instant email delivery." } },
+                { "@type": "Question", name: "Where can I buy a cheap ESET Smart Security Premium key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine ESET Smart Security Premium key for 1 device / 1 year right here on KeyGG for $32 with quick email delivery." } },
                 { "@type": "Question", name: "Is the ESET Smart Security Premium license for 1 year?", acceptedAnswer: { "@type": "Answer", text: "Yes. This key provides 1 year of full ESET Smart Security Premium protection for 1 device. You can renew annually at the same low price." } },
                 { "@type": "Question", name: "How fast will I receive my ESET product key?", acceptedAnswer: { "@type": "Answer", text: "Your ESET Smart Security Premium key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the ESET key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on ESET's official licensing servers." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine ESET key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap ESET Smart Security Premium key?",
-    a: "You can buy a genuine ESET Smart Security Premium key for 1 device / 1 year right here on KeyGG for $32, with instant email delivery.",
+    a: "You can buy a genuine ESET Smart Security Premium key for 1 device / 1 year right here on KeyGG for $32, with quick email delivery.",
   },
   {
     q: "Is the ESET Smart Security Premium license for 1 year?",
@@ -233,7 +233,7 @@ function ProductPage() {
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine ESET Smart Security Premium key for 1 device, 1 year. Advanced antivirus,
               firewall, ransomware shield, password manager and privacy protection — all in one lightweight
-              security suite. Instant email delivery after purchase.
+              security suite. Quick email delivery after purchase.
             </p>
 
             <ul className="mt-5 space-y-2">
