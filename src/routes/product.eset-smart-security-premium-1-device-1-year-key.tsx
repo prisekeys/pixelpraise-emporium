@@ -236,7 +236,7 @@ function ProductPage() {
                 ))}
               </div>
               <span className="text-sm font-medium">4.7</span>
-              <span className="text-sm text-muted-foreground">· 50+ Sold</span>
+              <span className="text-sm text-muted-foreground">· 780+ Sold</span>
             </a>
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
