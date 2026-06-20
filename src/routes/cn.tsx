@@ -21,44 +21,46 @@ import access2024 from "@/assets/products/access-2024.webp.asset.json";
 import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
 import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
 
-const PAGE_TITLE = "Microsoft Office・Windows 11 Pro プロダクトキー購入 | KeyGG";
-const PAGE_DESC = "Microsoft Office 2019・2021・2024 と Windows 11 Pro の正規プロダクトキー。永続ライセンス、メールで即時配信、24時間サポート。";
+const PAGE_TITLE = "购买 Microsoft Office 与 Windows 11 Pro 正版密钥 | KeyGG";
+const PAGE_DESC = "正版 Microsoft Office 2019、2021、2024 与 Windows 11 Pro 密钥。永久授权,邮件即时发货,7×24 小时客服支持。";
 
-export const Route = createFileRoute("/jp")({
+export const Route = createFileRoute("/cn")({
   head: () => ({
     meta: [
       { title: PAGE_TITLE },
       { name: "description", content: PAGE_DESC },
-      { name: "keywords", content: "Microsoft Office プロダクトキー, Windows 11 Pro キー, Office 2021 購入, Office 2024 Professional Plus, Office 永続ライセンス, Microsoft 365 Family, Mac 版 Office キー" },
+      { name: "keywords", content: "microsoft office 密钥, windows 11 pro 密钥, 购买 office 2021, office 2024 专业增强版, office 永久授权, microsoft 365 家庭版, mac 版 office 密钥" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { property: "og:title", content: PAGE_TITLE },
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/jp" },
+      { property: "og:url", content: "/cn" },
       { property: "og:site_name", content: "KeyGG" },
-      { property: "og:locale", content: "ja_JP" },
+      { property: "og:locale", content: "zh_CN" },
       { property: "og:locale:alternate", content: "en_US" },
       { property: "og:locale:alternate", content: "fr_FR" },
       { property: "og:locale:alternate", content: "de_DE" },
       { property: "og:locale:alternate", content: "es_ES" },
       { property: "og:locale:alternate", content: "pt_PT" },
+      { property: "og:locale:alternate", content: "ja_JP" },
+      { property: "og:locale:alternate", content: "ru_RU" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: PAGE_TITLE },
       { name: "twitter:description", content: PAGE_DESC },
-      { httpEquiv: "content-language", content: "ja" },
+      { httpEquiv: "content-language", content: "zh-CN" },
     ],
     links: [
-      { rel: "canonical", href: "/jp" },
-      { rel: "alternate", hrefLang: "ja", href: "/jp" },
-      { rel: "alternate", hrefLang: "ru", href: "/ru" },
+      { rel: "canonical", href: "/cn" },
       { rel: "alternate", hrefLang: "zh", href: "/cn" },
       { rel: "alternate", hrefLang: "zh-CN", href: "/cn" },
-      { rel: "alternate", hrefLang: "ja-JP", href: "/jp" },
+      { rel: "alternate", hrefLang: "zh-Hans", href: "/cn" },
       { rel: "alternate", hrefLang: "en", href: "/" },
       { rel: "alternate", hrefLang: "fr", href: "/fr" },
       { rel: "alternate", hrefLang: "de", href: "/de" },
       { rel: "alternate", hrefLang: "es", href: "/es" },
       { rel: "alternate", hrefLang: "pt", href: "/pt" },
+      { rel: "alternate", hrefLang: "ja", href: "/jp" },
+      { rel: "alternate", hrefLang: "ru", href: "/ru" },
       { rel: "alternate", hrefLang: "x-default", href: "/" },
     ],
     scripts: [
@@ -71,24 +73,24 @@ export const Route = createFileRoute("/jp")({
               "@type": "WebPage",
               name: PAGE_TITLE,
               description: PAGE_DESC,
-              inLanguage: "ja-JP",
-              url: "/jp",
+              inLanguage: "zh-CN",
+              url: "/cn",
             },
             {
               "@type": "Store",
               name: "KeyGG",
-              description: "Microsoft Office と Windows の正規プロダクトキーを即時配信で販売するオンラインストア。",
-              inLanguage: "ja-JP",
-              url: "/jp",
+              description: "正版 Microsoft Office 与 Windows 密钥商店,即时发货。",
+              inLanguage: "zh-CN",
+              url: "/cn",
             },
             {
               "@type": "FAQPage",
-              inLanguage: "ja-JP",
+              inLanguage: "zh-CN",
               mainEntity: [
-                { "@type": "Question", name: "KeyGG の Microsoft プロダクトキーは正規品ですか？", acceptedAnswer: { "@type": "Answer", text: "はい。KeyGG で販売するすべての Microsoft Office・Windows 11 のプロダクトキーは 100% 正規品で、Microsoft の認証サーバーに直接接続して有効化でき、永続ライセンスを保証します。" } },
-                { "@type": "Question", name: "配信はどのくらい早いですか？", acceptedAnswer: { "@type": "Answer", text: "ご購入後、通常 30 秒以内にプロダクトキーをメールでお届けし、ダウンロードと有効化の手順もあわせてお送りします。" } },
-                { "@type": "Question", name: "永続ライセンスですか、それともサブスクリプションですか？", acceptedAnswer: { "@type": "Answer", text: "Office 2019・2021・2024 および Windows 11 Pro のキーは 1 台の PC に紐づく永続ライセンスです。Microsoft 365 Family は 6 ユーザー向けの 1 年間のサブスクリプションです。" } },
-                { "@type": "Question", name: "なぜ Microsoft の公式価格より大幅に安いのですか？", acceptedAnswer: { "@type": "Answer", text: "正規のボリュームライセンスおよび OEM ライセンスを直接仕入れ、小売マージンを排除しています。Microsoft が販売しているのと同じ製品を、ごくわずかな価格でご提供できます。" } },
+                { "@type": "Question", name: "KeyGG 上的 Microsoft 密钥是正版的吗?", acceptedAnswer: { "@type": "Answer", text: "是的。KeyGG 上销售的所有 Microsoft Office 与 Windows 11 密钥均为 100% 正版,可直接在 Microsoft 服务器上激活,并享有终身授权保障。" } },
+                { "@type": "Question", name: "真的可以即时发货吗?", acceptedAnswer: { "@type": "Answer", text: "付款后产品密钥通常在 30 秒内发送到您的邮箱,并附带下载与激活说明。" } },
+                { "@type": "Question", name: "是永久授权还是订阅?", acceptedAnswer: { "@type": "Answer", text: "Office 2019、2021、2024 与 Windows 11 Pro 均为绑定单台电脑的永久授权。Microsoft 365 家庭版为 6 用户年度订阅。" } },
+                { "@type": "Question", name: "为什么你们的价格比 Microsoft 便宜很多?", acceptedAnswer: { "@type": "Answer", text: "我们直接采购正版批量授权与 OEM 密钥,去除零售加价。您获得的是与 Microsoft 完全相同的产品,但价格仅为其一小部分。" } },
               ],
             },
           ],
@@ -96,22 +98,22 @@ export const Route = createFileRoute("/jp")({
       },
     ],
   }),
-  component: HomeJP,
+  component: HomeCN,
 });
 
 const products = [
-  { img: office2019Pro.url, tag: "Office",   title: "Office 2019 Professional Plus – 1 PC 用キー",          price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
-  { img: win11Pro.url,      tag: "Windows",  title: "Windows 11 Professional – 1 PC 用キー",                price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
-  { img: office2021Pro.url, tag: "Office",   title: "Office 2021 Professional Plus – 1 PC 用キー",          price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
-  { img: projectPro2024.url, tag: "Business", title: "Project Professional 2024 – 1 PC 用キー",              price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
-  { img: visioPro2024.url,  tag: "Business", title: "Visio Professional 2024 – 1 PC 用キー",                price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
-  { img: office2024Pro.url, tag: "Office",   title: "Office 2024 Professional Plus LTSC – 1 PC 用キー",     price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
-  { img: office2019Mac.url, tag: "Mac",      title: "Office 2019 Home & Business for Mac – 1 Mac 用キー",   price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
-  { img: esetPremium.url,   tag: "セキュリティ", title: "ESET Smart Security Premium – 1 台 | 1 年キー",        price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
-  { img: office2021Mac.url, tag: "Mac",      title: "Office 2021 Home & Business for Mac – 1 Mac 用キー",   price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
-  { img: m365Family.url,    tag: "サブスク",   title: "Microsoft 365 Family – 6 ユーザー | 6 TB | 1 年キー",  price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
-  { img: office2024Mac.url, tag: "Mac",      title: "Office 2024 Home & Business for Mac – 1 Mac 用キー",   price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
-  { img: office365Pro.url,  tag: "Office",   title: "Office 365 Professional Plus – 5 台 | 100 GB クラウド | 1 年", price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
+  { img: office2019Pro.url, tag: "Office",     title: "Office 2019 专业增强版 – 1 台 PC 密钥",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
+  { img: win11Pro.url,      tag: "Windows",    title: "Windows 11 专业版 – 1 台 PC 密钥",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
+  { img: office2021Pro.url, tag: "Office",     title: "Office 2021 专业增强版 – 1 台 PC 密钥",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
+  { img: projectPro2024.url, tag: "商务",       title: "Project Professional 2024 – 1 台 PC 密钥",          price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
+  { img: visioPro2024.url,  tag: "商务",        title: "Visio Professional 2024 – 1 台 PC 密钥",            price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
+  { img: office2024Pro.url, tag: "Office",     title: "Office 2024 专业增强版 LTSC – 1 台 PC 密钥",        price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
+  { img: office2019Mac.url, tag: "Mac",        title: "Office 2019 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
+  { img: esetPremium.url,   tag: "安全",        title: "ESET Smart Security Premium – 1 设备 1 年密钥",     price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
+  { img: office2021Mac.url, tag: "Mac",        title: "Office 2021 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
+  { img: m365Family.url,    tag: "订阅",        title: "Microsoft 365 家庭版 – 6 用户 6TB 1 年密钥",        price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
+  { img: office2024Mac.url, tag: "Mac",        title: "Office 2024 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
+  { img: office365Pro.url,  tag: "Office",     title: "Office 365 专业增强版 – 5 设备 100GB 云盘 1 年",     price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
 ];
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
@@ -123,13 +125,13 @@ const openCheckout = (url: string) => (e?: React.MouseEvent) => {
 };
 
 const heroSlides = [
-  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "正規ソフトウェア。", highlight: "圧倒的な価格。", desc: "永続ライセンス、メールで即時配信、必要なときに頼れるサポート。", cta: "Windows 11 を見る", price: 13, original: 50 },
-  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "最新の Office を。", highlight: "数分で有効化。", desc: "Word、Excel、PowerPoint、Outlook — 1 つのキー、1 台の PC で、ずっと使える。", cta: "Office 2024 を入手", price: 20, original: 65 },
-  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 Family", title: "6 人で使えるプレミアム。", highlight: "クラウド 6 TB 付き。", desc: "Microsoft 365 を最大 6 人で共有、1 人あたり 1 TB の OneDrive 付き。", cta: "365 Family を見る", price: 78, original: 130 },
-  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "必要なものすべて。", highlight: "わずかな価格で。", desc: "永続ライセンスと即時デジタル配信付きのフル Office スイート。", cta: "Office 2021 を入手", price: 15, original: 55 },
+  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "正版软件。", highlight: "超值价格。", desc: "永久授权,邮件即时发货,需要时即可获得贴心客服支持。", cta: "查看 Windows 11", price: 13, original: 50 },
+  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "全新 Office。", highlight: "几分钟激活。", desc: "Word、Excel、PowerPoint 与 Outlook —— 一个密钥、一台电脑、永久使用。", cta: "获取 Office 2024", price: 20, original: 65 },
+  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 家庭版", title: "6 人共享高级应用。", highlight: "6TB 云存储。", desc: "与最多 6 位家人共享 Microsoft 365,每人独享 1TB OneDrive 空间。", cta: "查看 365 家庭版", price: 78, original: 130 },
+  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "全部所需。", highlight: "超低折扣价。", desc: "完整 Office 套件,永久授权,即时数字发货。", cta: "获取 Office 2021", price: 15, original: 55 },
 ];
 
-function HomeJP() {
+function HomeCN() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -142,7 +144,7 @@ function HomeJP() {
   return (
     <div className="min-h-screen bg-secondary/30">
       <h1 className="sr-only">
-        Microsoft Office・Windows 11 Pro の正規プロダクトキーを購入 — 永続ライセンス・即時配信
+        购买正版 Microsoft Office 与 Windows 11 Pro 密钥 —— 永久授权,即时发货
       </h1>
       <Navbar />
 
@@ -168,13 +170,13 @@ function HomeJP() {
                       </a>
                     </div>
                     <div className="mt-3 flex sm:hidden items-center justify-center gap-2">
-                      <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="前のスライド" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="上一张" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         <ChevronLeft className="w-4 h-4" />
                       </button>
-                      <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "再生" : "一時停止"} className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "播放" : "暂停"} className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
                       </button>
-                      <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="次のスライド" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="下一张" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         <ChevronRight className="w-4 h-4" />
                       </button>
                     </div>
@@ -194,20 +196,20 @@ function HomeJP() {
             ))}
 
             <div className="absolute bottom-3 sm:bottom-5 right-3 sm:right-5 hidden sm:flex items-center gap-2 z-10">
-              <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="前のスライド" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="上一张" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 <ChevronLeft className="w-4 h-4" />
               </button>
-              <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "再生" : "一時停止"} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "播放" : "暂停"} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
               </button>
-              <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="次のスライド" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="下一张" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
 
             <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
               {heroSlides.map((_, i) => (
-                <button key={i} onClick={() => setActive(i)} aria-label={`スライド ${i + 1} へ`} className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
+                <button key={i} onClick={() => setActive(i)} aria-label={`跳转到第 ${i + 1} 张`} className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
               ))}
             </div>
           </div>
@@ -217,8 +219,8 @@ function HomeJP() {
       {/* Products grid */}
       <section id="products" className="mx-auto max-w-7xl px-6 pt-6 pb-20">
         <div className="mb-10">
-          <div className="text-sm font-medium text-primary mb-2">注目の商品</div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">人気の Microsoft 製品</h2>
+          <div className="text-sm font-medium text-primary mb-2">热销商品</div>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">最佳 Microsoft 产品</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -236,7 +238,7 @@ function HomeJP() {
                       <span className="text-xs text-muted-foreground line-through">${p.original}</span>
                     </div>
                     <button type="button" onClick={openCheckout(p.whop)} className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 cursor-pointer" style={{ background: "var(--gradient-primary)" }}>
-                      <Download className="w-3 h-3" /> 購入する
+                      <Download className="w-3 h-3" /> 购买
                     </button>
                   </div>
                 </div>
@@ -250,9 +252,9 @@ function HomeJP() {
       <section id="features" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { i: Zap, t: "即時配信", d: "決済完了後、すぐにメールでアクティベーションキーとダウンロードリンクをお届けします。" },
-            { i: ShieldCheck, t: "正規ライセンス", d: "100% 正規の Microsoft ライセンス。アップデートとサポートにも完全対応。" },
-            { i: Sparkles, t: "最低価格保証", d: "他店でより安い価格を見つけた場合、7 日以内なら無条件で価格を合わせます。" },
+            { i: Zap, t: "即时发货", d: "付款后激活密钥与下载链接立即发送至您的邮箱。" },
+            { i: ShieldCheck, t: "正版授权", d: "100% 正版 Microsoft 授权,享有更新与支持权益。" },
+            { i: Sparkles, t: "最低价保证", d: "发现更低价?7 天内无条件匹配价格,绝无附加条件。" },
           ].map(({ i: Icon, t, d }) => (
             <div key={t} className="rounded-3xl p-8 border border-border bg-card">
               <div className="w-11 h-11 rounded-xl grid place-items-center mb-5" style={{ background: "var(--gradient-lime)" }}>
@@ -270,9 +272,9 @@ function HomeJP() {
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 dark:bg-primary/10 border border-primary/20 dark:border-primary/30 mb-4">
             <CheckCircle2 className="w-4 h-4 text-primary dark:text-primary/80" />
-            <span className="text-sm font-medium text-primary dark:text-primary/70">認証済みレビュー</span>
+            <span className="text-sm font-medium text-primary dark:text-primary/70">已验证评价</span>
           </div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter mb-3">お客様の声</h2>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter mb-3">客户怎么说</h2>
           <div className="flex items-center justify-center gap-3">
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((s) => (
@@ -280,22 +282,22 @@ function HomeJP() {
               ))}
             </div>
             <span className="text-2xl font-bold text-foreground">4.9</span>
-            <span className="text-sm text-muted-foreground">/ 5 ・ 12,847 件のレビュー</span>
+            <span className="text-sm text-muted-foreground">满分 5 分 • 12,847 条评价</span>
           </div>
-          <p className="text-primary dark:text-primary/80 font-semibold text-lg mt-1">非常に満足</p>
+          <p className="text-primary dark:text-primary/80 font-semibold text-lg mt-1">优秀</p>
         </div>
 
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent className="-ml-4">
             {[
-              { name: "佐藤 美咲", date: "2日前", rating: 5, title: "即時配信、正規キー", body: "Office 2019 を注文して、2 分でキーが届きました。一発で有効化。間違いなくリピートします！", verified: true },
-              { name: "鈴木 大輔", date: "1週間前", rating: 5, title: "見つけた中で最安値", body: "Microsoft 直販より 1 万円以上節約できました。キーは問題なく動作し、リンクも即時。", verified: true },
-              { name: "田中 健", date: "3日前", rating: 5, title: "サポートが素晴らしい", body: "有効化で少しトラブルがありましたが、サポートが 15 分で解決。強くおすすめします！", verified: true },
-              { name: "山本 結衣", date: "5日前", rating: 4, title: "速くて信頼できる", body: "Windows 11 Pro のキーが即座に届きました。全て問題なし。支払いオプションが増えると嬉しいです。", verified: true },
-              { name: "中村 翔", date: "2週間前", rating: 5, title: "3 回目の購入、いつも完璧", body: "Office 2021、M365 Family、そして Visio 2024。どのキーも正規で問題なく動作。", verified: true },
-              { name: "Ren Tanaka", date: "4日前", rating: 5, title: "Mac 版 Office が最高", body: "Office 2021 for Mac。インストール簡単、すべてのアプリが動作。説明もわかりやすい。", verified: true },
-              { name: "Gustav Lindqvist", date: "1週間前", rating: 5, title: "ビジネスライセンスも安心", body: "チーム用に Project Pro 2024 を 10 本。ボリューム割引も大きく、全て問題なく有効化。", verified: true },
-              { name: "小林 さくら", date: "3日前", rating: 4, title: "安定した体験", body: "ESET ライセンスがすぐに有効化されました。価格も魅力的で即時配信。とても満足です。", verified: true },
+              { name: "李伟", date: "2 天前", rating: 5, title: "即时发货,正版密钥", body: "我订购了 Office 2019,2 分钟内就收到密钥,一次激活成功。下次还会再买!", verified: true },
+              { name: "王芳", date: "1 周前", rating: 5, title: "我找到的最低价", body: "比直接从 Microsoft 购买省了 100 多美元。密钥完美可用,链接秒到。", verified: true },
+              { name: "张磊", date: "3 天前", rating: 5, title: "客服很棒", body: "激活时遇到小问题,客服 15 分钟内解决了。非常推荐!", verified: true },
+              { name: "刘洋", date: "5 天前", rating: 4, title: "快速且可靠", body: "Windows 11 Pro 密钥立即送达,一切正常。希望能有更多支付方式。", verified: true },
+              { name: "陈静", date: "2 周前", rating: 5, title: "第三次购买,依旧完美", body: "先是 Office 2021,然后是 M365 家庭版,现在是 Visio 2024。每个密钥都是正版且可用。", verified: true },
+              { name: "Ren Tanaka", date: "4 天前", rating: 5, title: "Mac 版 Office 非常好", body: "Mac 版 Office 2021。安装简单,所有应用都正常工作。说明非常清晰。", verified: true },
+              { name: "Gustav Lindqvist", date: "1 周前", rating: 5, title: "商务授权非常出色", body: "为团队购买了 10 个 Project Pro 2024 密钥。批量折扣很棒,全部顺利激活。", verified: true },
+              { name: "赵敏", date: "3 天前", rating: 4, title: "体验稳定", body: "ESET 授权立即激活。价格有竞争力,发货即时,非常满意。", verified: true },
             ].map((r, i) => (
               <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/4">
                 <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
@@ -318,7 +320,7 @@ function HomeJP() {
                     </div>
                     {r.verified && (
                       <span className="inline-flex items-center gap-1 text-[10px] font-medium text-primary dark:text-primary/80">
-                        <CheckCircle2 className="w-3 h-3" /> 認証済み
+                        <CheckCircle2 className="w-3 h-3" /> 已验证
                       </span>
                     )}
                   </div>
@@ -335,15 +337,15 @@ function HomeJP() {
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-10">
           <div className="text-sm font-medium text-primary mb-2">Office 2024</div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">個別アプリ</h2>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">单独应用</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 – 1 PC 用キー", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
-            { title: "Access 2024 – 1 PC 用キー", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
-            { title: "PowerPoint 2024 – 1 PC 用キー", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
-            { title: "Excel 2024 – 1 PC 用キー", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
+            { title: "Outlook 2024 – 1 台 PC 密钥", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
+            { title: "Access 2024 – 1 台 PC 密钥", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
+            { title: "PowerPoint 2024 – 1 台 PC 密钥", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
+            { title: "Excel 2024 – 1 台 PC 密钥", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
           ].map((p) => (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <Link to={p.to} className="block">
@@ -358,7 +360,7 @@ function HomeJP() {
                       <span className="text-xs text-muted-foreground line-through">$65</span>
                     </div>
                     <button type="button" onClick={openCheckout(p.whop)} className="w-full inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-medium text-primary-foreground transition hover:opacity-90 cursor-pointer" style={{ background: "var(--gradient-primary)" }}>
-                      <Download className="w-3 h-3" /> 購入する
+                      <Download className="w-3 h-3" /> 购买
                     </button>
                   </div>
                 </div>

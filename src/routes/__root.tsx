@@ -112,6 +112,7 @@ function RootShell({ children }: { children: ReactNode }) {
     pathname === "/pt" || pathname.startsWith("/pt/") ? "pt" :
     pathname === "/jp" || pathname.startsWith("/jp/") ? "ja" :
     pathname === "/ru" || pathname.startsWith("/ru/") ? "ru" :
+    pathname === "/cn" || pathname.startsWith("/cn/") ? "zh-CN" :
     "en";
   return (
     <html lang={lang}>

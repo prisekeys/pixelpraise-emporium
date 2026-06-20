@@ -23,6 +23,7 @@ import { Route as FrRouteImport } from './routes/fr'
 import { Route as EsRouteImport } from './routes/es'
 import { Route as DeRouteImport } from './routes/de'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
+import { Route as CnRouteImport } from './routes/cn'
 import { Route as ActivationGuideRouteImport } from './routes/activation-guide'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductWindows11ProfessionalKey1PcRouteImport } from './routes/product.windows-11-professional-key-1-pc'
@@ -111,6 +112,11 @@ const DeRoute = DeRouteImport.update({
 const CookiePolicyRoute = CookiePolicyRouteImport.update({
   id: '/cookie-policy',
   path: '/cookie-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CnRoute = CnRouteImport.update({
+  id: '/cn',
+  path: '/cn',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ActivationGuideRoute = ActivationGuideRouteImport.update({
@@ -229,6 +235,7 @@ const BlogHowToFindMicrosoftOfficeProductKeyRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
+  '/cn': typeof CnRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
   '/es': typeof EsRoute
@@ -264,6 +271,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
+  '/cn': typeof CnRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
   '/es': typeof EsRoute
@@ -300,6 +308,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/activation-guide': typeof ActivationGuideRoute
+  '/cn': typeof CnRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
   '/es': typeof EsRoute
@@ -337,6 +346,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/activation-guide'
+    | '/cn'
     | '/cookie-policy'
     | '/de'
     | '/es'
@@ -372,6 +382,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/activation-guide'
+    | '/cn'
     | '/cookie-policy'
     | '/de'
     | '/es'
@@ -407,6 +418,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/activation-guide'
+    | '/cn'
     | '/cookie-policy'
     | '/de'
     | '/es'
@@ -443,6 +455,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ActivationGuideRoute: typeof ActivationGuideRoute
+  CnRoute: typeof CnRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
   DeRoute: typeof DeRoute
   EsRoute: typeof EsRoute
@@ -574,6 +587,13 @@ declare module '@tanstack/react-router' {
       path: '/cookie-policy'
       fullPath: '/cookie-policy'
       preLoaderRoute: typeof CookiePolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cn': {
+      id: '/cn'
+      path: '/cn'
+      fullPath: '/cn'
+      preLoaderRoute: typeof CnRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/activation-guide': {
@@ -715,6 +735,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ActivationGuideRoute: ActivationGuideRoute,
+  CnRoute: CnRoute,
   CookiePolicyRoute: CookiePolicyRoute,
   DeRoute: DeRoute,
   EsRoute: EsRoute,
