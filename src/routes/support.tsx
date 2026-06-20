@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useServerFn } from "@tanstack/react-start";
@@ -37,6 +37,7 @@ export const Route = createFileRoute("/support")({
 function SupportPage() {
   const [submitted, setSubmitted] = useState(false);
   const submitMessage = useServerFn(submitSupportMessage);
+  const formLoadedAtRef = useRef<number>(Date.now());
 
   const form = useForm<SupportMessageInput>({
     resolver: zodResolver(supportMessageSchema),
@@ -46,8 +47,11 @@ function SupportPage() {
       subject: "",
       message: "",
       orderId: "",
+      website: "",
+      formLoadedAt: formLoadedAtRef.current,
     },
   });
+
 
   async function onSubmit(values: SupportMessageInput) {
     try {
@@ -192,6 +196,19 @@ function SupportPage() {
                         </FormItem>
                       )}
                     />
+
+                    {/* Honeypot field — hidden from humans, attractive to bots */}
+                    <div aria-hidden="true" className="absolute left-[-9999px] w-px h-px overflow-hidden" style={{ position: "absolute" }}>
+                      <label htmlFor="website">Website</label>
+                      <input
+                        type="text"
+                        id="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        {...form.register("website")}
+                      />
+                    </div>
+
 
                     {form.formState.errors.root && (
                       <p className="text-sm text-destructive">{form.formState.errors.root.message}</p>
