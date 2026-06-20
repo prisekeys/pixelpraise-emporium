@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/office-365-professional-plus-5-de
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.9",
                 reviewCount: "11100",
                 bestRating: "5",
                 worstRating: "1",

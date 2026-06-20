@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/windows-11-professional-key-1-pc"
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.9",
                 reviewCount: "31200",
                 bestRating: "5",
                 worstRating: "1",

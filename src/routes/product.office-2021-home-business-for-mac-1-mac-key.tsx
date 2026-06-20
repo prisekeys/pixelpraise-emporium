@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/office-2021-home-business-for-mac
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.5",
                 reviewCount: "5600",
                 bestRating: "5",
                 worstRating: "1",
