@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC
 
 const PAGE_TITLE = "Buy Office 2019 Professional Plus Key – 1 PC Lifetime | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Office 2019 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, official Microsoft activation. Only $13.";
+  "Buy a genuine Office 2019 Professional Plus product key for 1 PC. Lifetime license, quick email delivery, official Microsoft activation. Only $13.";
 const PAGE_URL = "/product/office-2019-professional-plus";
 const WHOP_URL = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/office-2019-professional-plus")({
               name: "Office 2019 Professional Plus Key – 1 PC Lifetime License",
               image: productImg.url,
               description:
-                "Genuine Microsoft Office 2019 Professional Plus product key for 1 Windows PC. Lifetime activation, instant email delivery. Includes Word, Excel, PowerPoint, Outlook, Access and Publisher.",
+                "Genuine Microsoft Office 2019 Professional Plus product key for 1 Windows PC. Lifetime activation, quick email delivery. Includes Word, Excel, PowerPoint, Outlook, Access and Publisher.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-OFFICE-2019-PRO-PLUS",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/office-2019-professional-plus")({
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Office 2019 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 2019 Professional Plus product key right here on KeyGG for $13 with instant email delivery and lifetime activation." } },
+                { "@type": "Question", name: "Where can I buy a cheap Office 2019 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 2019 Professional Plus product key right here on KeyGG for $13 with quick email delivery and lifetime activation." } },
                 { "@type": "Question", name: "Is this Office 2019 Pro Plus license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. It is a one-time purchase that gives you a lifetime activation for 1 PC. No subscription, no recurring fees." } },
                 { "@type": "Question", name: "How fast will I receive my Office 2019 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2019 Professional Plus key is delivered automatically to your email fast after payment." } },
                 { "@type": "Question", name: "Is the Office 2019 Pro Plus key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is genuine and activates directly on Microsoft's official servers." } },
@@ -135,7 +135,7 @@ const includedApps = [
 ];
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -155,7 +155,7 @@ const requirements = [
 const faqs = [
   {
     q: "Where can I buy a cheap Office 2019 Professional Plus key?",
-    a: "You can buy a genuine Office 2019 Professional Plus product key right here on KeyGG for $13, with instant email delivery and lifetime activation for 1 PC.",
+    a: "You can buy a genuine Office 2019 Professional Plus product key right here on KeyGG for $13, with quick email delivery and lifetime activation for 1 PC.",
   },
   {
     q: "Is this Office 2019 Pro Plus license lifetime?",
@@ -255,7 +255,7 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2019 Professional Plus product key for 1 Windows PC. One-time
-              payment, lifetime activation, instant email delivery. No subscription required.
+              payment, lifetime activation, quick email delivery. No subscription required.
             </p>
 
             <ul className="mt-5 space-y-2">

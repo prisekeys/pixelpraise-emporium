@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC
 
 const PAGE_TITLE = "Buy Office 2021 Professional Plus Key – 1 PC | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Microsoft Office 2021 Professional Plus product key for 1 PC. Lifetime license, instant email delivery, Word, Excel, PowerPoint, Outlook & more. Only $15.";
+  "Buy a genuine Microsoft Office 2021 Professional Plus product key for 1 PC. Lifetime license, quick email delivery, Word, Excel, PowerPoint, Outlook & more. Only $15.";
 const PAGE_URL = "/product/office-2021-professional-plus";
 const WHOP_URL = "https://whop.com/checkout/plan_cXRmNGflpuN4c";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/office-2021-professional-plus")({
               name: "Office 2021 Professional Plus Key – 1 PC Lifetime License",
               image: productImg.url,
               description:
-                "Genuine Microsoft Office 2021 Professional Plus product key for 1 Windows PC. Lifetime activation, instant email delivery. Includes Word, Excel, PowerPoint, Outlook, Access, Publisher and OneNote.",
+                "Genuine Microsoft Office 2021 Professional Plus product key for 1 Windows PC. Lifetime activation, quick email delivery. Includes Word, Excel, PowerPoint, Outlook, Access, Publisher and OneNote.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-OFFICE-2021-PRO-1PC",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/office-2021-professional-plus")({
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Office 2021 Pro Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2021 Professional Plus product key right here on KeyGG for $15 with instant email delivery and lifetime activation for 1 PC." } },
+                { "@type": "Question", name: "Where can I buy a cheap Office 2021 Pro Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2021 Professional Plus product key right here on KeyGG for $15 with quick email delivery and lifetime activation for 1 PC." } },
                 { "@type": "Question", name: "Is the Office 2021 Pro Plus license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2021 Professional Plus for 1 Windows PC. No subscription, no recurring fees." } },
                 { "@type": "Question", name: "How fast will I receive my Office 2021 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2021 Professional Plus key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2021 Pro Plus key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/office-2021-professional-plus")({
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap Office 2021 Pro Plus key?",
-    a: "You can buy a genuine Microsoft Office 2021 Professional Plus product key right here on KeyGG for $15, with instant email delivery and lifetime activation for 1 PC.",
+    a: "You can buy a genuine Microsoft Office 2021 Professional Plus product key right here on KeyGG for $15, with quick email delivery and lifetime activation for 1 PC.",
   },
   {
     q: "Is the Office 2021 Pro Plus license lifetime?",
@@ -232,7 +232,7 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2021 Professional Plus product key for 1 Windows PC.
-              One-time payment, lifetime activation, instant email delivery. Includes Word, Excel,
+              One-time payment, lifetime activation, quick email delivery. Includes Word, Excel,
               PowerPoint, Outlook, Access, Publisher and OneNote.
             </p>
 

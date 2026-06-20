@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Yea
 
 const PAGE_TITLE = "Buy Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Microsoft 365 Family key for 6 users, 6 TB cloud storage, 1 year. Premium Office apps, 1 TB OneDrive per user, instant email delivery. Only $78.";
+  "Buy a genuine Microsoft 365 Family key for 6 users, 6 TB cloud storage, 1 year. Premium Office apps, 1 TB OneDrive per user, quick email delivery. Only $78.";
 const PAGE_URL = "/product/microsoft-365-family-6-users-6-tb-1-year-key";
 const WHOP_URL = "https://whop.com/checkout/plan_8yC2bC1nvRG4Y";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
               name: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key",
               image: productImg.url,
               description:
-                "Genuine Microsoft 365 Family product key for 6 users, 1 year. Includes premium Office apps, 1 TB OneDrive cloud storage per user (6 TB total), advanced security and family safety features with instant email delivery.",
+                "Genuine Microsoft 365 Family product key for 6 users, 1 year. Includes premium Office apps, 1 TB OneDrive cloud storage per user (6 TB total), advanced security and family safety features with quick email delivery.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-M365-FAMILY-6U-1YR",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft 365 Family key for 6 users / 1 year right here on KeyGG for $78 with instant email delivery." } },
+                { "@type": "Question", name: "Where can I buy a cheap Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft 365 Family key for 6 users / 1 year right here on KeyGG for $78 with quick email delivery." } },
                 { "@type": "Question", name: "Is the Microsoft 365 Family license for 1 year?", acceptedAnswer: { "@type": "Answer", text: "Yes. This key provides 1 year of full Microsoft 365 Family subscription for up to 6 users. You can renew annually at the same low price." } },
                 { "@type": "Question", name: "How fast will I receive my Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "Your Microsoft 365 Family key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Microsoft 365 Family key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap Microsoft 365 Family key?",
-    a: "You can buy a genuine Microsoft 365 Family key for 6 users / 1 year right here on KeyGG for $78, with instant email delivery.",
+    a: "You can buy a genuine Microsoft 365 Family key for 6 users / 1 year right here on KeyGG for $78, with quick email delivery.",
   },
   {
     q: "Is the Microsoft 365 Family license for 1 year?",
@@ -233,7 +233,7 @@ function ProductPage() {
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft 365 Family key for 6 users, 1 year. Premium Office apps,
               1 TB OneDrive cloud storage per user (6 TB total), advanced security and family safety
-              features — all with instant email delivery after purchase.
+              features — all with quick email delivery after purchase.
             </p>
 
             <ul className="mt-5 space-y-2">

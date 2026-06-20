@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Office_365_Professional_Plus_5_Devices
 
 const PAGE_TITLE = "Buy Office 365 Professional Plus – 5 Devices | 100GB Cloud | 1 Year | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Office 365 Professional Plus 1-year subscription key – 5 devices, 100 GB cloud storage, Word, Excel, PowerPoint, Outlook, Teams & more. Instant email delivery. Only $13.";
+  "Buy a genuine Office 365 Professional Plus 1-year subscription key – 5 devices, 100 GB cloud storage, Word, Excel, PowerPoint, Outlook, Teams & more. Quick email delivery. Only $13.";
 const PAGE_URL = "/product/office-365-professional-plus-5-devices-100gb-1-year-key";
 const WHOP_URL = "https://whop.com/checkout/plan_GDDIytjYJffS0";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/office-365-professional-plus-5-de
               name: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1-Year Subscription Key",
               image: productImg.url,
               description:
-                "Genuine Office 365 Professional Plus 1-year subscription key for 5 devices with 100 GB cloud storage. Includes Word, Excel, PowerPoint, Outlook, Teams, OneNote, Publisher and Access. Instant email delivery.",
+                "Genuine Office 365 Professional Plus 1-year subscription key for 5 devices with 100 GB cloud storage. Includes Word, Excel, PowerPoint, Outlook, Teams, OneNote, Publisher and Access. Quick email delivery.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-OFFICE-365-PROPLUS-5D-1Y",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/office-365-professional-plus-5-de
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Office 365 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 365 Professional Plus 1-year subscription key right here on KeyGG for just $13, with instant email delivery and activation for 5 devices including 100 GB of cloud storage." } },
+                { "@type": "Question", name: "Where can I buy a cheap Office 365 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 365 Professional Plus 1-year subscription key right here on KeyGG for just $13, with quick email delivery and activation for 5 devices including 100 GB of cloud storage." } },
                 { "@type": "Question", name: "How many devices can I install Office 365 Pro Plus on?", acceptedAnswer: { "@type": "Answer", text: "Office 365 Professional Plus can be installed on up to 5 devices — any combination of Windows PCs, Macs, tablets and smartphones — all under the same Microsoft account." } },
                 { "@type": "Question", name: "How long does the Office 365 Pro Plus subscription last?", acceptedAnswer: { "@type": "Answer", text: "This key activates Office 365 Professional Plus for a full 12 months (1 year) from the date of activation, with all features and updates included." } },
                 { "@type": "Question", name: "How fast will I receive my Office 365 Pro Plus key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 365 Professional Plus key is delivered automatically to your email fast after a successful payment." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/office-365-professional-plus-5-de
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap Office 365 Professional Plus key?",
-    a: "You can buy a genuine Office 365 Professional Plus 1-year subscription key right here on KeyGG for just $13, with instant email delivery and activation for 5 devices including 100 GB of cloud storage.",
+    a: "You can buy a genuine Office 365 Professional Plus 1-year subscription key right here on KeyGG for just $13, with quick email delivery and activation for 5 devices including 100 GB of cloud storage.",
   },
   {
     q: "How many devices can I install Office 365 Pro Plus on?",

@@ -18,7 +18,7 @@ import productImg from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC
 
 const PAGE_TITLE = "Buy Office 2024 Professional Plus LTSC Key – 1 PC | KeyGG";
 const PAGE_DESC =
-  "Buy a genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 PC. Lifetime license, instant email delivery, Word, Excel, PowerPoint, Outlook & more. Only $20.";
+  "Buy a genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 PC. Lifetime license, quick email delivery, Word, Excel, PowerPoint, Outlook & more. Only $20.";
 const PAGE_URL = "/product/office-2024-professional-plus-ltsc-key-1-pc";
 const WHOP_URL = "https://whop.com/checkout/plan_FkmvpRpakB5ld";
 
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/office-2024-professional-plus-lts
               name: "Office 2024 Professional Plus LTSC Key – 1 PC Lifetime License",
               image: productImg.url,
               description:
-                "Genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 Windows PC. Lifetime activation, instant email delivery. Word, Excel, PowerPoint, Outlook, Access, Publisher and Teams — the latest perpetual Office suite.",
+                "Genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 Windows PC. Lifetime activation, quick email delivery. Word, Excel, PowerPoint, Outlook, Access, Publisher and Teams — the latest perpetual Office suite.",
               brand: { "@type": "Brand", name: "Microsoft" },
               sku: "KEYGG-OFFICE-2024-LTSC-PRO-1PC",
               offers: {
@@ -108,7 +108,7 @@ export const Route = createFileRoute("/product/office-2024-professional-plus-lts
             {
               "@type": "FAQPage",
               mainEntity: [
-                { "@type": "Question", name: "Where can I buy a cheap Office 2024 Professional Plus LTSC key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Professional Plus LTSC product key right here on KeyGG for $20 with instant email delivery and lifetime activation for 1 PC." } },
+                { "@type": "Question", name: "Where can I buy a cheap Office 2024 Professional Plus LTSC key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Professional Plus LTSC product key right here on KeyGG for $20 with quick email delivery and lifetime activation for 1 PC." } },
                 { "@type": "Question", name: "Is the Office 2024 LTSC license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2024 Professional Plus LTSC for 1 Windows PC. No subscription, no recurring fees." } },
                 { "@type": "Question", name: "How fast will I receive my Office 2024 LTSC product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Professional Plus LTSC key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2024 LTSC key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/product/office-2024-professional-plus-lts
 });
 
 const trust = [
-  { icon: Zap, label: "Instant email delivery" },
+  { icon: Zap, label: "Quick email delivery" },
   { icon: BadgeCheck, label: "Genuine Microsoft key" },
   { icon: Lock, label: "Secure SSL checkout" },
   { icon: RefreshCcw, label: "30-day money back" },
@@ -136,7 +136,7 @@ const trust = [
 const faqs = [
   {
     q: "Where can I buy a cheap Office 2024 Professional Plus LTSC key?",
-    a: "You can buy a genuine Microsoft Office 2024 Professional Plus LTSC product key right here on KeyGG for $20, with instant email delivery and lifetime activation for 1 PC.",
+    a: "You can buy a genuine Microsoft Office 2024 Professional Plus LTSC product key right here on KeyGG for $20, with quick email delivery and lifetime activation for 1 PC.",
   },
   {
     q: "Is the Office 2024 LTSC license lifetime?",
@@ -232,7 +232,7 @@ function ProductPage() {
 
             <p className="mt-4 text-sm md:text-base text-muted-foreground leading-relaxed">
               Get a genuine Microsoft Office 2024 Professional Plus LTSC product key for 1 Windows PC.
-              One-time payment, lifetime activation, instant email delivery. The latest perpetual Office
+              One-time payment, lifetime activation, quick email delivery. The latest perpetual Office
               suite with Word, Excel, PowerPoint, Outlook, Access, Publisher and Teams.
             </p>
 
