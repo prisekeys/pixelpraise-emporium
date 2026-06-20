@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Office 2024 for Mac key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Home & Business product key for Mac right here on KeyGG for $93 with instant email delivery and lifetime activation for 1 Mac." } },
                 { "@type": "Question", name: "Is the Office 2024 for Mac license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2024 Home & Business for 1 Mac. No subscription, no recurring fees." } },
-                { "@type": "Question", name: "How fast will I receive my Office 2024 Mac product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Home & Business for Mac key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Office 2024 Mac product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Home & Business for Mac key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2024 Mac key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
                 { "@type": "Question", name: "What apps are included in Office 2024 Home & Business for Mac?", acceptedAnswer: { "@type": "Answer", text: "Office 2024 Home & Business for Mac includes Word, Excel, PowerPoint and Outlook — all natively optimized for Apple Silicon and Intel Macs with the latest features." } },
                 { "@type": "Question", name: "Does Office 2024 for Mac work natively on Apple Silicon?", acceptedAnswer: { "@type": "Answer", text: "Yes. Office 2024 Home & Business for Mac is fully native for Apple Silicon Macs (M1, M2, M3) and also supports Intel-based Macs." } },
@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Office 2024 Mac product key?",
-    a: "Your Office 2024 Home & Business for Mac key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Office 2024 Home & Business for Mac key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Office 2024 Mac key genuine?",

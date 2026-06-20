@@ -111,7 +111,7 @@ export const Route = createFileRoute("/product/office-365-professional-plus-5-de
                 { "@type": "Question", name: "Where can I buy a cheap Office 365 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 365 Professional Plus 1-year subscription key right here on KeyGG for just $13, with instant email delivery and activation for 5 devices including 100 GB of cloud storage." } },
                 { "@type": "Question", name: "How many devices can I install Office 365 Pro Plus on?", acceptedAnswer: { "@type": "Answer", text: "Office 365 Professional Plus can be installed on up to 5 devices — any combination of Windows PCs, Macs, tablets and smartphones — all under the same Microsoft account." } },
                 { "@type": "Question", name: "How long does the Office 365 Pro Plus subscription last?", acceptedAnswer: { "@type": "Answer", text: "This key activates Office 365 Professional Plus for a full 12 months (1 year) from the date of activation, with all features and updates included." } },
-                { "@type": "Question", name: "How fast will I receive my Office 365 Pro Plus key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 365 Professional Plus key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Office 365 Pro Plus key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 365 Professional Plus key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "What apps and features are included?", acceptedAnswer: { "@type": "Answer", text: "Office 365 Professional Plus includes Word, Excel, PowerPoint, Outlook, OneNote, Publisher, Access, Microsoft Teams and 100 GB of OneDrive cloud storage per user." } },
                 { "@type": "Question", name: "Is the Office 365 Professional Plus key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly through Microsoft's official account portal at office.com." } },
               ],
@@ -148,7 +148,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Office 365 Pro Plus key?",
-    a: "Your Office 365 Professional Plus key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Office 365 Professional Plus key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "What apps and features are included?",

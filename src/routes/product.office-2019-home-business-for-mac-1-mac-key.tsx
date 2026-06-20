@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/office-2019-home-business-for-mac
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Office 2019 for Mac key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2019 Home & Business product key for Mac right here on KeyGG for $32 with instant email delivery and lifetime activation for 1 Mac." } },
                 { "@type": "Question", name: "Is the Office 2019 for Mac license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2019 Home & Business for 1 Mac. No subscription, no recurring fees." } },
-                { "@type": "Question", name: "How fast will I receive my Office 2019 Mac product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2019 Home & Business for Mac key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Office 2019 Mac product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2019 Home & Business for Mac key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2019 Mac key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
                 { "@type": "Question", name: "What apps are included in Office 2019 Home & Business for Mac?", acceptedAnswer: { "@type": "Answer", text: "Office 2019 Home & Business for Mac includes Word, Excel, PowerPoint and Outlook — all fully optimized for macOS." } },
                 { "@type": "Question", name: "Does Office 2019 for Mac work on Intel and Apple Silicon Macs?", acceptedAnswer: { "@type": "Answer", text: "Yes. Office 2019 Home & Business for Mac works on both Intel-based Macs and Apple Silicon Macs (M1, M2, M3) through Rosetta 2." } },
@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Office 2019 Mac product key?",
-    a: "Your Office 2019 Home & Business for Mac key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Office 2019 Home & Business for Mac key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Office 2019 Mac key genuine?",

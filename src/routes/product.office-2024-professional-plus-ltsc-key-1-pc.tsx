@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/office-2024-professional-plus-lts
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Office 2024 Professional Plus LTSC key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft Office 2024 Professional Plus LTSC product key right here on KeyGG for $20 with instant email delivery and lifetime activation for 1 PC." } },
                 { "@type": "Question", name: "Is the Office 2024 LTSC license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you lifetime activation of Office 2024 Professional Plus LTSC for 1 Windows PC. No subscription, no recurring fees." } },
-                { "@type": "Question", name: "How fast will I receive my Office 2024 LTSC product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Professional Plus LTSC key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Office 2024 LTSC product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2024 Professional Plus LTSC key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Office 2024 LTSC key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
                 { "@type": "Question", name: "What is the difference between Office 2024 LTSC and Microsoft 365?", acceptedAnswer: { "@type": "Answer", text: "Office 2024 LTSC is a perpetual license you pay once and own forever with no cloud features. Microsoft 365 is a subscription with continuous updates and cloud services like OneDrive and Teams online." } },
                 { "@type": "Question", name: "Does Office 2024 Professional Plus LTSC work on Windows 10 and Windows 11?", acceptedAnswer: { "@type": "Answer", text: "Yes. Office 2024 Professional Plus LTSC is fully compatible with both Windows 10 and Windows 11 (64-bit)." } },
@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Office 2024 LTSC product key?",
-    a: "Your Office 2024 Professional Plus LTSC key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Office 2024 Professional Plus LTSC key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Office 2024 LTSC key genuine?",

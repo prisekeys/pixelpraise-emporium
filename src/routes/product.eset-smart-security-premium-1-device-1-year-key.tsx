@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap ESET Smart Security Premium key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine ESET Smart Security Premium key for 1 device / 1 year right here on KeyGG for $32 with instant email delivery." } },
                 { "@type": "Question", name: "Is the ESET Smart Security Premium license for 1 year?", acceptedAnswer: { "@type": "Answer", text: "Yes. This key provides 1 year of full ESET Smart Security Premium protection for 1 device. You can renew annually at the same low price." } },
-                { "@type": "Question", name: "How fast will I receive my ESET product key?", acceptedAnswer: { "@type": "Answer", text: "Your ESET Smart Security Premium key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my ESET product key?", acceptedAnswer: { "@type": "Answer", text: "Your ESET Smart Security Premium key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the ESET key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on ESET's official licensing servers." } },
                 { "@type": "Question", name: "What does ESET Smart Security Premium include?", acceptedAnswer: { "@type": "Answer", text: "ESET Smart Security Premium includes advanced antivirus, firewall, anti-phishing, ransomware shield, password manager, secure browser banking protection, and privacy tools for 1 device." } },
                 { "@type": "Question", name: "Does ESET Smart Security Premium work on Windows, Mac and Android?", acceptedAnswer: { "@type": "Answer", text: "Yes. This 1-device license can be used on one Windows PC, one Mac, or one Android device. ESET Smart Security Premium is compatible with Windows 10/11, macOS and Android." } },
@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my ESET product key?",
-    a: "Your ESET Smart Security Premium key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your ESET Smart Security Premium key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the ESET key genuine?",

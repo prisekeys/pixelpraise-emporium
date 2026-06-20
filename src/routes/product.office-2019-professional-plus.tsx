@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/office-2019-professional-plus")({
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Office 2019 Professional Plus key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Office 2019 Professional Plus product key right here on KeyGG for $13 with instant email delivery and lifetime activation." } },
                 { "@type": "Question", name: "Is this Office 2019 Pro Plus license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. It is a one-time purchase that gives you a lifetime activation for 1 PC. No subscription, no recurring fees." } },
-                { "@type": "Question", name: "How fast will I receive my Office 2019 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2019 Professional Plus key is delivered automatically to your email within 5–10 minutes of payment." } },
+                { "@type": "Question", name: "How fast will I receive my Office 2019 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Office 2019 Professional Plus key is delivered automatically to your email fast after payment." } },
                 { "@type": "Question", name: "Is the Office 2019 Pro Plus key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is genuine and activates directly on Microsoft's official servers." } },
                 { "@type": "Question", name: "Can I download Office 2019 Professional Plus after purchase?", acceptedAnswer: { "@type": "Answer", text: "Yes. After purchase you'll receive the official Microsoft download link along with your product key." } },
               ],
@@ -163,7 +163,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Office 2019 product key?",
-    a: "Your Office 2019 Professional Plus product key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Office 2019 Professional Plus product key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Office 2019 Pro Plus key genuine?",
