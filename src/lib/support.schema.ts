@@ -6,6 +6,10 @@ export const supportMessageSchema = z.object({
   subject: z.string().trim().min(2, "Subject must be at least 2 characters").max(200, "Subject must be less than 200 characters"),
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000, "Message must be less than 2000 characters"),
   orderId: z.string().trim().max(100, "Order ID must be less than 100 characters").optional(),
+  // Bot protection: honeypot field — humans never see/fill it
+  website: z.string().max(0, "Bot detected").optional().or(z.literal("")),
+  // Bot protection: form render timestamp — block instant submits
+  formLoadedAt: z.number().int().positive(),
 });
 
 export type SupportMessageInput = z.infer<typeof supportMessageSchema>;
