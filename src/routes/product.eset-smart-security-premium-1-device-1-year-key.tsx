@@ -15,6 +15,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import productImg from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
+import trustBanner from "@/assets/trust-payment-banner.svg.asset.json";
 
 const PAGE_TITLE = "Buy ESET Smart Security Premium – 1 Device | 1-Year Key | KeyGG";
 const PAGE_DESC =
@@ -195,6 +196,7 @@ function ProductPage() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-start">
 
           {/* Image */}
+          <div>
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
               src={productImg.url}
@@ -202,6 +204,13 @@ function ProductPage() {
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
+          </div>
+          <img
+            src={trustBanner.url}
+            alt="Secure payment methods accepted"
+            className="mt-4 w-full h-auto"
+            loading="lazy"
+          />
           </div>
 
           {/* Details */}
