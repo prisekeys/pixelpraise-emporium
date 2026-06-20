@@ -38,6 +38,7 @@ export const Route = createFileRoute("/fr")({
       { property: "og:site_name", content: "KeyGG" },
       { property: "og:locale", content: "fr_FR" },
       { property: "og:locale:alternate", content: "en_US" },
+      { property: "og:locale:alternate", content: "de_DE" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: PAGE_TITLE },
       { name: "twitter:description", content: PAGE_DESC },
@@ -47,6 +48,7 @@ export const Route = createFileRoute("/fr")({
       { rel: "canonical", href: "/fr" },
       { rel: "alternate", hrefLang: "fr", href: "/fr" },
       { rel: "alternate", hrefLang: "en", href: "/" },
+      { rel: "alternate", hrefLang: "de", href: "/de" },
       { rel: "alternate", hrefLang: "x-default", href: "/" },
     ],
     scripts: [
