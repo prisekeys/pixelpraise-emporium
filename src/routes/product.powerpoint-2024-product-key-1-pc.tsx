@@ -406,7 +406,9 @@ function ProductPage() {
             <span className="text-base sm:text-lg text-muted-foreground line-through">${original}</span>
           </div>
           <button
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90"
+            type="button"
+            onClick={openCheckout}
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold text-primary-foreground transition hover:opacity-90 cursor-pointer"
             style={{ background: "var(--gradient-primary)", boxShadow: "var(--shadow-soft)" }}
           >
             <Download className="w-4 h-4" /> Buy now
