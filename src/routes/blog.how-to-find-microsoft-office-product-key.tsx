@@ -31,8 +31,9 @@ export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product
       {
         property: "og:description",
         content:
-          "Lost your Office key? Follow our step-by-step guide to recover Office 2019 & 2021 product keys. If recovery fails, grab a new lifetime license from KeyGG in minutes.",
+          "Recover lost Office 2019 & 2021 product keys with 5 proven methods — or grab a new lifetime license from KeyGG.",
       },
+
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/blog/how-to-find-microsoft-office-product-key" },
       { property: "og:site_name", content: "KeyGG" },
