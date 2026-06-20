@@ -75,7 +75,7 @@ export const Route = createFileRoute("/product/outlook-2024-product-key-1-pc")({
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.5",
                 reviewCount: "2100",
                 bestRating: "5",
                 worstRating: "1",

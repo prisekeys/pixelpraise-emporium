@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/project-professional-2024-key-1-p
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.4",
                 reviewCount: "5400",
                 bestRating: "5",
                 worstRating: "1",

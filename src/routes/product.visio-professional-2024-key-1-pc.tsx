@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/visio-professional-2024-key-1-pc"
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.7",
+                ratingValue: "4.3",
                 reviewCount: "4100",
                 bestRating: "5",
                 worstRating: "1",

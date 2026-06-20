@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/office-2019-home-business-for-mac
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.8",
+                ratingValue: "4.3",
                 reviewCount: "7800",
                 bestRating: "5",
                 worstRating: "1",

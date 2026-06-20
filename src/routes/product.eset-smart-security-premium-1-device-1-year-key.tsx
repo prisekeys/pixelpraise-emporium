@@ -68,7 +68,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
               },
               aggregateRating: {
                 "@type": "AggregateRating",
-                ratingValue: "4.7",
+                ratingValue: "4.4",
                 reviewCount: "6200",
                 bestRating: "5",
                 worstRating: "1",
