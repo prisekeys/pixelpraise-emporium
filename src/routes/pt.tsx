@@ -50,6 +50,7 @@ export const Route = createFileRoute("/pt")({
     links: [
       { rel: "canonical", href: "/pt" },
       { rel: "alternate", hrefLang: "pt", href: "/pt" },
+      { rel: "alternate", hrefLang: "ja", href: "/jp" },
       { rel: "alternate", hrefLang: "pt-PT", href: "/pt" },
       { rel: "alternate", hrefLang: "pt-BR", href: "/pt" },
       { rel: "alternate", hrefLang: "en", href: "/" },
