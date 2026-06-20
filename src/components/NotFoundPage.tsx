@@ -99,14 +99,13 @@ export default function NotFoundPage() {
             <ul className="divide-y divide-border">
               {matches.map((m) => (
                 <li key={m.slug}>
-                  <Link
-                    to="/product/$slug"
-                    params={{ slug: m.slug }}
+                  <a
+                    href={`/product/${m.slug}`}
                     className="flex items-center justify-between gap-3 py-3 text-sm text-foreground transition-colors hover:text-primary"
                   >
                     <span>{m.title}</span>
                     <ArrowRight className="h-4 w-4 shrink-0 opacity-60" />
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
