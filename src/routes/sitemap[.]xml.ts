@@ -20,6 +20,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/de", changefreq: "daily", priority: "1.0" },
           { path: "/es", changefreq: "daily", priority: "1.0" },
           { path: "/pt", changefreq: "daily", priority: "1.0" },
+          { path: "/jp", changefreq: "daily", priority: "1.0" },
           { path: "/product/office-2019-professional-plus", changefreq: "weekly", priority: "0.8" },
           { path: "/blog/how-to-find-microsoft-office-product-key", changefreq: "monthly", priority: "0.7" },
         ];
