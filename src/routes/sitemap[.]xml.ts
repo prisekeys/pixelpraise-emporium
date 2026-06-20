@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-// TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "";
+const BASE_URL = "https://keygg.com";
 
 interface SitemapEntry {
   path: string;
@@ -20,11 +19,20 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/de", changefreq: "daily", priority: "1.0" },
           { path: "/es", changefreq: "daily", priority: "1.0" },
           { path: "/pt", changefreq: "daily", priority: "1.0" },
+          { path: "/it", changefreq: "daily", priority: "1.0" },
           { path: "/jp", changefreq: "daily", priority: "1.0" },
           { path: "/ru", changefreq: "daily", priority: "1.0" },
           { path: "/cn", changefreq: "daily", priority: "1.0" },
           { path: "/ar", changefreq: "daily", priority: "1.0" },
           { path: "/shop", changefreq: "daily", priority: "0.9" },
+          { path: "/support", changefreq: "monthly", priority: "0.6" },
+          { path: "/help-center", changefreq: "monthly", priority: "0.6" },
+          { path: "/activation-guide", changefreq: "monthly", priority: "0.6" },
+          { path: "/licenses", changefreq: "monthly", priority: "0.5" },
+          { path: "/privacy-policy", changefreq: "yearly", priority: "0.3" },
+          { path: "/terms-of-service", changefreq: "yearly", priority: "0.3" },
+          { path: "/refund-policy", changefreq: "yearly", priority: "0.3" },
+          { path: "/cookie-policy", changefreq: "yearly", priority: "0.3" },
           { path: "/product/office-2019-professional-plus", changefreq: "weekly", priority: "0.8" },
           { path: "/product/windows-11-professional-key-1-pc", changefreq: "weekly", priority: "0.8" },
           { path: "/product/office-2021-professional-plus", changefreq: "weekly", priority: "0.8" },

@@ -64,3 +64,5 @@ Allow: /
 
 User-agent: MistralAI-User
 Allow: /
+
+Sitemap: https://keygg.com/sitemap.xml
