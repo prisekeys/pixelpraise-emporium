@@ -66,7 +66,7 @@ function SupportPage() {
     }
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/prisekeys@gmail.com", {
+      const res = await fetch("https://formsubmit.co/ajax/e49f955e07a1d33a8801701d524388cf", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
