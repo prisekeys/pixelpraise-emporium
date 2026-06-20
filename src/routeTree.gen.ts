@@ -17,6 +17,7 @@ import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as LicensesRouteImport } from './routes/licenses'
 import { Route as HelpCenterRouteImport } from './routes/help-center'
 import { Route as FrRouteImport } from './routes/fr'
+import { Route as EsRouteImport } from './routes/es'
 import { Route as DeRouteImport } from './routes/de'
 import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as ActivationGuideRouteImport } from './routes/activation-guide'
@@ -77,6 +78,11 @@ const HelpCenterRoute = HelpCenterRouteImport.update({
 const FrRoute = FrRouteImport.update({
   id: '/fr',
   path: '/fr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EsRoute = EsRouteImport.update({
+  id: '/es',
+  path: '/es',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeRoute = DeRouteImport.update({
@@ -207,6 +213,7 @@ export interface FileRoutesByFullPath {
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
+  '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
@@ -238,6 +245,7 @@ export interface FileRoutesByTo {
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
+  '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
@@ -270,6 +278,7 @@ export interface FileRoutesById {
   '/activation-guide': typeof ActivationGuideRoute
   '/cookie-policy': typeof CookiePolicyRoute
   '/de': typeof DeRoute
+  '/es': typeof EsRoute
   '/fr': typeof FrRoute
   '/help-center': typeof HelpCenterRoute
   '/licenses': typeof LicensesRoute
@@ -303,6 +312,7 @@ export interface FileRouteTypes {
     | '/activation-guide'
     | '/cookie-policy'
     | '/de'
+    | '/es'
     | '/fr'
     | '/help-center'
     | '/licenses'
@@ -334,6 +344,7 @@ export interface FileRouteTypes {
     | '/activation-guide'
     | '/cookie-policy'
     | '/de'
+    | '/es'
     | '/fr'
     | '/help-center'
     | '/licenses'
@@ -365,6 +376,7 @@ export interface FileRouteTypes {
     | '/activation-guide'
     | '/cookie-policy'
     | '/de'
+    | '/es'
     | '/fr'
     | '/help-center'
     | '/licenses'
@@ -397,6 +409,7 @@ export interface RootRouteChildren {
   ActivationGuideRoute: typeof ActivationGuideRoute
   CookiePolicyRoute: typeof CookiePolicyRoute
   DeRoute: typeof DeRoute
+  EsRoute: typeof EsRoute
   FrRoute: typeof FrRoute
   HelpCenterRoute: typeof HelpCenterRoute
   LicensesRoute: typeof LicensesRoute
@@ -480,6 +493,13 @@ declare module '@tanstack/react-router' {
       path: '/fr'
       fullPath: '/fr'
       preLoaderRoute: typeof FrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/es': {
+      id: '/es'
+      path: '/es'
+      fullPath: '/es'
+      preLoaderRoute: typeof EsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/de': {
@@ -637,6 +657,7 @@ const rootRouteChildren: RootRouteChildren = {
   ActivationGuideRoute: ActivationGuideRoute,
   CookiePolicyRoute: CookiePolicyRoute,
   DeRoute: DeRoute,
+  EsRoute: EsRoute,
   FrRoute: FrRoute,
   HelpCenterRoute: HelpCenterRoute,
   LicensesRoute: LicensesRoute,
