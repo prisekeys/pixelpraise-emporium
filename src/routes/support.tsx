@@ -54,8 +54,40 @@ function SupportPage() {
 
 
   async function onSubmit(values: SupportMessageInput) {
+    // Bot protection: honeypot must be empty
+    if (values.website && values.website.length > 0) {
+      setSubmitted(true);
+      return;
+    }
+    // Bot protection: form must have been on screen ≥ 3s
+    if (Date.now() - formLoadedAtRef.current < 3000) {
+      form.setError("root", { type: "manual", message: "Please take a moment before submitting." });
+      return;
+    }
+
     try {
-      await submitMessage({ data: values });
+      const res = await fetch("https://formsubmit.co/ajax/prisekeys@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          _replyto: values.email,
+          _subject: `KeyGG Support: ${values.subject}`,
+          subject: values.subject,
+          message: values.message,
+          orderId: values.orderId || "—",
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+      if (!res.ok) throw new Error(`Submit failed: ${res.status}`);
+      const json = (await res.json()) as { success?: string | boolean };
+      if (!json.success) throw new Error("Submit rejected");
+
+      // Fire-and-forget backup to our DB (don't block UX if it fails)
+      submitMessage({ data: values }).catch(() => {});
+
       setSubmitted(true);
     } catch (error) {
       console.error(error);
@@ -65,6 +97,7 @@ function SupportPage() {
       });
     }
   }
+
 
   if (submitted) {
     return (
