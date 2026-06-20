@@ -21,37 +21,41 @@ import access2024 from "@/assets/products/access-2024.webp.asset.json";
 import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
 import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
 
-const PAGE_TITLE = "Comprar Clave Microsoft Office y Windows 11 Pro | KeyGG";
-const PAGE_DESC = "Claves originales de Microsoft Office 2019, 2021, 2024 y Windows 11 Pro. Licencia de por vida, entrega instantánea por correo y soporte 24/7.";
+const PAGE_TITLE = "Comprar Chave Microsoft Office e Windows 11 Pro | KeyGG";
+const PAGE_DESC = "Chaves originais Microsoft Office 2019, 2021, 2024 e Windows 11 Pro. Licença vitalícia, entrega instantânea por e-mail e suporte 24/7.";
 
-export const Route = createFileRoute("/es")({
+export const Route = createFileRoute("/pt")({
   head: () => ({
     meta: [
       { title: PAGE_TITLE },
       { name: "description", content: PAGE_DESC },
-      { name: "keywords", content: "clave microsoft office, clave windows 11 pro, comprar office 2021, office 2024 professional plus, licencia office de por vida, microsoft 365 familia, office para mac clave" },
+      { name: "keywords", content: "chave microsoft office, chave windows 11 pro, comprar office 2021, office 2024 professional plus, licença office vitalícia, microsoft 365 família, office para mac chave" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { property: "og:title", content: PAGE_TITLE },
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/es" },
+      { property: "og:url", content: "/pt" },
       { property: "og:site_name", content: "KeyGG" },
-      { property: "og:locale", content: "es_ES" },
+      { property: "og:locale", content: "pt_PT" },
+      { property: "og:locale:alternate", content: "pt_BR" },
       { property: "og:locale:alternate", content: "en_US" },
       { property: "og:locale:alternate", content: "fr_FR" },
       { property: "og:locale:alternate", content: "de_DE" },
+      { property: "og:locale:alternate", content: "es_ES" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: PAGE_TITLE },
       { name: "twitter:description", content: PAGE_DESC },
-      { httpEquiv: "content-language", content: "es" },
+      { httpEquiv: "content-language", content: "pt" },
     ],
     links: [
-      { rel: "canonical", href: "/es" },
-      { rel: "alternate", hrefLang: "es", href: "/es" },
+      { rel: "canonical", href: "/pt" },
       { rel: "alternate", hrefLang: "pt", href: "/pt" },
+      { rel: "alternate", hrefLang: "pt-PT", href: "/pt" },
+      { rel: "alternate", hrefLang: "pt-BR", href: "/pt" },
       { rel: "alternate", hrefLang: "en", href: "/" },
       { rel: "alternate", hrefLang: "fr", href: "/fr" },
       { rel: "alternate", hrefLang: "de", href: "/de" },
+      { rel: "alternate", hrefLang: "es", href: "/es" },
       { rel: "alternate", hrefLang: "x-default", href: "/" },
     ],
     scripts: [
@@ -64,24 +68,24 @@ export const Route = createFileRoute("/es")({
               "@type": "WebPage",
               name: PAGE_TITLE,
               description: PAGE_DESC,
-              inLanguage: "es-ES",
-              url: "/es",
+              inLanguage: "pt-PT",
+              url: "/pt",
             },
             {
               "@type": "Store",
               name: "KeyGG",
-              description: "Tienda de claves originales de Microsoft Office y Windows con entrega instantánea.",
-              inLanguage: "es-ES",
-              url: "/es",
+              description: "Loja de chaves originais Microsoft Office e Windows com entrega instantânea.",
+              inLanguage: "pt-PT",
+              url: "/pt",
             },
             {
               "@type": "FAQPage",
-              inLanguage: "es-ES",
+              inLanguage: "pt-PT",
               mainEntity: [
-                { "@type": "Question", name: "¿Las claves de Microsoft de KeyGG son originales?", acceptedAnswer: { "@type": "Answer", text: "Sí. Cada clave de Microsoft Office y Windows 11 que se vende en KeyGG es 100 % original, se activa directamente en los servidores de Microsoft y cuenta con garantía de licencia de por vida." } },
-                { "@type": "Question", name: "¿La entrega es rápida?", acceptedAnswer: { "@type": "Answer", text: "Tu clave de producto se envía por correo electrónico inmediatamente después de la compra, normalmente en menos de 30 segundos, junto con las instrucciones de descarga y activación." } },
-                { "@type": "Question", name: "¿Es licencia de por vida o por suscripción?", acceptedAnswer: { "@type": "Answer", text: "Las claves de Office 2019, 2021, 2024 y Windows 11 Pro son licencias de por vida vinculadas a un solo PC. Microsoft 365 Familia es una suscripción anual para 6 usuarios." } },
-                { "@type": "Question", name: "¿Por qué vuestros precios son mucho más bajos que los de Microsoft?", acceptedAnswer: { "@type": "Answer", text: "Nos abastecemos directamente de licencias por volumen y OEM originales, eliminando el margen del minorista. Recibes exactamente el mismo producto que vende Microsoft, a una fracción del precio." } },
+                { "@type": "Question", name: "As chaves Microsoft da KeyGG são originais?", acceptedAnswer: { "@type": "Answer", text: "Sim. Todas as chaves Microsoft Office e Windows 11 vendidas na KeyGG são 100% originais, ativam diretamente nos servidores da Microsoft e têm garantia de licença vitalícia." } },
+                { "@type": "Question", name: "A entrega é rápida?", acceptedAnswer: { "@type": "Answer", text: "A sua chave de produto é enviada por e-mail imediatamente após a compra, normalmente em menos de 30 segundos, com as instruções de download e ativação." } },
+                { "@type": "Question", name: "É uma licença vitalícia ou por subscrição?", acceptedAnswer: { "@type": "Answer", text: "As chaves Office 2019, 2021, 2024 e Windows 11 Pro são licenças vitalícias associadas a um único PC. O Microsoft 365 Família é uma subscrição anual para 6 utilizadores." } },
+                { "@type": "Question", name: "Porque é que os vossos preços são muito mais baixos que os da Microsoft?", acceptedAnswer: { "@type": "Answer", text: "Adquirimos diretamente licenças de volume e OEM originais, eliminando a margem de retalho. Recebe exatamente o mesmo produto vendido pela Microsoft, por uma fração do preço." } },
               ],
             },
           ],
@@ -89,22 +93,22 @@ export const Route = createFileRoute("/es")({
       },
     ],
   }),
-  component: HomeES,
+  component: HomePT,
 });
 
 const products = [
-  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus – Clave 1 PC",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
-  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional – Clave 1 PC",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
-  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus – Clave 1 PC",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
-  { img: projectPro2024.url, tag: "Business",    title: "Project Professional 2024 – Clave 1 PC",                price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
-  { img: visioPro2024.url,  tag: "Business",     title: "Visio Professional 2024 – Clave 1 PC",                  price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
-  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC – Clave 1 PC",       price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
-  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Hogar y Empresas para Mac – Clave 1 Mac",   price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
-  { img: esetPremium.url,   tag: "Seguridad",    title: "ESET Smart Security Premium – 1 Dispositivo | Clave 1 año", price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
-  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Hogar y Empresas para Mac – Clave 1 Mac",   price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
-  { img: m365Family.url,    tag: "Suscripción",  title: "Microsoft 365 Familia – 6 Usuarios | 6 TB | Clave 1 año", price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
-  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Hogar y Empresas para Mac – Clave 1 Mac",   price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
-  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Dispositivos | 100 GB Cloud | 1 año", price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
+  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus – Chave 1 PC",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
+  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional – Chave 1 PC",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
+  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus – Chave 1 PC",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
+  { img: projectPro2024.url, tag: "Business",    title: "Project Professional 2024 – Chave 1 PC",                price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
+  { img: visioPro2024.url,  tag: "Business",     title: "Visio Professional 2024 – Chave 1 PC",                  price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
+  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC – Chave 1 PC",       price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
+  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Casa e Empresas para Mac – Chave 1 Mac",    price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
+  { img: esetPremium.url,   tag: "Segurança",    title: "ESET Smart Security Premium – 1 Dispositivo | Chave 1 ano", price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
+  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Casa e Empresas para Mac – Chave 1 Mac",    price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
+  { img: m365Family.url,    tag: "Subscrição",   title: "Microsoft 365 Família – 6 Utilizadores | 6 TB | Chave 1 ano", price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
+  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Casa e Empresas para Mac – Chave 1 Mac",    price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
+  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Dispositivos | 100 GB Cloud | 1 ano", price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
 ];
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
@@ -116,13 +120,13 @@ const openCheckout = (url: string) => (e?: React.MouseEvent) => {
 };
 
 const heroSlides = [
-  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "Software original.", highlight: "Precios imbatibles.", desc: "Licencia de por vida, entrega instantánea por correo y soporte amable cuando lo necesites.", cta: "Ver Windows 11", price: 13, original: 50 },
-  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "El último Office.", highlight: "Activado en minutos.", desc: "Word, Excel, PowerPoint y Outlook — una clave, un PC, para siempre.", cta: "Conseguir Office 2024", price: 20, original: 65 },
-  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 Familia", title: "Apps premium para 6.", highlight: "6 TB en la nube incluidos.", desc: "Comparte Microsoft 365 con hasta seis personas, con 1 TB de OneDrive para cada una.", cta: "Ver 365 Familia", price: 78, original: 130 },
-  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "Todo lo esencial.", highlight: "A una fracción del precio.", desc: "Suite Office completa con licencia de por vida y entrega digital instantánea.", cta: "Conseguir Office 2021", price: 15, original: 55 },
+  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "Software original.", highlight: "Preços imbatíveis.", desc: "Licença vitalícia, entrega instantânea por e-mail e suporte simpático sempre que precisar.", cta: "Ver Windows 11", price: 13, original: 50 },
+  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "O mais recente Office.", highlight: "Ativado em minutos.", desc: "Word, Excel, PowerPoint e Outlook — uma chave, um PC, para sempre.", cta: "Obter Office 2024", price: 20, original: 65 },
+  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 Família", title: "Apps premium para 6.", highlight: "6 TB na cloud incluídos.", desc: "Partilhe o Microsoft 365 com até seis pessoas, com 1 TB de OneDrive para cada uma.", cta: "Ver 365 Família", price: 78, original: 130 },
+  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "Tudo o que é essencial.", highlight: "Por uma fração do preço.", desc: "Suite Office completa com licença vitalícia e entrega digital instantânea.", cta: "Obter Office 2021", price: 15, original: 55 },
 ];
 
-function HomeES() {
+function HomePT() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -135,7 +139,7 @@ function HomeES() {
   return (
     <div className="min-h-screen bg-secondary/30">
       <h1 className="sr-only">
-        Comprar claves originales de Microsoft Office y Windows 11 Pro — Licencia de por vida, entrega instantánea
+        Comprar chaves originais Microsoft Office e Windows 11 Pro — Licença vitalícia, entrega instantânea
       </h1>
       <Navbar />
 
@@ -161,13 +165,13 @@ function HomeES() {
                       </a>
                     </div>
                     <div className="mt-3 flex sm:hidden items-center justify-center gap-2">
-                      <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Diapositiva anterior" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Diapositivo anterior" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         <ChevronLeft className="w-4 h-4" />
                       </button>
-                      <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Reproducir presentación" : "Pausar"} className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Reproduzir apresentação" : "Pausar"} className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
                       </button>
-                      <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Diapositiva siguiente" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+                      <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Diapositivo seguinte" className="w-8 h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                         <ChevronRight className="w-4 h-4" />
                       </button>
                     </div>
@@ -187,20 +191,20 @@ function HomeES() {
             ))}
 
             <div className="absolute bottom-3 sm:bottom-5 right-3 sm:right-5 hidden sm:flex items-center gap-2 z-10">
-              <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Diapositiva anterior" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setActive((i) => (i - 1 + heroSlides.length) % heroSlides.length)} aria-label="Diapositivo anterior" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 <ChevronLeft className="w-4 h-4" />
               </button>
-              <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Reproducir presentación" : "Pausar"} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setPaused((p) => !p)} aria-label={paused ? "Reproduzir apresentação" : "Pausar"} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 {paused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
               </button>
-              <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Diapositiva siguiente" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
+              <button onClick={() => setActive((i) => (i + 1) % heroSlides.length)} aria-label="Diapositivo seguinte" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 backdrop-blur border border-border hover:scale-105 transition grid place-items-center">
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
 
             <div className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
               {heroSlides.map((_, i) => (
-                <button key={i} onClick={() => setActive(i)} aria-label={`Ir a la diapositiva ${i + 1}`} className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
+                <button key={i} onClick={() => setActive(i)} aria-label={`Ir para o diapositivo ${i + 1}`} className={`h-1 rounded-full transition-all ${i === active ? "w-6 sm:w-8 bg-primary" : "w-1.5 bg-foreground/30"}`} />
               ))}
             </div>
           </div>
@@ -210,8 +214,8 @@ function HomeES() {
       {/* Products grid */}
       <section id="products" className="mx-auto max-w-7xl px-6 pt-6 pb-20">
         <div className="mb-10">
-          <div className="text-sm font-medium text-primary mb-2">Destacados</div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Mejores productos de Microsoft</h2>
+          <div className="text-sm font-medium text-primary mb-2">Em destaque</div>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Melhores produtos Microsoft</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -243,9 +247,9 @@ function HomeES() {
       <section id="features" className="mx-auto max-w-7xl px-6 pb-20">
         <div className="grid md:grid-cols-3 gap-5">
           {[
-            { i: Zap, t: "Entrega instantánea", d: "Claves de activación y enlaces de descarga enviados por correo en cuanto se completa el pago." },
-            { i: ShieldCheck, t: "Licencias originales", d: "Licencias de Microsoft 100 % originales, totalmente aptas para actualizaciones y soporte." },
-            { i: Sparkles, t: "Mejor precio garantizado", d: "¿Lo encontraste más barato? Lo igualamos en un plazo de 7 días, sin condiciones." },
+            { i: Zap, t: "Entrega instantânea", d: "Chaves de ativação e ligações de download enviadas por e-mail assim que o pagamento é concluído." },
+            { i: ShieldCheck, t: "Licenças originais", d: "Licenças Microsoft 100% originais, totalmente elegíveis para atualizações e suporte." },
+            { i: Sparkles, t: "Melhor preço garantido", d: "Encontrou mais barato? Igualamos em 7 dias, sem condições." },
           ].map(({ i: Icon, t, d }) => (
             <div key={t} className="rounded-3xl p-8 border border-border bg-card">
               <div className="w-11 h-11 rounded-xl grid place-items-center mb-5" style={{ background: "var(--gradient-lime)" }}>
@@ -263,9 +267,9 @@ function HomeES() {
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 dark:bg-primary/10 border border-primary/20 dark:border-primary/30 mb-4">
             <CheckCircle2 className="w-4 h-4 text-primary dark:text-primary/80" />
-            <span className="text-sm font-medium text-primary dark:text-primary/70">Reseñas verificadas</span>
+            <span className="text-sm font-medium text-primary dark:text-primary/70">Avaliações verificadas</span>
           </div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter mb-3">Lo que dicen nuestros clientes</h2>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter mb-3">O que dizem os nossos clientes</h2>
           <div className="flex items-center justify-center gap-3">
             <div className="flex items-center gap-1">
               {[1,2,3,4,5].map((s) => (
@@ -273,7 +277,7 @@ function HomeES() {
               ))}
             </div>
             <span className="text-2xl font-bold text-foreground">4.9</span>
-            <span className="text-sm text-muted-foreground">de 5 • 12 847 reseñas</span>
+            <span className="text-sm text-muted-foreground">em 5 • 12 847 avaliações</span>
           </div>
           <p className="text-primary dark:text-primary/80 font-semibold text-lg mt-1">Excelente</p>
         </div>
@@ -281,14 +285,14 @@ function HomeES() {
         <Carousel opts={{ align: "start", loop: true }} className="w-full">
           <CarouselContent className="-ml-4">
             {[
-              { name: "Lucía Fernández", date: "hace 2 días", rating: 5, title: "Entrega instantánea, clave original", body: "Pedí Office 2019 y recibí la clave en 2 minutos. Se activó a la primera. ¡Volveré a comprar sin duda!", verified: true },
-              { name: "Mateo Álvarez", date: "hace 1 semana", rating: 5, title: "El mejor precio que encontré", body: "Ahorré más de 100 € comparado con Microsoft directo. La clave funcionó perfecto y el enlace fue inmediato.", verified: true },
-              { name: "Diego Romero", date: "hace 3 días", rating: 5, title: "Soporte excelente", body: "Tuve un pequeño problema de activación. Soporte lo resolvió en 15 minutos. ¡Muy recomendable!", verified: true },
-              { name: "Carla Méndez", date: "hace 5 días", rating: 4, title: "Rápido y fiable", body: "La clave de Windows 11 Pro llegó al instante. Todo funciona. Me gustaría más opciones de pago.", verified: true },
-              { name: "Andrés Vega", date: "hace 2 semanas", rating: 5, title: "Tercera compra, siempre perfecto", body: "Office 2021, luego M365 Familia, ahora Visio 2024. Cada clave original y funcional.", verified: true },
-              { name: "Ren Tanaka", date: "hace 4 días", rating: 5, title: "Office Mac excelente", body: "Office 2021 para Mac. Instalación fácil, todas las apps funcionan. Instrucciones muy claras.", verified: true },
-              { name: "Gustav Lindqvist", date: "hace 1 semana", rating: 5, title: "Licencias business al tope", body: "10 claves de Project Pro 2024 para nuestro equipo. Descuento por volumen excelente, todas activadas sin problemas.", verified: true },
-              { name: "Sofía Castaño", date: "hace 3 días", rating: 4, title: "Experiencia sólida", body: "Licencia de ESET activada al momento. Precio competitivo y entrega instantánea. Muy contenta.", verified: true },
+              { name: "Inês Carvalho", date: "há 2 dias", rating: 5, title: "Entrega instantânea, chave original", body: "Encomendei o Office 2019 e recebi a chave em 2 minutos. Ativou à primeira. Volto a comprar sem dúvida!", verified: true },
+              { name: "Tiago Almeida", date: "há 1 semana", rating: 5, title: "O melhor preço que encontrei", body: "Poupei mais de 100 € em relação à Microsoft direta. A chave funcionou perfeitamente e a ligação foi imediata.", verified: true },
+              { name: "Rui Marques", date: "há 3 dias", rating: 5, title: "Suporte excelente", body: "Tive um pequeno problema de ativação. O suporte resolveu em 15 minutos. Muito recomendável!", verified: true },
+              { name: "Catarina Sousa", date: "há 5 dias", rating: 4, title: "Rápido e fiável", body: "A chave Windows 11 Pro chegou instantaneamente. Tudo funciona. Gostava de mais opções de pagamento.", verified: true },
+              { name: "André Pinto", date: "há 2 semanas", rating: 5, title: "Terceira compra, sempre perfeito", body: "Office 2021, depois M365 Família, agora Visio 2024. Cada chave original e funcional.", verified: true },
+              { name: "Ren Tanaka", date: "há 4 dias", rating: 5, title: "Office Mac excelente", body: "Office 2021 para Mac. Instalação fácil, todas as apps a funcionar. Instruções muito claras.", verified: true },
+              { name: "Gustav Lindqvist", date: "há 1 semana", rating: 5, title: "Licenças business no topo", body: "10 chaves Project Pro 2024 para a nossa equipa. Desconto por volume excelente, todas ativadas sem problemas.", verified: true },
+              { name: "Beatriz Lopes", date: "há 3 dias", rating: 4, title: "Experiência sólida", body: "Licença ESET ativada de imediato. Preço competitivo e entrega instantânea. Muito satisfeita.", verified: true },
             ].map((r, i) => (
               <CarouselItem key={i} className="pl-4 sm:basis-1/2 lg:basis-1/4">
                 <div className="rounded-xl border border-border bg-card p-5 flex flex-col h-full">
@@ -328,15 +332,15 @@ function HomeES() {
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <div className="mb-10">
           <div className="text-sm font-medium text-primary mb-2">Office 2024</div>
-          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Aplicaciones individuales</h2>
+          <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tighter">Aplicações individuais</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 – Clave 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
-            { title: "Access 2024 – Clave 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
-            { title: "PowerPoint 2024 – Clave 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
-            { title: "Excel 2024 – Clave 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
+            { title: "Outlook 2024 – Chave 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
+            { title: "Access 2024 – Chave 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
+            { title: "PowerPoint 2024 – Chave 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
+            { title: "Excel 2024 – Chave 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
           ].map((p) => (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <Link to={p.to} className="block">
