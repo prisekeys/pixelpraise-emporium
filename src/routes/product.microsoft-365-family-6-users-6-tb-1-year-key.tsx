@@ -11,6 +11,7 @@ import {
   BadgeCheck,
   Check,
   ChevronRight,
+  AlertTriangle,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -260,6 +261,28 @@ function ProductPage() {
                 </li>
               ))}
             </ul>
+
+            {/* Important VPN notice */}
+            <div
+              role="alert"
+              className="mt-6 rounded-2xl border-2 border-yellow-500/60 bg-yellow-500/10 p-4 sm:p-5"
+            >
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="w-6 h-6 text-yellow-500 shrink-0 mt-0.5" />
+                <div>
+                  <div className="font-display font-bold text-base sm:text-lg text-foreground">
+                    Important: VPN required for first activation
+                  </div>
+                  <p className="mt-1.5 text-sm text-foreground/80 leading-relaxed">
+                    To redeem this key for the first time, you <strong>must</strong> connect
+                    through a VPN set to one of the following regions:{" "}
+                    <strong>China (CHN), Taiwan (TW), Hong Kong (HK), or Macau</strong>.
+                    Once activation is complete, you can use Microsoft 365 normally from anywhere
+                    without a VPN.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             {/* Price card */}
             <div className="mt-6 p-4 sm:p-5 rounded-2xl border border-border bg-card">
