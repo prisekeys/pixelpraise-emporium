@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/windows-11-professional-key-1-pc"
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Windows 11 Pro key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Windows 11 Professional product key right here on KeyGG for $13 with instant email delivery and lifetime activation for 1 PC." } },
                 { "@type": "Question", name: "Is this Windows 11 Pro license lifetime?", acceptedAnswer: { "@type": "Answer", text: "Yes. This is a one-time purchase that gives you a lifetime activation for 1 Windows PC. No subscription, no recurring fees." } },
-                { "@type": "Question", name: "How fast will I receive my Windows 11 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Windows 11 Professional key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Windows 11 product key?", acceptedAnswer: { "@type": "Answer", text: "Your Windows 11 Professional key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Windows 11 Pro key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
                 { "@type": "Question", name: "Can I upgrade from Windows 10 to Windows 11 with this key?", acceptedAnswer: { "@type": "Answer", text: "Yes. You can use this Windows 11 Pro key to activate a fresh install or upgrade an existing Windows 10 installation to Windows 11 Pro." } },
               ],
@@ -153,7 +153,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Windows 11 product key?",
-    a: "Your Windows 11 Professional key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Windows 11 Professional key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Windows 11 Pro key genuine?",

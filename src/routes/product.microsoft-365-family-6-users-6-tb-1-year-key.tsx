@@ -110,7 +110,7 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
               mainEntity: [
                 { "@type": "Question", name: "Where can I buy a cheap Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "You can buy a genuine Microsoft 365 Family key for 6 users / 1 year right here on KeyGG for $78 with instant email delivery." } },
                 { "@type": "Question", name: "Is the Microsoft 365 Family license for 1 year?", acceptedAnswer: { "@type": "Answer", text: "Yes. This key provides 1 year of full Microsoft 365 Family subscription for up to 6 users. You can renew annually at the same low price." } },
-                { "@type": "Question", name: "How fast will I receive my Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "Your Microsoft 365 Family key is delivered automatically to your email within 5–10 minutes of a successful payment." } },
+                { "@type": "Question", name: "How fast will I receive my Microsoft 365 Family key?", acceptedAnswer: { "@type": "Answer", text: "Your Microsoft 365 Family key is delivered automatically to your email fast after a successful payment." } },
                 { "@type": "Question", name: "Is the Microsoft 365 Family key genuine?", acceptedAnswer: { "@type": "Answer", text: "Yes. Every key is 100% genuine and activates directly on Microsoft's official licensing servers." } },
                 { "@type": "Question", name: "What does Microsoft 365 Family include?", acceptedAnswer: { "@type": "Answer", text: "Microsoft 365 Family includes premium Word, Excel, PowerPoint, Outlook, Teams and OneDrive for up to 6 users, with 1 TB cloud storage per user (6 TB total), plus advanced security and family safety features." } },
                 { "@type": "Question", name: "Can I share Microsoft 365 Family with my household?", acceptedAnswer: { "@type": "Answer", text: "Yes. Microsoft 365 Family covers up to 6 users in your household. Each user gets their own account with full access to all apps and 1 TB of OneDrive storage." } },
@@ -144,7 +144,7 @@ const faqs = [
   },
   {
     q: "How fast will I receive my Microsoft 365 Family key?",
-    a: "Your Microsoft 365 Family key is delivered automatically to your email within 5–10 minutes of a successful payment.",
+    a: "Your Microsoft 365 Family key is delivered automatically to your email fast after a successful payment.",
   },
   {
     q: "Is the Microsoft 365 Family key genuine?",
