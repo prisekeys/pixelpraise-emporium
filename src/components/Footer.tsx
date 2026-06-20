@@ -25,8 +25,8 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition">Microsoft 365</a></li>
               <li><a href="#" className="hover:text-foreground transition">Windows 11</a></li>
-              <li><a href="#" className="hover:text-foreground transition">Xbox Game Pass</a></li>
-              <li><a href="#" className="hover:text-foreground transition">Microsoft Copilot</a></li>
+              <li><a href="/product/office-2024-professional-plus-ltsc-key-1-pc" className="hover:text-foreground transition">Office 2024 for windows</a></li>
+              <li><a href="/product/office-2024-home-business-for-mac-1-mac-key" className="hover:text-foreground transition">Office 2024 for mac</a></li>
             </ul>
           </div>
 
