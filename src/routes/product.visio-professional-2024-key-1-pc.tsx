@@ -226,7 +226,7 @@ function ProductPage() {
               href="#"
               className="mt-3 inline-flex items-center gap-3 group underline underline-offset-2 decoration-foreground/30 hover:decoration-foreground transition"
             >
-              <div className="flex items-center gap-0.5" aria-label="Rated 4.7 out of 5">
+              <div className="flex items-center gap-0.5 border-b border-foreground/30 group-hover:border-foreground pb-0.5" aria-label="Rated 4.7 out of 5">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
