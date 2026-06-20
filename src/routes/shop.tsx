@@ -158,12 +158,6 @@ function ShopPage() {
               <li key={p.slug}>
                 <article className="h-full rounded-2xl border border-border bg-card overflow-hidden flex flex-col">
                   <Link
-                    to="/product/$slug"
-                    params={{ slug: p.slug }}
-                    // @ts-expect-error dynamic slug routes are separate files
-                    href={`/product/${p.slug}`}
-                  />
-                  <Link
                     to={`/product/${p.slug}` as any}
                     className="block"
                   >
