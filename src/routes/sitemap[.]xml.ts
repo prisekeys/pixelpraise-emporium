@@ -17,6 +17,7 @@ export const Route = createFileRoute("/sitemap.xml")({
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "daily", priority: "1.0" },
           { path: "/fr", changefreq: "daily", priority: "1.0" },
+          { path: "/de", changefreq: "daily", priority: "1.0" },
           { path: "/product/office-2019-professional-plus", changefreq: "weekly", priority: "0.8" },
           { path: "/blog/how-to-find-microsoft-office-product-key", changefreq: "monthly", priority: "0.7" },
         ];
