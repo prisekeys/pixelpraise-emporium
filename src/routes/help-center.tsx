@@ -20,7 +20,37 @@ export const Route = createFileRoute("/help-center")({
       { name: "twitter:description", content: "Find answers to all your questions about buying and activating genuine Microsoft product keys at KeyGG." },
     ],
     links: [{ rel: "canonical", href: "/help-center" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "How do I receive my product key?", acceptedAnswer: { "@type": "Answer", text: "After completing your purchase, your product key is delivered instantly via email to the address you provided during checkout. You will also find your key in your KeyGG account order history. In rare cases, delivery may take up to 24 hours due to payment verification." } },
+            { "@type": "Question", name: "I didn't receive my order email. What should I do?", acceptedAnswer: { "@type": "Answer", text: "First, check your spam or junk folder. If the email is not there, ensure you entered the correct email address at checkout. You can also log in to your KeyGG account and view your order history to retrieve your key directly. If you still cannot find it, contact our support team with your order number." } },
+            { "@type": "Question", name: "Is my payment information secure?", acceptedAnswer: { "@type": "Answer", text: "Yes. KeyGG uses industry-standard encryption (SSL/TLS) to protect all transactions. We process payments through trusted providers like Stripe and PayPal. We never store your full credit card details on our servers." } },
+            { "@type": "Question", name: "Can I cancel or change my order?", acceptedAnswer: { "@type": "Answer", text: "Orders for digital product keys cannot be cancelled once the key has been delivered, because the product is instantly consumable. If you purchased the wrong product and the key has not been viewed, contact us within 24 hours and we may be able to help." } },
+            { "@type": "Question", name: "Are your product keys genuine?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. Every key sold on KeyGG is 100% genuine and sourced through authorized channels. All keys activate directly on Microsoft's official servers, granting you full access to updates and features." } },
+            { "@type": "Question", name: "What is the difference between Retail, OEM, and Volume licenses?", acceptedAnswer: { "@type": "Answer", text: "Retail licenses can be transferred between devices and are tied to the purchaser. OEM licenses are typically tied to the first device they are activated on and are non-transferable. Volume licenses are designed for businesses and organizations with multiple activations." } },
+            { "@type": "Question", name: "How many devices can I install the software on?", acceptedAnswer: { "@type": "Answer", text: "Device limits vary by product. Single-PC keys activate one device. Microsoft 365 Family supports up to 6 users with 1 TB of cloud storage each. Office 365 Professional Plus covers up to 5 devices." } },
+            { "@type": "Question", name: "Can I transfer my license to a new computer?", acceptedAnswer: { "@type": "Answer", text: "Retail licenses can generally be transferred to a new device by uninstalling the software from the old device and reactivating on the new one. OEM licenses are typically non-transferable." } },
+            { "@type": "Question", name: "How do I activate my product?", acceptedAnswer: { "@type": "Answer", text: "Activation steps vary by product. We have a detailed Activation Guide covering Office, Windows 11, Microsoft 365, and individual apps, with step-by-step instructions and troubleshooting tips." } },
+            { "@type": "Question", name: "What if my key doesn't work?", acceptedAnswer: { "@type": "Answer", text: "If your key fails to activate, first double-check that you entered all 25 characters correctly and that you are activating the correct product version. If the problem persists, contact our support team within 7 days for troubleshooting or a replacement key." } },
+            { "@type": "Question", name: "Do I need a Microsoft account?", acceptedAnswer: { "@type": "Answer", text: "Standalone Office and Windows keys can be activated without a Microsoft account, though linking your license to an account makes reinstallation easier. Microsoft 365 subscriptions require a Microsoft account." } },
+            { "@type": "Question", name: "Can I reinstall the software after formatting my PC?", acceptedAnswer: { "@type": "Answer", text: "Yes. As long as you have your product key, you can reinstall and reactivate the software. For retail licenses tied to a Microsoft account, reactivation is automatic when you sign in." } },
+            { "@type": "Question", name: "What is your refund policy?", acceptedAnswer: { "@type": "Answer", text: "Due to the nature of digital products, all sales are generally final. However, we offer refunds for defective keys that cannot be resolved within 7 days, duplicate purchases reported within 24 hours, or accidental purchases of the wrong product within 24 hours if the key has not been used." } },
+            { "@type": "Question", name: "How do I request a refund?", acceptedAnswer: { "@type": "Answer", text: "Contact our support team at support@keygg.com or through the Support Center. Include your order number, the email used for purchase, and a description of the issue. Please allow up to 7 days for our team to evaluate and process your request." } },
+            { "@type": "Question", name: "Can I get a replacement instead of a refund?", acceptedAnswer: { "@type": "Answer", text: "Yes. In most cases where a key is defective, we will provide a replacement key at no additional cost. Replacements are typically issued faster than refunds and are our preferred resolution method." } },
+            { "@type": "Question", name: "Do I need an account to buy from KeyGG?", acceptedAnswer: { "@type": "Answer", text: "No, you can check out as a guest. However, creating an account lets you view your order history, store product keys for easy access, and receive exclusive offers." } },
+            { "@type": "Question", name: "How do I reset my password?", acceptedAnswer: { "@type": "Answer", text: "Click 'Forgot Password' on the login page and enter your email address. We will send you a password reset link. If you do not receive the email within a few minutes, check your spam folder." } },
+            { "@type": "Question", name: "Is my personal information safe?", acceptedAnswer: { "@type": "Answer", text: "Yes. We take data privacy seriously and comply with GDPR and other applicable data protection regulations. We do not sell your personal information to third parties." } },
+          ],
+        }),
+      },
+    ],
   }),
+
   component: HelpCenterPage,
 });
 
