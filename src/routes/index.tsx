@@ -40,8 +40,16 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Buy Microsoft Office & Windows 11 Pro Keys | KeyGG" },
       { name: "twitter:description", content: "Genuine Microsoft product keys. Lifetime license. Instant delivery." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:locale:alternate", content: "fr_FR" },
+      { httpEquiv: "content-language", content: "en" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "alternate", hrefLang: "en", href: "/" },
+      { rel: "alternate", hrefLang: "fr", href: "/fr" },
+      { rel: "alternate", hrefLang: "x-default", href: "/" },
+    ],
     scripts: [
       {
         type: "application/ld+json",
