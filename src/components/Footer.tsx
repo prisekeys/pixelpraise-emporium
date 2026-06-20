@@ -23,8 +23,8 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold text-sm mb-4">Products</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition">Microsoft 365</a></li>
-              <li><a href="#" className="hover:text-foreground transition">Windows 11</a></li>
+              <li><a href="/product/microsoft-365-family-6-users-6-tb-1-year-key" className="hover:text-foreground transition">Microsoft 365</a></li>
+              <li><a href="/product/windows-11-professional-key-1-pc" className="hover:text-foreground transition">Windows 11</a></li>
               <li><a href="/product/office-2024-professional-plus-ltsc-key-1-pc" className="hover:text-foreground transition">Office 2024 for windows</a></li>
               <li><a href="/product/office-2024-home-business-for-mac-1-mac-key" className="hover:text-foreground transition">Office 2024 for mac</a></li>
             </ul>
