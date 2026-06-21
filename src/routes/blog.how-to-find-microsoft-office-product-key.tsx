@@ -9,7 +9,7 @@ import {
   ArrowRight,
   Headphones,
 } from "lucide-react";
-import logo from "@/assets/keygg-logo-v2.png.asset.json";
+import logo from "@/assets/keygg-logo-v2.png";
 
 export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product-key")({
   head: () => ({
@@ -38,11 +38,11 @@ export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/blog/how-to-find-microsoft-office-product-key" },
       { property: "og:site_name", content: "KeyGG" },
-      { property: "og:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { property: "og:image", content: "https://keygg.com/og-default.jpg" },
       { property: "og:image:width", content: "1216" },
       { property: "og:image:height", content: "640" },
       { property: "og:image:alt", content: "KeyGG — Genuine Software Product Keys" },
-      { name: "twitter:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { name: "twitter:image", content: "https://keygg.com/og-default.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "How to Find Your Microsoft Office Product Key (2019 & 2021)" },
       {
@@ -232,7 +232,7 @@ function BlogPage() {
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30 border-b border-border/60">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
           <Link to="/" className="flex items-center gap-2.5 justify-start md:pl-2">
-            <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
+            <img src={logo} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </Link>
           <div className="hidden md:flex justify-center w-full max-w-md mx-auto" />
           <button

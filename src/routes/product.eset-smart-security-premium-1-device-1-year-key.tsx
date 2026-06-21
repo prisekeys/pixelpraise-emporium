@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import productImg from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
-import trustBanner from "@/assets/trust-payment-banner.svg.asset.json";
+import productImg from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.webp";
+import trustBanner from "@/assets/trust-payment-banner.svg";
 
 const PAGE_TITLE = "Buy ESET Smart Security Premium – 1 Device | 1-Year Key | KeyGG";
 const PAGE_DESC =
@@ -38,9 +38,9 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "product" },
       { property: "og:url", content: PAGE_URL },
-      { property: "og:image", content: productImg.url },
+      { property: "og:image", content: productImg },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: productImg.url },
+      { name: "twitter:image", content: productImg },
     ],
     links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/product/eset-smart-security-premium-1-dev
             {
               "@type": "Product",
               name: "ESET Smart Security Premium – 1 Device | 1-Year Key",
-              image: productImg.url,
+              image: productImg,
               description:
                 "Genuine ESET Smart Security Premium product key for 1 device, 1 year. Advanced antivirus, firewall, ransomware shield, password manager and privacy protection with quick email delivery.",
               brand: { "@type": "Brand", name: "ESET" },
@@ -199,14 +199,14 @@ function ProductPage() {
           <div>
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
-              src={productImg.url}
+              src={productImg}
               alt="Buy ESET Smart Security Premium key for 1 device 1 year"
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
           </div>
           <img
-            src={trustBanner.url}
+            src={trustBanner}
             alt="Secure payment methods accepted"
             className="mt-4 w-full h-auto"
             loading="lazy"

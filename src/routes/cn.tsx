@@ -4,22 +4,22 @@ import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
-import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
-import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
-import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
-import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.png.asset.json";
-import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.png.asset.json";
-import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
-import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
-import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
-import outlook2024 from "@/assets/products/outlook-2024.webp.asset.json";
-import access2024 from "@/assets/products/access-2024.webp.asset.json";
-import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
-import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.webp";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.webp";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.webp";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.webp";
+import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.webp";
+import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.webp";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.webp";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.webp";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.webp";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.webp";
+import outlook2024 from "@/assets/products/outlook-2024.webp";
+import access2024 from "@/assets/products/access-2024.webp";
+import powerpoint2024 from "@/assets/products/powerpoint-2024.webp";
+import excel2024 from "@/assets/products/excel-2024.webp";
 
 const PAGE_TITLE = "购买 Microsoft Office 与 Windows 11 Pro 正版密钥 | KeyGG";
 const PAGE_DESC = "正版 Microsoft Office 2019、2021、2024 与 Windows 11 Pro 密钥。永久授权,邮件即时发货,7×24 小时客服支持。";
@@ -36,11 +36,11 @@ export const Route = createFileRoute("/cn")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/cn" },
       { property: "og:site_name", content: "KeyGG" },
-      { property: "og:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { property: "og:image", content: "https://keygg.com/og-default.jpg" },
       { property: "og:image:width", content: "1216" },
       { property: "og:image:height", content: "640" },
       { property: "og:image:alt", content: "KeyGG — Genuine Software Product Keys" },
-      { name: "twitter:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { name: "twitter:image", content: "https://keygg.com/og-default.jpg" },
       { property: "og:locale", content: "zh_CN" },
       { property: "og:locale:alternate", content: "en_US" },
       { property: "og:locale:alternate", content: "fr_FR" },
@@ -108,18 +108,18 @@ export const Route = createFileRoute("/cn")({
 });
 
 const products = [
-  { img: office2019Pro.url, tag: "Office",     title: "Office 2019 专业增强版 – 1 台 PC 密钥",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
-  { img: win11Pro.url,      tag: "Windows",    title: "Windows 11 专业版 – 1 台 PC 密钥",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
-  { img: office2021Pro.url, tag: "Office",     title: "Office 2021 专业增强版 – 1 台 PC 密钥",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
-  { img: projectPro2024.url, tag: "商务",       title: "Project Professional 2024 – 1 台 PC 密钥",          price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
-  { img: visioPro2024.url,  tag: "商务",        title: "Visio Professional 2024 – 1 台 PC 密钥",            price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
-  { img: office2024Pro.url, tag: "Office",     title: "Office 2024 专业增强版 LTSC – 1 台 PC 密钥",        price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
-  { img: office2019Mac.url, tag: "Mac",        title: "Office 2019 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
-  { img: esetPremium.url,   tag: "安全",        title: "ESET Smart Security Premium – 1 设备 1 年密钥",     price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
-  { img: office2021Mac.url, tag: "Mac",        title: "Office 2021 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
-  { img: m365Family.url,    tag: "订阅",        title: "Microsoft 365 家庭版 – 6 用户 6TB 1 年密钥",        price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
-  { img: office2024Mac.url, tag: "Mac",        title: "Office 2024 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
-  { img: office365Pro.url,  tag: "Office",     title: "Office 365 专业增强版 – 5 设备 100GB 云盘 1 年",     price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
+  { img: office2019Pro, tag: "Office",     title: "Office 2019 专业增强版 – 1 台 PC 密钥",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
+  { img: win11Pro,      tag: "Windows",    title: "Windows 11 专业版 – 1 台 PC 密钥",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
+  { img: office2021Pro, tag: "Office",     title: "Office 2021 专业增强版 – 1 台 PC 密钥",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
+  { img: projectPro2024, tag: "商务",       title: "Project Professional 2024 – 1 台 PC 密钥",          price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
+  { img: visioPro2024,  tag: "商务",        title: "Visio Professional 2024 – 1 台 PC 密钥",            price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
+  { img: office2024Pro, tag: "Office",     title: "Office 2024 专业增强版 LTSC – 1 台 PC 密钥",        price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
+  { img: office2019Mac, tag: "Mac",        title: "Office 2019 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
+  { img: esetPremium,   tag: "安全",        title: "ESET Smart Security Premium – 1 设备 1 年密钥",     price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
+  { img: office2021Mac, tag: "Mac",        title: "Office 2021 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
+  { img: m365Family,    tag: "订阅",        title: "Microsoft 365 家庭版 – 6 用户 6TB 1 年密钥",        price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
+  { img: office2024Mac, tag: "Mac",        title: "Office 2024 家庭与企业版 Mac – 1 台 Mac 密钥",      price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
+  { img: office365Pro,  tag: "Office",     title: "Office 365 专业增强版 – 5 设备 100GB 云盘 1 年",     price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
 ];
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
@@ -131,10 +131,10 @@ const openCheckout = (url: string) => (e?: React.MouseEvent) => {
 };
 
 const heroSlides = [
-  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "正版软件。", highlight: "超值价格。", desc: "永久授权,邮件即时发货,需要时即可获得贴心客服支持。", cta: "查看 Windows 11", price: 13, original: 50 },
-  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "全新 Office。", highlight: "几分钟激活。", desc: "Word、Excel、PowerPoint 与 Outlook —— 一个密钥、一台电脑、永久使用。", cta: "获取 Office 2024", price: 20, original: 65 },
-  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 家庭版", title: "6 人共享高级应用。", highlight: "6TB 云存储。", desc: "与最多 6 位家人共享 Microsoft 365,每人独享 1TB OneDrive 空间。", cta: "查看 365 家庭版", price: 78, original: 130 },
-  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "全部所需。", highlight: "超低折扣价。", desc: "完整 Office 套件,永久授权,即时数字发货。", cta: "获取 Office 2021", price: 15, original: 55 },
+  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro, eyebrow: "Windows 11 Pro", title: "正版软件。", highlight: "超值价格。", desc: "永久授权,邮件即时发货,需要时即可获得贴心客服支持。", cta: "查看 Windows 11", price: 13, original: 50 },
+  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro, eyebrow: "Office 2024 Pro Plus", title: "全新 Office。", highlight: "几分钟激活。", desc: "Word、Excel、PowerPoint 与 Outlook —— 一个密钥、一台电脑、永久使用。", cta: "获取 Office 2024", price: 20, original: 65 },
+  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family, eyebrow: "Microsoft 365 家庭版", title: "6 人共享高级应用。", highlight: "6TB 云存储。", desc: "与最多 6 位家人共享 Microsoft 365,每人独享 1TB OneDrive 空间。", cta: "查看 365 家庭版", price: 78, original: 130 },
+  { href: "/product/office-2021-professional-plus", product: office2021Pro, eyebrow: "Office 2021 Pro Plus", title: "全部所需。", highlight: "超低折扣价。", desc: "完整 Office 套件,永久授权,即时数字发货。", cta: "获取 Office 2021", price: 15, original: 55 },
 ];
 
 function HomeCN() {
@@ -348,10 +348,10 @@ function HomeCN() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 – 1 台 PC 密钥", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
-            { title: "Access 2024 – 1 台 PC 密钥", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
-            { title: "PowerPoint 2024 – 1 台 PC 密钥", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
-            { title: "Excel 2024 – 1 台 PC 密钥", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
+            { title: "Outlook 2024 – 1 台 PC 密钥", img: outlook2024, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
+            { title: "Access 2024 – 1 台 PC 密钥", img: access2024, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
+            { title: "PowerPoint 2024 – 1 台 PC 密钥", img: powerpoint2024, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
+            { title: "Excel 2024 – 1 台 PC 密钥", img: excel2024, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
           ].map((p) => (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <Link to={p.to} className="block">

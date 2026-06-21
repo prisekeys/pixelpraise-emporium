@@ -15,8 +15,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import productImg from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
-import trustBanner from "@/assets/trust-payment-banner.svg.asset.json";
+import productImg from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.webp";
+import trustBanner from "@/assets/trust-payment-banner.svg";
 
 const PAGE_TITLE = "Buy Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key | KeyGG";
 const PAGE_DESC =
@@ -39,9 +39,9 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "product" },
       { property: "og:url", content: PAGE_URL },
-      { property: "og:image", content: productImg.url },
+      { property: "og:image", content: productImg },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: productImg.url },
+      { name: "twitter:image", content: productImg },
     ],
     links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/product/microsoft-365-family-6-users-6-tb
             {
               "@type": "Product",
               name: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key",
-              image: productImg.url,
+              image: productImg,
               description:
                 "Genuine Microsoft 365 Family product key for 6 users, 1 year. Includes premium Office apps, 1 TB OneDrive cloud storage per user (6 TB total), advanced security and family safety features with quick email delivery.",
               brand: { "@type": "Brand", name: "Microsoft" },
@@ -200,14 +200,14 @@ function ProductPage() {
           <div>
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
-              src={productImg.url}
+              src={productImg}
               alt="Buy Microsoft 365 Family key for 6 users 6 TB 1 year subscription"
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
           </div>
           <img
-            src={trustBanner.url}
+            src={trustBanner}
             alt="Secure payment methods accepted"
             className="mt-4 w-full h-auto"
             loading="lazy"

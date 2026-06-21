@@ -2,22 +2,22 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Download } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
-import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
-import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
-import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
-import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.png.asset.json";
-import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.png.asset.json";
-import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
-import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
-import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
-import outlook2024 from "@/assets/products/outlook-2024.webp.asset.json";
-import access2024 from "@/assets/products/access-2024.webp.asset.json";
-import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
-import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.webp";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.webp";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.webp";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.webp";
+import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.webp";
+import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.webp";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.webp";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.webp";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.webp";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.webp";
+import outlook2024 from "@/assets/products/outlook-2024.webp";
+import access2024 from "@/assets/products/access-2024.webp";
+import powerpoint2024 from "@/assets/products/powerpoint-2024.webp";
+import excel2024 from "@/assets/products/excel-2024.webp";
 
 const WHOP = {
   office2019: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl",
@@ -51,22 +51,22 @@ type Product = {
 };
 
 const PRODUCTS: Product[] = [
-  { slug: "office-2019-professional-plus", title: "Office 2019 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.", img: office2019Pro.url, price: 13, original: 45, rating: 4.9, reviews: 24500, whop: WHOP.office2019 },
-  { slug: "windows-11-professional-key-1-pc", title: "Windows 11 Professional Key – 1 PC", desc: "Lifetime license. Pro features, BitLocker & business security.", img: win11Pro.url, price: 13, original: 50, rating: 4.8, reviews: 31200, whop: WHOP.win11 },
-  { slug: "office-365-professional-plus-5-devices-100gb-1-year-key", title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year", desc: "Full Office suite with cloud storage for 5 devices.", img: office365Pro.url, price: 13, original: 60, rating: 4.8, reviews: 11100, whop: WHOP.office365Pro },
-  { slug: "office-2021-professional-plus", title: "Office 2021 Professional Plus Key – 1 PC", desc: "Lifetime license. Latest Office suite with all premium apps.", img: office2021Pro.url, price: 15, original: 55, rating: 4.9, reviews: 18700, whop: WHOP.office2021 },
-  { slug: "project-professional-2024-key-1-pc", title: "Project Professional 2024 Key – 1 PC", desc: "Advanced project management & planning tools.", img: projectPro2024.url, price: 17, original: 120, rating: 4.8, reviews: 5400, whop: WHOP.project2024 },
-  { slug: "visio-professional-2024-key-1-pc", title: "Visio Professional 2024 Key – 1 PC", desc: "Professional diagramming & data visualization.", img: visioPro2024.url, price: 17, original: 120, rating: 4.7, reviews: 4100, whop: WHOP.visio2024 },
-  { slug: "office-2024-professional-plus-ltsc-key-1-pc", title: "Office 2024 Professional Plus LTSC Key – 1 PC", desc: "Lifetime license. Long-term service channel with latest features.", img: office2024Pro.url, price: 20, original: 65, rating: 4.9, reviews: 9300, whop: WHOP.office2024 },
-  { slug: "outlook-2024-product-key-1-pc", title: "Outlook 2024 Product Key – 1 PC", desc: "Standalone Outlook 2024 with a lifetime license.", img: outlook2024.url, price: 15, original: 55, rating: 4.8, reviews: 3200, whop: WHOP.outlook2024 },
-  { slug: "excel-2024-product-key-1-pc", title: "Excel 2024 Product Key – 1 PC", desc: "Standalone Excel 2024 with a lifetime license.", img: excel2024.url, price: 15, original: 55, rating: 4.9, reviews: 4100, whop: WHOP.excel2024 },
-  { slug: "powerpoint-2024-product-key-1-pc", title: "PowerPoint 2024 Product Key – 1 PC", desc: "Standalone PowerPoint 2024 with a lifetime license.", img: powerpoint2024.url, price: 15, original: 55, rating: 4.8, reviews: 2900, whop: WHOP.powerpoint2024 },
-  { slug: "access-2024-product-key-1-pc", title: "Access 2024 Product Key – 1 PC", desc: "Standalone Access 2024 with a lifetime license.", img: access2024.url, price: 15, original: 55, rating: 4.7, reviews: 2100, whop: WHOP.access2024 },
-  { slug: "office-2019-home-business-for-mac-1-mac-key", title: "Office 2019 Home & Business for Mac – Key for 1 Mac", desc: "Word, Excel, PowerPoint & Outlook for macOS.", img: office2019Mac.url, price: 32, original: 120, rating: 4.8, reviews: 7800, whop: WHOP.office2019Mac },
-  { slug: "office-2021-home-business-for-mac-1-mac-key", title: "Office 2021 Home & Business for Mac – Key for 1 Mac", desc: "Updated Office apps with improved collaboration.", img: office2021Mac.url, price: 38, original: 140, rating: 4.8, reviews: 5600, whop: WHOP.office2021Mac },
-  { slug: "office-2024-home-business-for-mac-1-mac-key", title: "Office 2024 Home & Business for Mac – Key for 1 Mac", desc: "Latest Office suite optimized for Apple Silicon.", img: office2024Mac.url, price: 93, original: 180, rating: 4.9, reviews: 3400, whop: WHOP.office2024Mac },
-  { slug: "eset-smart-security-premium-1-device-1-year-key", title: "ESET Smart Security Premium – 1 Device | 1-Year Key", desc: "Advanced antivirus, firewall & privacy protection.", img: esetPremium.url, price: 32, original: 80, rating: 4.7, reviews: 6200, whop: WHOP.eset },
-  { slug: "microsoft-365-family-6-users-6-tb-1-year-key", title: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key", desc: "Premium apps, 1 TB cloud storage per user.", img: m365Family.url, price: 78, original: 130, rating: 4.9, reviews: 15900, whop: WHOP.m365Family },
+  { slug: "office-2019-professional-plus", title: "Office 2019 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.", img: office2019Pro, price: 13, original: 45, rating: 4.9, reviews: 24500, whop: WHOP.office2019 },
+  { slug: "windows-11-professional-key-1-pc", title: "Windows 11 Professional Key – 1 PC", desc: "Lifetime license. Pro features, BitLocker & business security.", img: win11Pro, price: 13, original: 50, rating: 4.8, reviews: 31200, whop: WHOP.win11 },
+  { slug: "office-365-professional-plus-5-devices-100gb-1-year-key", title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year", desc: "Full Office suite with cloud storage for 5 devices.", img: office365Pro, price: 13, original: 60, rating: 4.8, reviews: 11100, whop: WHOP.office365Pro },
+  { slug: "office-2021-professional-plus", title: "Office 2021 Professional Plus Key – 1 PC", desc: "Lifetime license. Latest Office suite with all premium apps.", img: office2021Pro, price: 15, original: 55, rating: 4.9, reviews: 18700, whop: WHOP.office2021 },
+  { slug: "project-professional-2024-key-1-pc", title: "Project Professional 2024 Key – 1 PC", desc: "Advanced project management & planning tools.", img: projectPro2024, price: 17, original: 120, rating: 4.8, reviews: 5400, whop: WHOP.project2024 },
+  { slug: "visio-professional-2024-key-1-pc", title: "Visio Professional 2024 Key – 1 PC", desc: "Professional diagramming & data visualization.", img: visioPro2024, price: 17, original: 120, rating: 4.7, reviews: 4100, whop: WHOP.visio2024 },
+  { slug: "office-2024-professional-plus-ltsc-key-1-pc", title: "Office 2024 Professional Plus LTSC Key – 1 PC", desc: "Lifetime license. Long-term service channel with latest features.", img: office2024Pro, price: 20, original: 65, rating: 4.9, reviews: 9300, whop: WHOP.office2024 },
+  { slug: "outlook-2024-product-key-1-pc", title: "Outlook 2024 Product Key – 1 PC", desc: "Standalone Outlook 2024 with a lifetime license.", img: outlook2024, price: 15, original: 55, rating: 4.8, reviews: 3200, whop: WHOP.outlook2024 },
+  { slug: "excel-2024-product-key-1-pc", title: "Excel 2024 Product Key – 1 PC", desc: "Standalone Excel 2024 with a lifetime license.", img: excel2024, price: 15, original: 55, rating: 4.9, reviews: 4100, whop: WHOP.excel2024 },
+  { slug: "powerpoint-2024-product-key-1-pc", title: "PowerPoint 2024 Product Key – 1 PC", desc: "Standalone PowerPoint 2024 with a lifetime license.", img: powerpoint2024, price: 15, original: 55, rating: 4.8, reviews: 2900, whop: WHOP.powerpoint2024 },
+  { slug: "access-2024-product-key-1-pc", title: "Access 2024 Product Key – 1 PC", desc: "Standalone Access 2024 with a lifetime license.", img: access2024, price: 15, original: 55, rating: 4.7, reviews: 2100, whop: WHOP.access2024 },
+  { slug: "office-2019-home-business-for-mac-1-mac-key", title: "Office 2019 Home & Business for Mac – Key for 1 Mac", desc: "Word, Excel, PowerPoint & Outlook for macOS.", img: office2019Mac, price: 32, original: 120, rating: 4.8, reviews: 7800, whop: WHOP.office2019Mac },
+  { slug: "office-2021-home-business-for-mac-1-mac-key", title: "Office 2021 Home & Business for Mac – Key for 1 Mac", desc: "Updated Office apps with improved collaboration.", img: office2021Mac, price: 38, original: 140, rating: 4.8, reviews: 5600, whop: WHOP.office2021Mac },
+  { slug: "office-2024-home-business-for-mac-1-mac-key", title: "Office 2024 Home & Business for Mac – Key for 1 Mac", desc: "Latest Office suite optimized for Apple Silicon.", img: office2024Mac, price: 93, original: 180, rating: 4.9, reviews: 3400, whop: WHOP.office2024Mac },
+  { slug: "eset-smart-security-premium-1-device-1-year-key", title: "ESET Smart Security Premium – 1 Device | 1-Year Key", desc: "Advanced antivirus, firewall & privacy protection.", img: esetPremium, price: 32, original: 80, rating: 4.7, reviews: 6200, whop: WHOP.eset },
+  { slug: "microsoft-365-family-6-users-6-tb-1-year-key", title: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key", desc: "Premium apps, 1 TB cloud storage per user.", img: m365Family, price: 78, original: 130, rating: 4.9, reviews: 15900, whop: WHOP.m365Family },
 ];
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
