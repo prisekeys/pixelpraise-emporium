@@ -11,7 +11,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import faviconAsset from "../assets/favicon.png.asset.json";
+import faviconAsset from "../assets/favicon.png";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import NotFoundPage from "../components/NotFoundPage";
 
