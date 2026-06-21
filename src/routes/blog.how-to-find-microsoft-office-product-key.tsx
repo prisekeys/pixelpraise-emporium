@@ -38,11 +38,11 @@ export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/blog/how-to-find-microsoft-office-product-key" },
       { property: "og:site_name", content: "KeyGG" },
-      { property: "og:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { property: "og:image", content: "https://keygg.com/og-default.jpg" },
       { property: "og:image:width", content: "1216" },
       { property: "og:image:height", content: "640" },
       { property: "og:image:alt", content: "KeyGG — Genuine Software Product Keys" },
-      { name: "twitter:image", content: "/__l5e/assets-v1/35fbbed5-ea7d-440f-9bfa-47a5b1c45cb0/og-default.jpg" },
+      { name: "twitter:image", content: "https://keygg.com/og-default.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "How to Find Your Microsoft Office Product Key (2019 & 2021)" },
       {
