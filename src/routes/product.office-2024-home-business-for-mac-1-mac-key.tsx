@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import productImg from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import trustBanner from "@/assets/trust-payment-banner.svg.asset.json";
+import productImg from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.webp";
+import trustBanner from "@/assets/trust-payment-banner.svg";
 
 const PAGE_TITLE = "Buy Office 2024 Home & Business for Mac – Key for 1 Mac | KeyGG";
 const PAGE_DESC =
@@ -38,9 +38,9 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "product" },
       { property: "og:url", content: PAGE_URL },
-      { property: "og:image", content: productImg.url },
+      { property: "og:image", content: productImg },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: productImg.url },
+      { name: "twitter:image", content: productImg },
     ],
     links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/product/office-2024-home-business-for-mac
             {
               "@type": "Product",
               name: "Office 2024 Home & Business for Mac – Key for 1 Mac Lifetime License",
-              image: productImg.url,
+              image: productImg,
               description:
                 "Genuine Microsoft Office 2024 Home & Business product key for 1 Mac. Lifetime activation, quick email delivery. Latest Word, Excel, PowerPoint and Outlook natively optimized for Apple Silicon and Intel Macs.",
               brand: { "@type": "Brand", name: "Microsoft" },
@@ -199,14 +199,14 @@ function ProductPage() {
           <div>
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
-              src={productImg.url}
+              src={productImg}
               alt="Buy Microsoft Office 2024 Home & Business for Mac product key lifetime license"
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
           </div>
           <img
-            src={trustBanner.url}
+            src={trustBanner}
             alt="Secure payment methods accepted"
             className="mt-4 w-full h-auto"
             loading="lazy"

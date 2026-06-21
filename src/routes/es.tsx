@@ -4,22 +4,22 @@ import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
-import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
-import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
-import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
-import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.png.asset.json";
-import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.png.asset.json";
-import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
-import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
-import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
-import outlook2024 from "@/assets/products/outlook-2024.webp.asset.json";
-import access2024 from "@/assets/products/access-2024.webp.asset.json";
-import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
-import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.webp";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.webp";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.webp";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.webp";
+import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.webp";
+import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.webp";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.webp";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.webp";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.webp";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.webp";
+import outlook2024 from "@/assets/products/outlook-2024.webp";
+import access2024 from "@/assets/products/access-2024.webp";
+import powerpoint2024 from "@/assets/products/powerpoint-2024.webp";
+import excel2024 from "@/assets/products/excel-2024.webp";
 
 const PAGE_TITLE = "Comprar Clave Microsoft Office y Windows 11 Pro | KeyGG";
 const PAGE_DESC = "Claves originales de Microsoft Office 2019, 2021, 2024 y Windows 11 Pro. Licencia de por vida, entrega instantánea por correo y soporte 24/7.";
@@ -103,18 +103,18 @@ export const Route = createFileRoute("/es")({
 });
 
 const products = [
-  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus – Clave 1 PC",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
-  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional – Clave 1 PC",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
-  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus – Clave 1 PC",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
-  { img: projectPro2024.url, tag: "Business",    title: "Project Professional 2024 – Clave 1 PC",                price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
-  { img: visioPro2024.url,  tag: "Business",     title: "Visio Professional 2024 – Clave 1 PC",                  price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
-  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC – Clave 1 PC",       price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
-  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Hogar y Empresas para Mac – Clave 1 Mac",   price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
-  { img: esetPremium.url,   tag: "Seguridad",    title: "ESET Smart Security Premium – 1 Dispositivo | Clave 1 año", price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
-  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Hogar y Empresas para Mac – Clave 1 Mac",   price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
-  { img: m365Family.url,    tag: "Suscripción",  title: "Microsoft 365 Familia – 6 Usuarios | 6 TB | Clave 1 año", price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
-  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Hogar y Empresas para Mac – Clave 1 Mac",   price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
-  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Dispositivos | 100 GB Cloud | 1 año", price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
+  { img: office2019Pro, tag: "Office",       title: "Office 2019 Professional Plus – Clave 1 PC",            price: 13, original: 45,  to: "/product/office-2019-professional-plus", whop: "https://whop.com/checkout/plan_9SCu81I3Rd5Sl" },
+  { img: win11Pro,      tag: "Windows",      title: "Windows 11 Professional – Clave 1 PC",                  price: 13, original: 50,  to: "/product/windows-11-professional-key-1-pc", whop: "https://whop.com/checkout/plan_oDPDDAU0cg3Lf" },
+  { img: office2021Pro, tag: "Office",       title: "Office 2021 Professional Plus – Clave 1 PC",            price: 15, original: 55,  to: "/product/office-2021-professional-plus", whop: "https://whop.com/checkout/plan_cXRmNGflpuN4c" },
+  { img: projectPro2024, tag: "Business",    title: "Project Professional 2024 – Clave 1 PC",                price: 17, original: 120, to: "/product/project-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_E667X7ZZLRvMj" },
+  { img: visioPro2024,  tag: "Business",     title: "Visio Professional 2024 – Clave 1 PC",                  price: 17, original: 120, to: "/product/visio-professional-2024-key-1-pc", whop: "https://whop.com/checkout/plan_pcZakGTskqbmb" },
+  { img: office2024Pro, tag: "Office",       title: "Office 2024 Professional Plus LTSC – Clave 1 PC",       price: 20, original: 65,  to: "/product/office-2024-professional-plus-ltsc-key-1-pc", whop: "https://whop.com/checkout/plan_FkmvpRpakB5ld" },
+  { img: office2019Mac, tag: "Mac",          title: "Office 2019 Hogar y Empresas para Mac – Clave 1 Mac",   price: 32, original: 120, to: "/product/office-2019-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_eDGTcPRB6DiyP" },
+  { img: esetPremium,   tag: "Seguridad",    title: "ESET Smart Security Premium – 1 Dispositivo | Clave 1 año", price: 32, original: 80,  to: "/product/eset-smart-security-premium-1-device-1-year-key", whop: "https://whop.com/checkout/plan_rCZIOlElFaDd2" },
+  { img: office2021Mac, tag: "Mac",          title: "Office 2021 Hogar y Empresas para Mac – Clave 1 Mac",   price: 38, original: 140, to: "/product/office-2021-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_Hr9I3rbmMaIij" },
+  { img: m365Family,    tag: "Suscripción",  title: "Microsoft 365 Familia – 6 Usuarios | 6 TB | Clave 1 año", price: 78, original: 130, to: "/product/microsoft-365-family-6-users-6-tb-1-year-key", whop: "https://whop.com/checkout/plan_8yC2bC1nvRG4Y" },
+  { img: office2024Mac, tag: "Mac",          title: "Office 2024 Hogar y Empresas para Mac – Clave 1 Mac",   price: 93, original: 180, to: "/product/office-2024-home-business-for-mac-1-mac-key", whop: "https://whop.com/checkout/plan_ohtX2pZDYAK6K" },
+  { img: office365Pro,  tag: "Office",       title: "Office 365 Professional Plus – 5 Dispositivos | 100 GB Cloud | 1 año", price: 13, original: 60, to: "/product/office-365-professional-plus-5-devices-100gb-1-year-key", whop: "https://whop.com/checkout/plan_GDDIytjYJffS0" },
 ];
 
 const openCheckout = (url: string) => (e?: React.MouseEvent) => {
@@ -126,10 +126,10 @@ const openCheckout = (url: string) => (e?: React.MouseEvent) => {
 };
 
 const heroSlides = [
-  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url, eyebrow: "Windows 11 Pro", title: "Software original.", highlight: "Precios imbatibles.", desc: "Licencia de por vida, entrega instantánea por correo y soporte amable cuando lo necesites.", cta: "Ver Windows 11", price: 13, original: 50 },
-  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "El último Office.", highlight: "Activado en minutos.", desc: "Word, Excel, PowerPoint y Outlook — una clave, un PC, para siempre.", cta: "Conseguir Office 2024", price: 20, original: 65 },
-  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url, eyebrow: "Microsoft 365 Familia", title: "Apps premium para 6.", highlight: "6 TB en la nube incluidos.", desc: "Comparte Microsoft 365 con hasta seis personas, con 1 TB de OneDrive para cada una.", cta: "Ver 365 Familia", price: 78, original: 130 },
-  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "Todo lo esencial.", highlight: "A una fracción del precio.", desc: "Suite Office completa con licencia de por vida y entrega digital instantánea.", cta: "Conseguir Office 2021", price: 15, original: 55 },
+  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro, eyebrow: "Windows 11 Pro", title: "Software original.", highlight: "Precios imbatibles.", desc: "Licencia de por vida, entrega instantánea por correo y soporte amable cuando lo necesites.", cta: "Ver Windows 11", price: 13, original: 50 },
+  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro, eyebrow: "Office 2024 Pro Plus", title: "El último Office.", highlight: "Activado en minutos.", desc: "Word, Excel, PowerPoint y Outlook — una clave, un PC, para siempre.", cta: "Conseguir Office 2024", price: 20, original: 65 },
+  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family, eyebrow: "Microsoft 365 Familia", title: "Apps premium para 6.", highlight: "6 TB en la nube incluidos.", desc: "Comparte Microsoft 365 con hasta seis personas, con 1 TB de OneDrive para cada una.", cta: "Ver 365 Familia", price: 78, original: 130 },
+  { href: "/product/office-2021-professional-plus", product: office2021Pro, eyebrow: "Office 2021 Pro Plus", title: "Todo lo esencial.", highlight: "A una fracción del precio.", desc: "Suite Office completa con licencia de por vida y entrega digital instantánea.", cta: "Conseguir Office 2021", price: 15, original: 55 },
 ];
 
 function HomeES() {
@@ -343,10 +343,10 @@ function HomeES() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 – Clave 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
-            { title: "Access 2024 – Clave 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
-            { title: "PowerPoint 2024 – Clave 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
-            { title: "Excel 2024 – Clave 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
+            { title: "Outlook 2024 – Clave 1 PC", img: outlook2024, to: "/product/outlook-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_hLUpquD3dwJkZ" },
+            { title: "Access 2024 – Clave 1 PC", img: access2024, to: "/product/access-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_RY3qEBO6CBQrM" },
+            { title: "PowerPoint 2024 – Clave 1 PC", img: powerpoint2024, to: "/product/powerpoint-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_Nse08h3qGlKcB" },
+            { title: "Excel 2024 – Clave 1 PC", img: excel2024, to: "/product/excel-2024-product-key-1-pc", whop: "https://whop.com/checkout/plan_pOfQfJAk0xrAX" },
           ].map((p) => (
             <article key={p.title} className="rounded-2xl border border-border bg-card overflow-hidden">
               <Link to={p.to} className="block">

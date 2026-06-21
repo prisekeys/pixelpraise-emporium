@@ -14,8 +14,8 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import productImg from "@/assets/products/powerpoint-2024.webp.asset.json";
-import trustBanner from "@/assets/trust-payment-banner.svg.asset.json";
+import productImg from "@/assets/products/powerpoint-2024.webp";
+import trustBanner from "@/assets/trust-payment-banner.svg";
 
 const PAGE_TITLE = "Buy PowerPoint 2024 Product Key – 1 PC | KeyGG";
 const PAGE_DESC =
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/product/powerpoint-2024-product-key-1-pc"
       { property: "og:description", content: PAGE_DESC },
       { property: "og:type", content: "product" },
       { property: "og:url", content: PAGE_URL },
-      { property: "og:image", content: productImg.url },
+      { property: "og:image", content: productImg },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: productImg.url },
+      { name: "twitter:image", content: productImg },
     ],
     links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/product/powerpoint-2024-product-key-1-pc"
             {
               "@type": "Product",
               name: "PowerPoint 2024 Product Key – 1 PC Lifetime License",
-              image: productImg.url,
+              image: productImg,
               description:
                 "Genuine Microsoft PowerPoint 2024 product key for 1 PC. Lifetime activation, quick email delivery. Create professional presentations with advanced animations, transitions, and design tools.",
               brand: { "@type": "Brand", name: "Microsoft" },
@@ -195,14 +195,14 @@ function ProductPage() {
           <div>
           <div className="relative aspect-square rounded-2xl border border-border bg-white overflow-hidden">
             <img
-              src={productImg.url}
+              src={productImg}
               alt="Buy Microsoft PowerPoint 2024 product key lifetime license for 1 PC"
               className="w-full h-full object-contain p-4 sm:p-8"
               loading="eager"
             />
           </div>
           <img
-            src={trustBanner.url}
+            src={trustBanner}
             alt="Secure payment methods accepted"
             className="mt-4 w-full h-auto"
             loading="lazy"

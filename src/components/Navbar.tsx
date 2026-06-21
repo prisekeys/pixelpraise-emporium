@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Search, Headphones } from "lucide-react";
-import logo from "@/assets/keygg-logo-v2.png.asset.json";
+import logo from "@/assets/keygg-logo-v2.png";
 
 export default function Navbar() {
   return (
@@ -8,7 +8,7 @@ export default function Navbar() {
       <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5 justify-start md:pl-2">
-          <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
+          <img src={logo} alt="KeyGG" className="h-8 md:h-10 w-auto" />
         </Link>
 
         {/* Search — desktop only */}

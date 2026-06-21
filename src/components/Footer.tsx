@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import payStripe from "@/assets/payments/stripe.svg.asset.json";
-import payPaypal from "@/assets/payments/paypal.svg.asset.json";
-import payVisa from "@/assets/payments/visa.svg.asset.json";
-import payMastercard from "@/assets/payments/mastercard.svg.asset.json";
-import payApple from "@/assets/payments/applepay.svg.asset.json";
-import logo from "@/assets/keygg-logo-v2.png.asset.json";
-import microsoftCertified from "@/assets/keygg-ms-partner.png.asset.json";
+import payStripe from "@/assets/payments/stripe.svg";
+import payPaypal from "@/assets/payments/paypal.svg";
+import payVisa from "@/assets/payments/visa.svg";
+import payMastercard from "@/assets/payments/mastercard.svg";
+import payApple from "@/assets/payments/applepay.svg";
+import logo from "@/assets/keygg-logo-v2.png";
+import microsoftCertified from "@/assets/keygg-ms-partner.png";
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
         {/* Top section: logo + links */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
           <div className="col-span-2 md:col-span-1">
-            <img src={logo.url} alt="KeyGG" className="h-8 w-auto mb-4" />
+            <img src={logo} alt="KeyGG" className="h-8 w-auto mb-4" />
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Genuine Microsoft keys, games & AI tools. Instant digital delivery, unbeatable prices.
             </p>
@@ -52,7 +52,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-display font-bold text-sm mb-4">Partners</h4>
-            <img src={microsoftCertified.url} alt="Microsoft Certified" className="h-12 w-auto" />
+            <img src={microsoftCertified} alt="Microsoft Certified" className="h-12 w-auto" />
           </div>
         </div>
 
@@ -64,11 +64,11 @@ export default function Footer() {
           <div className="flex items-center gap-3 flex-wrap justify-center">
             <span className="text-xs text-muted-foreground mr-1">We accept:</span>
             {[
-              { src: payStripe.url, alt: "Stripe" },
-              { src: payPaypal.url, alt: "PayPal" },
-              { src: payVisa.url, alt: "Visa" },
-              { src: payMastercard.url, alt: "Mastercard" },
-              { src: payApple.url, alt: "Apple Pay" },
+              { src: payStripe, alt: "Stripe" },
+              { src: payPaypal, alt: "PayPal" },
+              { src: payVisa, alt: "Visa" },
+              { src: payMastercard, alt: "Mastercard" },
+              { src: payApple, alt: "Apple Pay" },
             ].map((p) => (
               <span key={p.alt} className="inline-flex items-center justify-center h-6 px-2 rounded bg-white border border-border" title={p.alt}>
                 <img src={p.src} alt={p.alt} className="h-3.5 w-auto object-contain" loading="lazy" />

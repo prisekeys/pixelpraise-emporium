@@ -9,7 +9,7 @@ import {
   ArrowRight,
   Headphones,
 } from "lucide-react";
-import logo from "@/assets/keygg-logo-v2.png.asset.json";
+import logo from "@/assets/keygg-logo-v2.png";
 
 export const Route = createFileRoute("/blog/how-to-find-microsoft-office-product-key")({
   head: () => ({
@@ -232,7 +232,7 @@ function BlogPage() {
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-secondary/30 border-b border-border/60">
         <nav className="mx-auto max-w-7xl px-4 md:px-6 h-16 grid grid-cols-[auto_1fr_auto] items-center gap-3">
           <Link to="/" className="flex items-center gap-2.5 justify-start md:pl-2">
-            <img src={logo.url} alt="KeyGG" className="h-8 md:h-10 w-auto" />
+            <img src={logo} alt="KeyGG" className="h-8 md:h-10 w-auto" />
           </Link>
           <div className="hidden md:flex justify-center w-full max-w-md mx-auto" />
           <button

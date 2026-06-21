@@ -4,22 +4,22 @@ import { ArrowRight, ChevronLeft, ChevronRight, Star, Download, Zap, ShieldCheck
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.png.asset.json";
-import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.png.asset.json";
-import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.png.asset.json";
-import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.png.asset.json";
-import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.png.asset.json";
-import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.png.asset.json";
-import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.png.asset.json";
-import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.png.asset.json";
-import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.png.asset.json";
-import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.png.asset.json";
-import outlook2024 from "@/assets/products/outlook-2024.webp.asset.json";
-import access2024 from "@/assets/products/access-2024.webp.asset.json";
-import powerpoint2024 from "@/assets/products/powerpoint-2024.webp.asset.json";
-import excel2024 from "@/assets/products/excel-2024.webp.asset.json";
+import office2019Pro from "@/assets/products/Office_2019_Professional_Plus_Key_1_PC.webp";
+import win11Pro from "@/assets/products/Windows_11_Professional_Key_1_PC.webp";
+import office2021Pro from "@/assets/products/Office_2021_Professional_Plus_Key_1_PC.webp";
+import office2024Pro from "@/assets/products/Office_2024_Professional_Plus_Key_1_PC.webp";
+import projectPro2024 from "@/assets/products/Project_Professional_2024_Key_1_PC.webp";
+import visioPro2024 from "@/assets/products/Visio_Professional_2024_Key_1_PC.webp";
+import office2019Mac from "@/assets/products/Office_2019_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2021Mac from "@/assets/products/Office_2021_Home_Business_for_Mac_1_Mac_Key.webp";
+import office2024Mac from "@/assets/products/Office_2024_Home_Business_for_Mac_1_Mac_Key.webp";
+import esetPremium from "@/assets/products/ESET_Smart_Security_Premium_1_Device_1_Year_Key.webp";
+import m365Family from "@/assets/products/Microsoft_365_Family_6_Users_6TB_1_Year_Key.webp";
+import office365Pro from "@/assets/products/Office_365_Professional_Plus_5_Devices_100GB_Cloud_1_Year.webp";
+import outlook2024 from "@/assets/products/outlook-2024.webp";
+import access2024 from "@/assets/products/access-2024.webp";
+import powerpoint2024 from "@/assets/products/powerpoint-2024.webp";
+import excel2024 from "@/assets/products/excel-2024.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -173,18 +173,18 @@ export const Route = createFileRoute("/")({
 });
 
 const products = [
-  { img: office2019Pro.url, tag: "Office",       title: "Office 2019 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.",          price: 13, original: 45,  rating: 4.9, sales: "24,500" },
-  { img: win11Pro.url,      tag: "Windows",      title: "Windows 11 Professional Key – 1 PC",       desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.",       price: 13, original: 50,  rating: 4.8, sales: "31,200" },
-  { img: office2021Pro.url, tag: "Office",       title: "Office 2021 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.",        price: 15, original: 55,  rating: 4.9, sales: "18,700" },
-  { img: projectPro2024.url, tag: "Business",     title: "Project Professional 2024 Key – 1 PC",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
-  { img: visioPro2024.url, tag: "Business",     title: "Visio Professional 2024 Key – 1 PC",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
-  { img: office2024Pro.url, tag: "Office",       title: "Office 2024 Professional Plus LTSC Key – 1 PC", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20, original: 65,  rating: 4.9, sales: "9,300" },
-  { img: office2019Mac.url, tag: "Mac",          title: "Office 2019 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.",               price: 32, original: 120, rating: 4.8, sales: "7,800"  },
-  { img: esetPremium.url,   tag: "Security",     title: "ESET Smart Security Premium – 1 Device | 1-Year Key",        desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.",   price: 32, original: 80,  rating: 4.7, sales: "6,200"  },
-  { img: office2021Mac.url, tag: "Mac",          title: "Office 2021 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.",            price: 38, original: 140, rating: 4.8, sales: "5,600"  },
-  { img: m365Family.url,    tag: "Subscription", title: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key",                desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.",      price: 78, original: 130, rating: 4.9, sales: "15,900" },
-  { img: office2024Mac.url, tag: "Mac",          title: "Office 2024 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.",            price: 93, original: 180, rating: 4.9, sales: "3,400"  },
-  { img: office365Pro.url,  tag: "Office",       title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
+  { img: office2019Pro, tag: "Office",       title: "Office 2019 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Word, Excel, PowerPoint, Outlook & more.",          price: 13, original: 45,  rating: 4.9, sales: "24,500" },
+  { img: win11Pro,      tag: "Windows",      title: "Windows 11 Professional Key – 1 PC",       desc: "Lifetime license for 1 PC. Pro features, BitLocker & business security.",       price: 13, original: 50,  rating: 4.8, sales: "31,200" },
+  { img: office2021Pro, tag: "Office",       title: "Office 2021 Professional Plus Key – 1 PC", desc: "Lifetime license for 1 PC. Latest Office suite with all premium apps.",        price: 15, original: 55,  rating: 4.9, sales: "18,700" },
+  { img: projectPro2024, tag: "Business",     title: "Project Professional 2024 Key – 1 PC",     desc: "Lifetime license for 1 PC. Advanced project management & planning tools.",     price: 17, original: 120, rating: 4.8, sales: "5,400"  },
+  { img: visioPro2024, tag: "Business",     title: "Visio Professional 2024 Key – 1 PC",       desc: "Lifetime license for 1 PC. Professional diagramming & data visualization.",   price: 17, original: 120, rating: 4.7, sales: "4,100"  },
+  { img: office2024Pro, tag: "Office",       title: "Office 2024 Professional Plus LTSC Key – 1 PC", desc: "Lifetime license for 1 PC. Long-term service channel with latest features.", price: 20, original: 65,  rating: 4.9, sales: "9,300" },
+  { img: office2019Mac, tag: "Mac",          title: "Office 2019 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Word, Excel, PowerPoint & Outlook for macOS.",               price: 32, original: 120, rating: 4.8, sales: "7,800"  },
+  { img: esetPremium,   tag: "Security",     title: "ESET Smart Security Premium – 1 Device | 1-Year Key",        desc: "1 Device | 1-Year Key. Advanced antivirus, firewall & privacy protection.",   price: 32, original: 80,  rating: 4.7, sales: "6,200"  },
+  { img: office2021Mac, tag: "Mac",          title: "Office 2021 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Updated Office apps with improved collaboration.",            price: 38, original: 140, rating: 4.8, sales: "5,600"  },
+  { img: m365Family,    tag: "Subscription", title: "Microsoft 365 Family – 6 Users | 6 TB | 1-Year Key",                desc: "6 Users | 6 TB | 1-Year Key. Premium apps, 1TB cloud storage per user.",      price: 78, original: 130, rating: 4.9, sales: "15,900" },
+  { img: office2024Mac, tag: "Mac",          title: "Office 2024 Home & Business for Mac – Key for 1 Mac", desc: "Key for 1 Mac. Latest Office suite optimized for Apple Silicon.",            price: 93, original: 180, rating: 4.9, sales: "3,400"  },
+  { img: office365Pro,  tag: "Office",       title: "Office 365 Professional Plus – 5 Devices | 100 GB Cloud Storage | 1 Year",        desc: "5 Devices | 100 GB Cloud Storage | 1 Year. Full Office suite with cloud.",   price: 13, original: 60,  rating: 4.8, sales: "11,100" },
 ];
 
 const WHOP_URL_OFFICE2019 = "https://whop.com/checkout/plan_9SCu81I3Rd5Sl";
@@ -217,10 +217,10 @@ const openCheckout = (url: string) => (e?: React.MouseEvent) => {
 };
 
 const heroSlides = [
-  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro.url,    eyebrow: "Windows 11 Pro",        title: "Genuine software.",   highlight: "Unbeatable prices.",     desc: "Lifetime license, instant email delivery, and friendly support whenever you need it.", cta: "Shop Windows 11",  price: 13, original: 50 },
-  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro.url, eyebrow: "Office 2024 Pro Plus", title: "The latest Office.",  highlight: "Activated in minutes.",  desc: "Word, Excel, PowerPoint and Outlook — one key, one PC, forever.",                       cta: "Get Office 2024",  price: 20, original: 65 },
-  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family.url,  eyebrow: "Microsoft 365 Family",  title: "Premium apps for 6.", highlight: "6 TB cloud included.",   desc: "Share Microsoft 365 with up to six people, with 1 TB OneDrive storage each.",          cta: "Shop 365 Family",  price: 78, original: 130 },
-  { href: "/product/office-2021-professional-plus", product: office2021Pro.url, eyebrow: "Office 2021 Pro Plus", title: "All the essentials.", highlight: "Fraction of the price.", desc: "Full Office suite with lifetime license and instant digital delivery.",                 cta: "Get Office 2021",  price: 15, original: 55 },
+  { href: "/product/windows-11-professional-key-1-pc", product: win11Pro,    eyebrow: "Windows 11 Pro",        title: "Genuine software.",   highlight: "Unbeatable prices.",     desc: "Lifetime license, instant email delivery, and friendly support whenever you need it.", cta: "Shop Windows 11",  price: 13, original: 50 },
+  { href: "/product/office-2024-professional-plus-ltsc-key-1-pc", product: office2024Pro, eyebrow: "Office 2024 Pro Plus", title: "The latest Office.",  highlight: "Activated in minutes.",  desc: "Word, Excel, PowerPoint and Outlook — one key, one PC, forever.",                       cta: "Get Office 2024",  price: 20, original: 65 },
+  { href: "/product/microsoft-365-family-6-users-6-tb-1-year-key", product: m365Family,  eyebrow: "Microsoft 365 Family",  title: "Premium apps for 6.", highlight: "6 TB cloud included.",   desc: "Share Microsoft 365 with up to six people, with 1 TB OneDrive storage each.",          cta: "Shop 365 Family",  price: 78, original: 130 },
+  { href: "/product/office-2021-professional-plus", product: office2021Pro, eyebrow: "Office 2021 Pro Plus", title: "All the essentials.", highlight: "Fraction of the price.", desc: "Full Office suite with lifetime license and instant digital delivery.",                 cta: "Get Office 2021",  price: 15, original: 55 },
 ];
 
 function Home() {
@@ -545,10 +545,10 @@ function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024.url, to: "/product/outlook-2024-product-key-1-pc", whop: WHOP_URL_OUTLOOK2024 },
-            { title: "Access 2024 Product Key – 1 PC", img: access2024.url, to: "/product/access-2024-product-key-1-pc", whop: WHOP_URL_ACCESS2024 },
-            { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024.url, to: "/product/powerpoint-2024-product-key-1-pc", whop: WHOP_URL_POWERPOINT2024 },
-            { title: "Excel 2024 Product Key – 1 PC", img: excel2024.url, to: "/product/excel-2024-product-key-1-pc", whop: WHOP_URL_EXCEL2024 },
+            { title: "Outlook 2024 Product Key – 1 PC", img: outlook2024, to: "/product/outlook-2024-product-key-1-pc", whop: WHOP_URL_OUTLOOK2024 },
+            { title: "Access 2024 Product Key – 1 PC", img: access2024, to: "/product/access-2024-product-key-1-pc", whop: WHOP_URL_ACCESS2024 },
+            { title: "PowerPoint 2024 Product Key – 1 PC", img: powerpoint2024, to: "/product/powerpoint-2024-product-key-1-pc", whop: WHOP_URL_POWERPOINT2024 },
+            { title: "Excel 2024 Product Key – 1 PC", img: excel2024, to: "/product/excel-2024-product-key-1-pc", whop: WHOP_URL_EXCEL2024 },
           ].map((p) => {
             const Wrap = p.to ? Link : "div";
             const wrapProps = p.to ? { to: p.to } : {};
